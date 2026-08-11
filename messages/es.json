@@ -1,6 +1,6 @@
 {
   "Navigation": {
-    "brand": "Greenway International",
+    "brand": "Green Way International",
     "home": "Home",
     "about": "Quienes Somos",
     "work": "Como Trabajamos",
@@ -21,7 +21,7 @@
       "title": "Expertos En Recuperación De Metales Industriales.",
       "description": "Compramos, evaluamos y coordinamos la recuperación de tungsteno, carburo de tungsteno, aleaciones especiales y residuos metálicos con valor técnico.",
       "videoHero": {
-        "eyebrow": "Greenway International",
+        "eyebrow": "Green Way International",
         "title": "Recuperación De Metales Industriales Con Alcance Internacional.",
         "body": "Identificamos, valorizamos y compramos materiales metálicos recuperables para que cada lote avance con trazabilidad, velocidad y compra final.",
         "announcements": [
@@ -55,7 +55,7 @@
       },
       "flowBreaker": {
         "eyebrow": "Cotización de material",
-        "phrase": "¿Tienes un lote industrial para que Greenway lo cotice, compre o recupere? Envíanos fotos, peso aproximado y ciudad.",
+        "phrase": "¿Tienes un lote industrial para que Green Way lo cotice, compre o recupere? Envíanos fotos, peso aproximado y ciudad.",
         "cta": "Contáctanos"
       },
       "workRoute": {
@@ -257,7 +257,7 @@
       }
     },
     "about": {
-      "eyebrow": "Sobre Greenway",
+      "eyebrow": "Sobre Green Way",
       "title": "Expertos En Recuperación De Metales",
       "heroImageLabel": "Material recuperable y operación industrial",
       "stats": [
@@ -276,7 +276,7 @@
       ],
       "introEyebrow": "Quienes Somos",
       "introTitle": "Compramos y Valorizamos Materiales Metálicos Industriales.",
-      "introBody": "Greenway International conecta conocimiento de materiales, capacidad de compra final, servicio 4PL y estudios de mercado para recuperar metales con valor técnico: tungsteno, carburo de tungsteno, aleaciones especiales, inoxidables y no ferrosos.",
+      "introBody": "Green Way International conecta conocimiento de materiales, capacidad de compra final, servicio 4PL y estudios de mercado para recuperar metales con valor técnico: tungsteno, carburo de tungsteno, aleaciones especiales, inoxidables y no ferrosos.",
       "introImageLabel": "Clasificación y evaluación de material",
       "operatingEyebrow": "Estándar De Recuperación",
       "operatingTitle": "Cada Lote Se Trabaja Con Identificación, Precio y Trazabilidad.",
@@ -322,7 +322,7 @@
           "imageAlt": "Bodega industrial y materiales metálicos recuperados en Houston, Texas",
           "imageLabel": "Estados Unidos",
           "bodyTitle": "Resumen",
-          "body": "Estados Unidos es un mercado clave para recuperación de metales de alto valor: tungsteno, carburo de tungsteno, níquel, cobalto, titanio, inoxidables y aleaciones de alta temperatura. Greenway articula evaluación, bodegas y compra final para lotes industriales.",
+          "body": "Estados Unidos es un mercado clave para recuperación de metales de alto valor: tungsteno, carburo de tungsteno, níquel, cobalto, titanio, inoxidables y aleaciones de alta temperatura. Green Way articula evaluación, bodegas y compra final para lotes industriales.",
           "highlightsTitle": "Puntos Clave",
           "highlights": [
             "Houston como punto de operación industrial",
@@ -382,7 +382,7 @@
           "imageAlt": "Operación de metales en Santiago, Chile",
           "imageLabel": "Santiago, Chile",
           "bodyTitle": "Resumen",
-          "body": "Chile ofrece un contexto industrial fuerte para materiales de desgaste, herramientas, aceros y metales recuperables. Greenway documenta y evalúa oportunidades donde la clasificación técnica puede mejorar nuestra compra final del lote.",
+          "body": "Chile ofrece un contexto industrial fuerte para materiales de desgaste, herramientas, aceros y metales recuperables. Green Way documenta y evalúa oportunidades donde la clasificación técnica puede mejorar nuestra compra final del lote.",
           "highlightsTitle": "Puntos Clave",
           "highlights": [
             "Materiales de minería e industria pesada",
@@ -462,7 +462,7 @@
           "imageAlt": "Patio de Tungco con tambores de metal recuperado en Madisonville, Kentucky",
           "imageLabel": "Madisonville, Kentucky",
           "bodyTitle": "Resumen Operativo",
-          "body": "Madisonville muestra el tipo de lote que Greenway busca evaluar: materiales de desgaste, carburo de tungsteno, residuos de proceso y piezas industriales que requieren una lectura técnica antes de definir compra o recuperación.",
+          "body": "Madisonville muestra el tipo de lote que Green Way busca evaluar: materiales de desgaste, carburo de tungsteno, residuos de proceso y piezas industriales que requieren una lectura técnica antes de definir compra o recuperación.",
           "highlightsTitle": "Puntos Clave",
           "highlights": [
             "Carburo de tungsteno y piezas de desgaste",
@@ -496,8 +496,8 @@
     "work": {
       "heroEyebrow": "Como Trabajamos",
       "heroTitle": "Así Compramos y Recuperamos Lotes Metálicos Industriales.",
-      "heroBody": "Greenway revisa el material, valida su valor técnico, estructura una oferta de compra y coordina la operación cuando el lote requiere logística 4PL o lectura de mercado.",
-      "heroImageLabel": "Operación Greenway",
+      "heroBody": "Green Way revisa el material, valida su valor técnico, estructura una oferta de compra y coordina la operación cuando el lote requiere logística 4PL o lectura de mercado.",
+      "heroImageLabel": "Operación Green Way",
       "heroStats": [
         {
           "value": "Material",
@@ -505,7 +505,7 @@
         },
         {
           "value": "Compra",
-          "label": "Oferta final de Greenway"
+          "label": "Oferta final de Green Way"
         },
         {
           "value": "4PL",
@@ -514,7 +514,7 @@
       ],
       "routeEyebrow": "Ruta De Trabajo",
       "routeTitle": "De La Evidencia Del Lote A Una Compra Lista Para Ejecutar.",
-      "routeBody": "La prioridad es decidir rápido y bien: qué material es, cuánto valor recuperable tiene, dónde está, cómo se presenta y qué ruta operativa permite que Greenway compre con claridad.",
+      "routeBody": "La prioridad es decidir rápido y bien: qué material es, cuánto valor recuperable tiene, dónde está, cómo se presenta y qué ruta operativa permite que Green Way compre con claridad.",
       "routeSteps": [
         {
           "title": "Recibimos Evidencia Del Lote",
@@ -536,7 +536,7 @@
         },
         {
           "title": "Definimos Oferta De Compra",
-          "body": "Greenway estructura una oferta según composición probable, condición, limpieza, volumen, separación y demanda real del material.",
+          "body": "Green Way estructura una oferta según composición probable, condición, limpieza, volumen, separación y demanda real del material.",
           "bullets": [
             "Precio",
             "Condición",
@@ -711,7 +711,7 @@
     "products": {
       "heroEyebrow": "Materiales y Servicios",
       "heroTitle": "Compra y Recuperación De Metales Industriales.",
-      "heroBody": "Greenway trabaja con materiales de alto valor técnico: tungsteno, carburo de tungsteno, aceros inoxidables, níquel, cobalto, titanio, no ferrosos y residuos metálicos de proceso.",
+      "heroBody": "Green Way trabaja con materiales de alto valor técnico: tungsteno, carburo de tungsteno, aceros inoxidables, níquel, cobalto, titanio, no ferrosos y residuos metálicos de proceso.",
       "heroStats": [
         {
           "value": "W",
@@ -747,12 +747,12 @@
       ],
       "servicesEyebrow": "Líneas De Servicio",
       "servicesTitle": "Compramos Metales Industriales y Estructuramos La Ruta De Recuperación.",
-      "servicesBody": "Greenway es comprador final de tungsteno, carburo de tungsteno, aleaciones especiales y residuos metálicos. Cuando el lote lo exige, integramos 4PL y estudios de mercado para evaluar, cotizar y mover el material con control.",
+      "servicesBody": "Green Way es comprador final de tungsteno, carburo de tungsteno, aleaciones especiales y residuos metálicos. Cuando el lote lo exige, integramos 4PL y estudios de mercado para evaluar, cotizar y mover el material con control.",
       "servicesItems": [
         {
           "eyebrow": "4PL",
           "title": "4PL",
-          "body": "Servicio 4PL para recolección, bodega, documentación, aliados, consolidación y movimiento internacional de lotes que encajan con la ruta de compra de Greenway."
+          "body": "Servicio 4PL para recolección, bodega, documentación, aliados, consolidación y movimiento internacional de lotes que encajan con la ruta de compra de Green Way."
         },
         {
           "eyebrow": "Recuperación",
@@ -809,7 +809,7 @@
       "closingCta": "Contáctanos",
       "continuationEyebrow": "Portafolio En Construcción",
       "continuationTitle": "Un Portafolio Centrado En Metales Recuperables.",
-      "continuationBody": "La oferta de Greenway prioriza materiales industriales donde la identificación técnica, logística y compra final pueden crear más valor.",
+      "continuationBody": "La oferta de Green Way prioriza materiales industriales donde la identificación técnica, logística y compra final pueden crear más valor.",
       "continuationItems": [
         {
           "title": "Material",
@@ -827,13 +827,13 @@
     }
   },
   "Footer": {
-    "brandAlt": "Greenway International LLC",
-    "summary": "Greenway International recupera, compra y coordina materiales metálicos industriales con enfoque en tungsteno, carburo de tungsteno, aleaciones especiales, inoxidables y no ferrosos.",
+    "brandAlt": "Green Way International LLC",
+    "summary": "Green Way International recupera, compra y coordina materiales metálicos industriales con enfoque en tungsteno, carburo de tungsteno, aleaciones especiales, inoxidables y no ferrosos.",
     "companyTitle": "Empresa",
     "warehouseTitle": "Bodegas",
     "infoTitle": "Información",
     "copyright": "Todos los derechos reservados.",
-    "ownedBy": "Propiedad de Greenway.",
+    "ownedBy": "Propiedad de Green Way.",
     "designedBy": "Diseñado por Fastwasas.",
     "navLinks": [
       {

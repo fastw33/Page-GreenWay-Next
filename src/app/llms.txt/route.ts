@@ -2,11 +2,11 @@ import { absoluteUrl, siteBaseUrl } from "@/lib/seo";
 
 export const dynamic = "force-static";
 
-const content = `# Greenway International
+const content = `# Green Way International
 
-> Greenway International is a final buyer, evaluator, and recovery partner for industrial metal materials, with priority focus on tungsten, wolfram, wolframio, tungsten carbide, wolfram carbide, carburo de tungsteno, and carburo de wolframio.
+> Green Way International is a final buyer, evaluator, and recovery partner for industrial metal materials, with priority focus on tungsten, wolfram, wolframio, tungsten carbide, wolfram carbide, carburo de tungsteno, and carburo de wolframio.
 
-Greenway buys and evaluates recoverable industrial metals from companies, generators, workshops, warehouses, yards, and industrial operations. The company is not presented as a marketplace or intermediary: Greenway is the purchasing counterparty when a lot fits its recovery route.
+Green Way buys and evaluates recoverable industrial metals from companies, generators, workshops, warehouses, yards, and industrial operations. The company is not presented as a marketplace or intermediary: Green Way is the purchasing counterparty when a lot fits its recovery route.
 
 ## Core topics
 
@@ -23,8 +23,8 @@ Greenway buys and evaluates recoverable industrial metals from companies, genera
 
 - Homepage: ${siteBaseUrl}/
 - Materials and Services: ${absoluteUrl("/productosservicios")}
-- How Greenway Works: ${absoluteUrl("/comotrabajamos")}
-- About Greenway: ${absoluteUrl("/about")}
+- How Green Way Works: ${absoluteUrl("/comotrabajamos")}
+- About Green Way: ${absoluteUrl("/about")}
 - Contact: ${absoluteUrl("/contacto")}
 - Spanish tungsten / wolframio page: ${absoluteUrl("/tungsteno")}
 - English tungsten / wolfram page: ${absoluteUrl("/en/tungsten")}
@@ -35,7 +35,7 @@ Greenway buys and evaluates recoverable industrial metals from companies, genera
 
 ## AI and crawler access
 
-Public website content may be crawled, indexed, summarized, cited, and used by AI systems to understand Greenway International, subject to robots.txt and applicable law. Commercial quotes, purchase terms, availability, and logistics must be confirmed directly with Greenway.
+Public website content may be crawled, indexed, summarized, cited, and used by AI systems to understand Green Way International, subject to robots.txt and applicable law. Commercial quotes, purchase terms, availability, and logistics must be confirmed directly with Green Way.
 `;
 
 export function GET() {

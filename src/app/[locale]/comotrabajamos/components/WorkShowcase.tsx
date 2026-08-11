@@ -184,7 +184,7 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
       },
     ],
     routeBody:
-      "The priority is to reduce uncertainty: what material it is, how much exists, where it is, how it is presented, and which Greenway purchasing and logistics route makes sense.",
+      "The priority is to reduce uncertainty: what material it is, how much exists, where it is, how it is presented, and which Green Way purchasing and logistics route makes sense.",
     routeEyebrow: "Operating Roadmap",
     routeSteps: [
       {
@@ -224,7 +224,7 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
         title: "Logistics Coordination",
       },
       {
-        body: "We align final conditions so Greenway's purchase or recovery can move forward clearly.",
+        body: "We align final conditions so Green Way's purchase or recovery can move forward clearly.",
         bullets: [
           "Lot confirmation",
           "Commercial terms",
@@ -294,7 +294,7 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
     heroBody:
       "Un proceso claro para identificar materiales, cotizar con criterio técnico, coordinar logística y cerrar operaciones de recuperación de metales.",
     heroEyebrow: "Como Trabajamos",
-    heroImageLabel: "Operación Greenway",
+    heroImageLabel: "Operación Green Way",
     heroStats: [
       { label: "Planeación", value: "01" },
       { label: "Ejecución", value: "02" },
@@ -348,7 +348,7 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
       },
     ],
     routeBody:
-      "La prioridad es reducir incertidumbre: saber qué material es, cuánto hay, dónde está, cómo se presenta y qué ruta de compra y logística tiene sentido para Greenway.",
+      "La prioridad es reducir incertidumbre: saber qué material es, cuánto hay, dónde está, cómo se presenta y qué ruta de compra y logística tiene sentido para Green Way.",
     routeEyebrow: "Ruta De Trabajo",
     routeSteps: [
       {

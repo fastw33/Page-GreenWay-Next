@@ -47,10 +47,10 @@ const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
       ],
       acceptedIntro:
         "The first step is not a generic scrap price. We review the presentation, origin, weight, and alloy signals before quoting.",
-      acceptedTitle: "Tungsten, Wolfram, and Wolframio Materials Greenway Buys",
+      acceptedTitle: "Tungsten, Wolfram, and Wolframio Materials Green Way Buys",
       ctaBody:
-        "Send photos, approximate weight, city, and any available material history. Greenway reviews the lot as a final buyer.",
-      ctaTitle: "Send Tungsten Or Wolfram For Greenway To Quote",
+        "Send photos, approximate weight, city, and any available material history. Green Way reviews the lot as a final buyer.",
+      ctaTitle: "Send Tungsten Or Wolfram For Green Way To Quote",
       detailBody:
         "Tungsten, also searched as wolfram or wolframio, is valuable because density, temperature resistance, and industrial use make it different from ordinary scrap. A clean technical read can protect the value of the lot.",
       detailEyebrow: "Material Focus",
@@ -64,7 +64,7 @@ const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
           title: "Valuation",
         },
         {
-          body: "Greenway coordinates purchase, payment, pickup, consolidation, and documentation when the lot is viable.",
+          body: "Green Way coordinates purchase, payment, pickup, consolidation, and documentation when the lot is viable.",
           title: "Final Purchase",
         },
       ],
@@ -79,22 +79,22 @@ const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
       faqs: [
         {
           answer:
-            "Yes. Greenway reviews tungsten, wolfram, and wolframio-related industrial lots as a final buyer when the material fits its recovery route.",
-          question: "Does Greenway buy tungsten or wolfram directly?",
+            "Yes. Green Way reviews tungsten, wolfram, and wolframio-related industrial lots as a final buyer when the material fits its recovery route.",
+          question: "Does Green Way buy tungsten or wolfram directly?",
         },
         {
           answer:
-            "Photos, approximate weight, city, material origin, condition, and any alloy or process history help Greenway quote faster.",
+            "Photos, approximate weight, city, material origin, condition, and any alloy or process history help Green Way quote faster.",
           question: "What information is needed to quote tungsten?",
         },
         {
           answer:
-            "Greenway reviews mixed lots, but clear separation, weight, and photos improve the technical read and purchase decision.",
+            "Green Way reviews mixed lots, but clear separation, weight, and photos improve the technical read and purchase decision.",
           question: "Can mixed tungsten-bearing lots be evaluated?",
         },
       ],
       heroBody:
-        "Greenway buys tungsten, wolfram, and wolframio-related industrial material from generators, workshops, yards, and companies that need a direct final buyer for recoverable metal.",
+        "Green Way buys tungsten, wolfram, and wolframio-related industrial material from generators, workshops, yards, and companies that need a direct final buyer for recoverable metal.",
       heroEyebrow: "Final Buyer For Tungsten and Wolfram",
       heroImage: "/countries/estados-unidos/houston/houston-metal-turnings-tag-01.webp",
       heroImageAlt:
@@ -102,9 +102,9 @@ const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
       heroImageLabel: "Tungsten / wolfram evaluation",
       heroTitle: "Tungsten, Wolfram, and Wolframio Buying.",
       proofBody:
-        "We do not position the material for another buyer. Greenway evaluates, quotes, buys, pays, and coordinates the operating route.",
+        "We do not position the material for another buyer. Green Way evaluates, quotes, buys, pays, and coordinates the operating route.",
       proofEyebrow: "No Intermediary Framing",
-      proofTitle: "Greenway Is The Purchasing Counterparty.",
+      proofTitle: "Green Way Is The Purchasing Counterparty.",
     },
     es: {
       accepted: [
@@ -115,10 +115,10 @@ const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
       ],
       acceptedIntro:
         "El primer paso no es un precio genérico de chatarra. Revisamos presentación, origen, peso y señales de aleación antes de cotizar.",
-      acceptedTitle: "Materiales De Tungsteno O Wolframio Que Greenway Compra",
+      acceptedTitle: "Materiales De Tungsteno O Wolframio Que Green Way Compra",
       ctaBody:
-        "Envíanos fotos, peso aproximado, ciudad e historial disponible del material. Greenway revisa el lote como comprador final.",
-      ctaTitle: "Envía Tungsteno O Wolframio Para Que Greenway Cotice",
+        "Envíanos fotos, peso aproximado, ciudad e historial disponible del material. Green Way revisa el lote como comprador final.",
+      ctaTitle: "Envía Tungsteno O Wolframio Para Que Green Way Cotice",
       detailBody:
         "El tungsteno, también conocido como wolframio, tiene valor por su densidad, resistencia a temperatura y uso industrial. Una lectura técnica protege el valor real del lote.",
       detailEyebrow: "Enfoque De Material",
@@ -132,7 +132,7 @@ const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
           title: "Valorización",
         },
         {
-          body: "Greenway coordina compra, pago, recolección, consolidación y documentación cuando el lote es viable.",
+          body: "Green Way coordina compra, pago, recolección, consolidación y documentación cuando el lote es viable.",
           title: "Compra Final",
         },
       ],
@@ -147,8 +147,8 @@ const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
       faqs: [
         {
           answer:
-            "Sí. Greenway revisa lotes industriales de tungsteno, wolframio o materiales relacionados como comprador final cuando el lote encaja con su ruta de recuperación.",
-          question: "¿Greenway compra tungsteno o wolframio directamente?",
+            "Sí. Green Way revisa lotes industriales de tungsteno, wolframio o materiales relacionados como comprador final cuando el lote encaja con su ruta de recuperación.",
+          question: "¿Green Way compra tungsteno o wolframio directamente?",
         },
         {
           answer:
@@ -157,12 +157,12 @@ const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
         },
         {
           answer:
-            "Sí. Greenway puede evaluar lotes mezclados con contenido de tungsteno, pero la separación, el peso y fotos claras mejoran la lectura técnica.",
+            "Sí. Green Way puede evaluar lotes mezclados con contenido de tungsteno, pero la separación, el peso y fotos claras mejoran la lectura técnica.",
           question: "¿Pueden evaluar lotes mezclados con tungsteno?",
         },
       ],
       heroBody:
-        "Greenway compra tungsteno o wolframio a generadores industriales, talleres, patios y empresas que necesitan un comprador final directo para metal recuperable.",
+        "Green Way compra tungsteno o wolframio a generadores industriales, talleres, patios y empresas que necesitan un comprador final directo para metal recuperable.",
       heroEyebrow: "Comprador Final De Tungsteno y Wolframio",
       heroImage: "/countries/estados-unidos/houston/houston-metal-turnings-tag-01.webp",
       heroImageAlt:
@@ -170,9 +170,9 @@ const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
       heroImageLabel: "Evaluación de tungsteno / wolframio",
       heroTitle: "Compra, Evaluación y Recuperación De Tungsteno O Wolframio.",
       proofBody:
-        "No posicionamos el material para otro comprador. Greenway evalúa, cotiza, compra, paga y coordina la ruta operativa.",
+        "No posicionamos el material para otro comprador. Green Way evalúa, cotiza, compra, paga y coordina la ruta operativa.",
       proofEyebrow: "Sin Enfoque De Intermediario",
-      proofTitle: "Greenway Es La Contraparte Compradora.",
+      proofTitle: "Green Way Es La Contraparte Compradora.",
     },
   },
   "tungsten-carbide": {
@@ -184,11 +184,11 @@ const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
         "Industrial lots that need separation before final valuation",
       ],
       acceptedIntro:
-        "Tungsten carbide, also searched as wolfram carbide in some industrial contexts, often appears in mixed, dirty, or process-heavy lots. Greenway reviews the lot as a final buyer and quotes based on recoverable value.",
-      acceptedTitle: "Tungsten Carbide and Wolfram Carbide Materials Greenway Buys",
+        "Tungsten carbide, also searched as wolfram carbide in some industrial contexts, often appears in mixed, dirty, or process-heavy lots. Green Way reviews the lot as a final buyer and quotes based on recoverable value.",
+      acceptedTitle: "Tungsten Carbide and Wolfram Carbide Materials Green Way Buys",
       ctaBody:
         "Send photos of the material, the container, estimated weight, and city. We will review the carbide lot for direct purchase.",
-      ctaTitle: "Send Tungsten Carbide Or Wolfram Carbide For Greenway To Quote",
+      ctaTitle: "Send Tungsten Carbide Or Wolfram Carbide For Green Way To Quote",
       detailBody:
         "Carbide value changes with form, cleanliness, oil, moisture, mixing, and expected recovery. We look at those details before giving direction.",
       detailEyebrow: "High-Value Recovery",
@@ -202,7 +202,7 @@ const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
           title: "Condition",
         },
         {
-          body: "Greenway can buy the material directly and coordinate pickup, warehouse, payment, and recovery route.",
+          body: "Green Way can buy the material directly and coordinate pickup, warehouse, payment, and recovery route.",
           title: "Direct Purchase",
         },
       ],
@@ -217,8 +217,8 @@ const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
       faqs: [
         {
           answer:
-            "Yes. Greenway buys tungsten carbide and wolfram carbide scrap such as inserts, drill bits, wear parts, sludge, grinding residue, and mixed industrial lots.",
-          question: "Does Greenway buy tungsten carbide scrap?",
+            "Yes. Green Way buys tungsten carbide and wolfram carbide scrap such as inserts, drill bits, wear parts, sludge, grinding residue, and mixed industrial lots.",
+          question: "Does Green Way buy tungsten carbide scrap?",
         },
         {
           answer:
@@ -232,7 +232,7 @@ const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
         },
       ],
       heroBody:
-        "Greenway buys tungsten carbide scrap, wolfram carbide references, and industrial carbide-bearing materials as a final purchasing counterparty.",
+        "Green Way buys tungsten carbide scrap, wolfram carbide references, and industrial carbide-bearing materials as a final purchasing counterparty.",
       heroEyebrow: "Final Buyer For Tungsten Carbide and Wolfram Carbide",
       heroImage:
         "/countries/estados-unidos/madisonville/madisonville-tungco-yard-drums-01.webp",
@@ -253,12 +253,12 @@ const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
         "Lotes industriales que necesitan separación antes de valoración final",
       ],
       acceptedIntro:
-        "El carburo de tungsteno, también relacionado con búsquedas de carburo de wolframio, suele llegar mezclado, sucio o con alto contenido de proceso. Greenway revisa el lote como comprador final y cotiza según valor recuperable.",
-      acceptedTitle: "Materiales De Carburo De Tungsteno O Carburo De Wolframio Que Greenway Compra",
+        "El carburo de tungsteno, también relacionado con búsquedas de carburo de wolframio, suele llegar mezclado, sucio o con alto contenido de proceso. Green Way revisa el lote como comprador final y cotiza según valor recuperable.",
+      acceptedTitle: "Materiales De Carburo De Tungsteno O Carburo De Wolframio Que Green Way Compra",
       ctaBody:
         "Envíanos fotos del material, contenedor, peso estimado y ciudad. Revisamos el lote de carburo para compra directa.",
       ctaTitle:
-        "Envía Carburo De Tungsteno O Carburo De Wolframio Para Que Greenway Cotice",
+        "Envía Carburo De Tungsteno O Carburo De Wolframio Para Que Green Way Cotice",
       detailBody:
         "El valor del carburo de tungsteno o carburo de wolframio cambia según forma, limpieza, aceite, humedad, mezcla y recuperación esperada. Revisamos esos detalles antes de orientar la cotización.",
       detailEyebrow: "Recuperación De Alto Valor",
@@ -272,7 +272,7 @@ const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
           title: "Condición",
         },
         {
-          body: "Greenway puede comprar directamente el material y coordinar retiro, bodega, pago y ruta de recuperación.",
+          body: "Green Way puede comprar directamente el material y coordinar retiro, bodega, pago y ruta de recuperación.",
           title: "Compra Directa",
         },
       ],
@@ -289,8 +289,8 @@ const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
       faqs: [
         {
           answer:
-            "Sí. Greenway compra chatarra de carburo de tungsteno o carburo de wolframio como insertos, brocas, piezas de desgaste, lodos, residuos de rectificado y lotes industriales mezclados.",
-          question: "¿Greenway compra chatarra de carburo de tungsteno?",
+            "Sí. Green Way compra chatarra de carburo de tungsteno o carburo de wolframio como insertos, brocas, piezas de desgaste, lodos, residuos de rectificado y lotes industriales mezclados.",
+          question: "¿Green Way compra chatarra de carburo de tungsteno?",
         },
         {
           answer:
@@ -304,7 +304,7 @@ const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
         },
       ],
       heroBody:
-        "Greenway compra chatarra de carburo de tungsteno, carburo de wolframio y materiales industriales con contenido de carburo como contraparte compradora final.",
+        "Green Way compra chatarra de carburo de tungsteno, carburo de wolframio y materiales industriales con contenido de carburo como contraparte compradora final.",
       heroEyebrow: "Comprador Final De Carburo De Tungsteno y Carburo De Wolframio",
       heroImage:
         "/countries/estados-unidos/madisonville/madisonville-tungco-yard-drums-01.webp",
@@ -649,9 +649,7 @@ export default async function MaterialSeoPage({
         </div>
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
           <div data-aos="fade-up">
-            <p className="text-xs font-bold uppercase tracking-[0.24em] text-[var(--gw-green)]">
-              Greenway International
-            </p>
+            <p className="text-xs font-bold uppercase tracking-[0.24em] text-[var(--gw-green)]">Green Way International</p>
             <h2 className="mt-5 max-w-3xl text-4xl font-bold leading-tight sm:text-5xl">
               {copy.ctaTitle}
             </h2>

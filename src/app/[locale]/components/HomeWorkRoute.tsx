@@ -64,7 +64,7 @@ const fallbackCopy: Record<"en" | "es", WorkRouteCopy> = {
       },
       {
         title: "Close and Payment",
-        body: "We align final conditions so Greenway's purchase or recovery can move forward clearly.",
+        body: "We align final conditions so Green Way's purchase or recovery can move forward clearly.",
         bullets: [
           "Lot confirmation",
           "Commercial terms",

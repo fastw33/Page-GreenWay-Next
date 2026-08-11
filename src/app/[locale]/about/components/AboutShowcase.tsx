@@ -124,7 +124,7 @@ const fallbackCopy: Record<"en" | "es", AboutCopy> = {
       },
     ],
     cta: "Contact Us",
-    eyebrow: "About Greenway",
+    eyebrow: "About Green Way",
     experienceEyebrow: "Where We Have Participated",
     experienceTitle: "Presence Designed To Recover Metals Across Markets.",
     footerBufferBody:
@@ -134,7 +134,7 @@ const fallbackCopy: Record<"en" | "es", AboutCopy> = {
     footerBufferTitle: "Tungsten, Tungsten Carbide, Specialty Alloys, and Industrial Metals.",
     heroImageLabel: "Institutional image slot",
     introBody:
-      "Greenway International connects material knowledge, final purchasing capacity, 4PL service, and market studies to recover metals with technical value: tungsten, wolfram, tungsten carbide, specialty alloys, stainless steels, and non-ferrous metals.",
+      "Green Way International connects material knowledge, final purchasing capacity, 4PL service, and market studies to recover metals with technical value: tungsten, wolfram, tungsten carbide, specialty alloys, stainless steels, and non-ferrous metals.",
     introEyebrow: "Who We Are",
     introImageLabel: "Team and operation image slot",
     introTitle: "We Buy and Value Industrial Metal Materials.",
@@ -234,7 +234,7 @@ const fallbackCopy: Record<"en" | "es", AboutCopy> = {
       },
     ],
     cta: "Contáctanos",
-    eyebrow: "Sobre Greenway",
+    eyebrow: "Sobre Green Way",
     experienceEyebrow: "Donde Hemos Participado",
     experienceTitle: "Presencia Pensada Para Recuperar Metales Entre Mercados.",
     footerBufferBody:
@@ -244,7 +244,7 @@ const fallbackCopy: Record<"en" | "es", AboutCopy> = {
     footerBufferTitle: "Tungsteno, Carburo De Tungsteno, Aleaciones Especiales y Metales Industriales.",
     heroImageLabel: "Espacio para imagen institucional",
     introBody:
-      "Greenway International conecta conocimiento de materiales, capacidad de compra final, servicio 4PL y estudios de mercado para recuperar metales con valor técnico: tungsteno, carburo de tungsteno, aleaciones especiales, inoxidables y no ferrosos.",
+      "Green Way International conecta conocimiento de materiales, capacidad de compra final, servicio 4PL y estudios de mercado para recuperar metales con valor técnico: tungsteno, carburo de tungsteno, aleaciones especiales, inoxidables y no ferrosos.",
     introEyebrow: "Quienes Somos",
     introImageLabel: "Espacio para foto de equipo y operación",
     introTitle: "Compramos y Valorizamos Materiales Metálicos Industriales.",
@@ -369,7 +369,7 @@ export async function AboutShowcase() {
     locale === "en"
       ? {
           logistics: {
-            body: "When a metal lot needs more than a local pickup, Greenway structures the operational route: pickup, warehouse, documentation, consolidation, and international movement.",
+            body: "When a metal lot needs more than a local pickup, Green Way structures the operational route: pickup, warehouse, documentation, consolidation, and international movement.",
             eyebrow: "4PL service",
             items: [
               {
@@ -391,7 +391,7 @@ export async function AboutShowcase() {
             title: "4PL For Industrial Metal Lots That Need Controlled Movement.",
           },
           market: {
-            body: "Market studies help us read demand, timing, price context, and industrial appetite before defining how aggressively Greenway should quote or move a lot.",
+            body: "Market studies help us read demand, timing, price context, and industrial appetite before defining how aggressively Green Way should quote or move a lot.",
             eyebrow: "Market studies",
             items: [
               "Demand by material family",
@@ -404,7 +404,7 @@ export async function AboutShowcase() {
         }
       : {
           logistics: {
-            body: "Cuando un lote metálico necesita más que una recolección local, Greenway estructura la ruta operativa: recolección, bodega, documentación, consolidación y movimiento internacional.",
+            body: "Cuando un lote metálico necesita más que una recolección local, Green Way estructura la ruta operativa: recolección, bodega, documentación, consolidación y movimiento internacional.",
             eyebrow: "Servicio 4PL",
             items: [
               {
@@ -426,7 +426,7 @@ export async function AboutShowcase() {
             title: "4PL Para Lotes Metálicos Industriales Que Necesitan Movimiento Controlado.",
           },
           market: {
-            body: "Los estudios de mercado nos ayudan a leer demanda, momento, contexto de precio y apetito industrial antes de definir cómo Greenway debe cotizar o mover un lote.",
+            body: "Los estudios de mercado nos ayudan a leer demanda, momento, contexto de precio y apetito industrial antes de definir cómo Green Way debe cotizar o mover un lote.",
             eyebrow: "Estudios de mercado",
             items: [
               "Demanda por familia de material",

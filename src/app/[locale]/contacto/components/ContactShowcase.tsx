@@ -64,7 +64,7 @@ const fallbackCopy: Record<"en" | "es", ContactCopy> = {
       },
     ],
     channelsEyebrow: "Contact Channels",
-    channelsTitle: "Direct Access To The Greenway Operating Team.",
+    channelsTitle: "Direct Access To The Green Way Operating Team.",
     directionsLabel: "Open in Google Maps",
     heroBody:
       "Tell us what metal you have, where it is located, estimated weight, and send photos. With that information we can guide the first review.",
@@ -123,7 +123,7 @@ const fallbackCopy: Record<"en" | "es", ContactCopy> = {
       },
     ],
     channelsEyebrow: "Canales De Contacto",
-    channelsTitle: "Acceso Directo Al Equipo Operativo De Greenway.",
+    channelsTitle: "Acceso Directo Al Equipo Operativo De Green Way.",
     directionsLabel: "Abrir en Google Maps",
     heroBody:
       "Cuéntanos qué metal tienes, en qué ciudad está, cuánto pesa y adjunta fotos. Con esa información podemos orientar la revisión inicial.",

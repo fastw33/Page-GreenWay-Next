@@ -21,7 +21,7 @@ const contacts: Record<"en" | "es", WhatsAppContact[]> = {
       body: "Industrial metal lots, tungsten, tungsten carbide, and international coordination.",
       label: "+1 (786) 661-0046",
       message:
-        "Hello Greenway, I want to quote an industrial metal lot. I have material, photos, and location details.",
+        "Hello Green Way, I want to quote an industrial metal lot. I have material, photos, and location details.",
       phone: "17866610046",
       title: "Miami / USA",
     },
@@ -29,7 +29,7 @@ const contacts: Record<"en" | "es", WhatsAppContact[]> = {
       body: "Metal recovery and evaluation for Colombia and LATAM operations.",
       label: "+57 314 3002760",
       message:
-        "Hello Greenway, I want to quote tungsten, tungsten carbide, or another industrial metal lot.",
+        "Hello Green Way, I want to quote tungsten, tungsten carbide, or another industrial metal lot.",
       phone: "573143002760",
       title: "Bogota / LATAM",
     },
@@ -39,7 +39,7 @@ const contacts: Record<"en" | "es", WhatsAppContact[]> = {
       body: "Lotes metálicos industriales, tungsteno, carburo de tungsteno y coordinación internacional.",
       label: "+1 (786) 661-0046",
       message:
-        "Hola Greenway, quiero cotizar un lote de metal industrial. Tengo material, fotos y ubicación para revisar.",
+        "Hola Green Way, quiero cotizar un lote de metal industrial. Tengo material, fotos y ubicación para revisar.",
       phone: "17866610046",
       title: "Miami / USA",
     },
@@ -47,7 +47,7 @@ const contacts: Record<"en" | "es", WhatsAppContact[]> = {
       body: "Recuperación y evaluación de metales para Colombia y operaciones LATAM.",
       label: "+57 314 3002760",
       message:
-        "Hola Greenway, quiero cotizar tungsteno, carburo de tungsteno u otro lote de metal industrial.",
+        "Hola Green Way, quiero cotizar tungsteno, carburo de tungsteno u otro lote de metal industrial.",
       phone: "573143002760",
       title: "Bogotá / LATAM",
     },
@@ -81,13 +81,13 @@ export function FloatingWhatsApp({ locale }: FloatingWhatsAppProps) {
             aria: "Open WhatsApp contact options",
             close: "Close WhatsApp contact options",
             eyebrow: "WhatsApp",
-            title: "Talk To Greenway",
+            title: "Talk To Green Way",
           }
         : {
             aria: "Abrir opciones de contacto por WhatsApp",
             close: "Cerrar opciones de contacto por WhatsApp",
             eyebrow: "WhatsApp",
-            title: "Habla Con Greenway",
+            title: "Habla Con Green Way",
           },
     [localeKey],
   );

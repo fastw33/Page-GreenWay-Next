@@ -17,7 +17,7 @@ export const siteBaseUrl = (
 
 const defaultLocale: Locale = "es";
 
-const siteName = "Greenway International";
+const siteName = "Green Way International";
 const ogImage = "/brand/greenway-logo-full-transparent.png";
 
 const baseKeywords: Record<Locale, string[]> = {
@@ -133,13 +133,13 @@ const pageSeo: Record<
   about: {
     es: {
       description:
-        "Greenway International recupera tungsteno, carburo de tungsteno y metales industriales con presencia por pais, ciudades operativas y aliados comerciales.",
+        "Green Way International recupera tungsteno, carburo de tungsteno y metales industriales con presencia por pais, ciudades operativas y aliados comerciales.",
       path: "/about",
       title: "Expertos En Recuperacion De Tungsteno y Metales",
     },
     en: {
       description:
-        "Greenway International recovers tungsten, wolfram, tungsten carbide, and industrial metals with country presence, operating cities, and commercial partners.",
+        "Green Way International recovers tungsten, wolfram, tungsten carbide, and industrial metals with country presence, operating cities, and commercial partners.",
       path: "/about",
       title: "Experts In Tungsten and Metal Recovery",
     },
@@ -175,13 +175,13 @@ const pageSeo: Record<
   contact: {
     es: {
       description:
-        "Contacta a Greenway para cotizar, comprar y coordinar recuperacion de tungsteno, carburo de tungsteno, chatarra industrial, lodos, insertos y aleaciones especiales.",
+        "Contacta a Green Way para cotizar, comprar y coordinar recuperacion de tungsteno, carburo de tungsteno, chatarra industrial, lodos, insertos y aleaciones especiales.",
       path: "/contacto",
       title: "Cotizar Tungsteno y Metales Industriales",
     },
     en: {
       description:
-        "Contact Greenway to quote, buy, and coordinate recovery for tungsten, wolfram, tungsten carbide, industrial scrap, sludge, inserts, and specialty alloys.",
+        "Contact Green Way to quote, buy, and coordinate recovery for tungsten, wolfram, tungsten carbide, industrial scrap, sludge, inserts, and specialty alloys.",
       path: "/contacto",
       title: "Quote Tungsten and Industrial Metals",
     },
@@ -302,10 +302,10 @@ const countryRoutes = [
 export const materialRoutes = [
   {
     enDescription:
-      "Informational page for companies with tungsten or wolfram available for quote: Greenway buys tungsten, evaluates industrial lots, pays, and coordinates recovery.",
+      "Informational page for companies with tungsten or wolfram available for quote: Green Way buys tungsten, evaluates industrial lots, pays, and coordinates recovery.",
     enSlug: "tungsten",
     esDescription:
-      "Pagina SEO para cotizar tungsteno o wolframio: Greenway compra tungsteno como comprador final, evalua lotes industriales, paga y coordina recuperacion.",
+      "Pagina SEO para cotizar tungsteno o wolframio: Green Way compra tungsteno como comprador final, evalua lotes industriales, paga y coordina recuperacion.",
     esSlug: "tungsteno",
     key: "tungsten",
     priority: 0.96,
@@ -316,10 +316,10 @@ export const materialRoutes = [
   },
   {
     enDescription:
-      "Informational page for tungsten carbide and wolfram carbide scrap: Greenway buys tungsten carbide inserts, drill bits, wear parts, sludge, and industrial residues.",
+      "Informational page for tungsten carbide and wolfram carbide scrap: Green Way buys tungsten carbide inserts, drill bits, wear parts, sludge, and industrial residues.",
     enSlug: "tungsten-carbide",
     esDescription:
-      "Pagina SEO para cotizar chatarra de carburo de tungsteno o carburo de wolframio: Greenway compra insertos, brocas, lodos, piezas de desgaste y residuos industriales como comprador final.",
+      "Pagina SEO para cotizar chatarra de carburo de tungsteno o carburo de wolframio: Green Way compra insertos, brocas, lodos, piezas de desgaste y residuos industriales como comprador final.",
     esSlug: "carburo-de-tungsteno",
     key: "tungsten-carbide",
     priority: 0.98,
@@ -392,8 +392,8 @@ function buildMetadata({
         {
           alt:
             locale === "en"
-              ? "Greenway International tungsten and industrial metal recovery"
-              : "Greenway International recuperacion de tungsteno y metales industriales",
+              ? "Green Way International tungsten and industrial metal recovery"
+              : "Green Way International recuperacion de tungsteno y metales industriales",
           height: 630,
           url: ogImage,
           width: 1200,
@@ -667,9 +667,9 @@ export function getOrganizationJsonLd(localeInput: string) {
         ],
         description:
           locale === "en"
-            ? "Greenway International buys, evaluates, and recovers tungsten, wolfram, tungsten carbide, specialty alloys, and industrial metals."
-            : "Greenway International compra, evalua y recupera tungsteno, carburo de tungsteno, aleaciones especiales y metales industriales.",
-        legalName: "Greenway International LLC",
+            ? "Green Way International buys, evaluates, and recovers tungsten, wolfram, tungsten carbide, specialty alloys, and industrial metals."
+            : "Green Way International compra, evalua y recupera tungsteno, carburo de tungsteno, aleaciones especiales y metales industriales.",
+        legalName: "Green Way International LLC",
         knowsAbout: baseKeywords[locale],
         logo: absoluteUrl("/brand/greenway-logo-full-transparent.png"),
         name: siteName,

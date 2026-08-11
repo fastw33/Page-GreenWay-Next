@@ -68,7 +68,7 @@ const fallbackCopy: Record<"en" | "es", ProductsCopy> = {
       "We can review scope, available information, logistics requirements, and the best path to structure the conversation.",
     closingCta: "Contact Us",
     closingEyebrow: "Next Step",
-    closingTitle: "Talk To Greenway About Tungsten and Metal Operations.",
+    closingTitle: "Talk To Green Way About Tungsten and Metal Operations.",
     continuationBody:
       "The page is prepared to incorporate material profiles, imagery, and cases with a clearer purchasing read.",
     continuationEyebrow: "Portfolio In Progress",
@@ -89,7 +89,7 @@ const fallbackCopy: Record<"en" | "es", ProductsCopy> = {
     continuationTitle:
       "Tungsten, Metals, and Intelligence Stay Organized By Commercial Priority.",
     heroBody:
-      "Greenway works with materials of high technical value: tungsten, tungsten carbide, stainless steels, nickel, cobalt, titanium, non-ferrous metals, and metal-bearing process residues.",
+      "Green Way works with materials of high technical value: tungsten, tungsten carbide, stainless steels, nickel, cobalt, titanium, non-ferrous metals, and metal-bearing process residues.",
     heroEyebrow: "Materials and Services",
     heroStats: [
       { label: "Tungsten", value: "W" },
@@ -158,11 +158,11 @@ const fallbackCopy: Record<"en" | "es", ProductsCopy> = {
     ],
     processTitle: "From Material Opportunity To Controlled Execution.",
     servicesBody:
-      "Greenway is a final buyer for tungsten, wolfram, tungsten carbide, specialty alloys, and metal-bearing residues. When a lot requires it, we integrate 4PL and market studies to evaluate, quote, and move the material with control.",
+      "Green Way is a final buyer for tungsten, wolfram, tungsten carbide, specialty alloys, and metal-bearing residues. When a lot requires it, we integrate 4PL and market studies to evaluate, quote, and move the material with control.",
     servicesEyebrow: "Service Lines",
     servicesItems: [
       {
-        body: "4PL service for pickup, warehouse, documentation, partners, consolidation, and international movement for lots that fit Greenway's purchasing route.",
+        body: "4PL service for pickup, warehouse, documentation, partners, consolidation, and international movement for lots that fit Green Way's purchasing route.",
         eyebrow: "4PL",
         title: "4PL",
       },
@@ -205,7 +205,7 @@ const fallbackCopy: Record<"en" | "es", ProductsCopy> = {
     continuationTitle:
       "Tungsteno, Metales E Inteligencia Ordenados Por Prioridad Comercial.",
     heroBody:
-      "Greenway trabaja con materiales de alto valor técnico: tungsteno, carburo de tungsteno, aceros inoxidables, níquel, cobalto, titanio, no ferrosos y residuos metálicos de proceso.",
+      "Green Way trabaja con materiales de alto valor técnico: tungsteno, carburo de tungsteno, aceros inoxidables, níquel, cobalto, titanio, no ferrosos y residuos metálicos de proceso.",
     heroEyebrow: "Materiales y Servicios",
     heroStats: [
       { label: "Tungsteno", value: "W" },
@@ -274,11 +274,11 @@ const fallbackCopy: Record<"en" | "es", ProductsCopy> = {
     ],
     processTitle: "De Oportunidad De Material A Ejecución Controlada.",
     servicesBody:
-      "Greenway es comprador final de tungsteno, carburo de tungsteno, aleaciones especiales y residuos metálicos. Cuando el lote lo exige, integramos 4PL y estudios de mercado para evaluar, cotizar y mover el material con control.",
+      "Green Way es comprador final de tungsteno, carburo de tungsteno, aleaciones especiales y residuos metálicos. Cuando el lote lo exige, integramos 4PL y estudios de mercado para evaluar, cotizar y mover el material con control.",
     servicesEyebrow: "Líneas De Servicio",
     servicesItems: [
       {
-        body: "Servicio 4PL para recolección, bodega, documentación, aliados, consolidación y movimiento internacional de lotes que encajan con la ruta de compra de Greenway.",
+        body: "Servicio 4PL para recolección, bodega, documentación, aliados, consolidación y movimiento internacional de lotes que encajan con la ruta de compra de Green Way.",
         eyebrow: "4PL",
         title: "4PL",
       },

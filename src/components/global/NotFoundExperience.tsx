@@ -9,7 +9,7 @@ const copy = {
   en: {
     eyebrow: "Route not found",
     title: "This Material Route Is Not In Our System.",
-    body: "The page may have moved, but Greenway still buys and evaluates tungsten, wolfram, tungsten carbide, specialty alloys, and recoverable industrial metals.",
+    body: "The page may have moved, but Green Way still buys and evaluates tungsten, wolfram, tungsten carbide, specialty alloys, and recoverable industrial metals.",
     primaryCta: "Quote material",
     secondaryCta: "View materials",
     home: "Return home",
@@ -24,7 +24,7 @@ const copy = {
   es: {
     eyebrow: "Ruta no encontrada",
     title: "Esta Ruta De Material No Está En Nuestro Sistema.",
-    body: "La página pudo moverse, pero Greenway sigue comprando y evaluando tungsteno, wolframio, carburo de tungsteno, aleaciones especiales y metales industriales recuperables.",
+    body: "La página pudo moverse, pero Green Way sigue comprando y evaluando tungsteno, wolframio, carburo de tungsteno, aleaciones especiales y metales industriales recuperables.",
     primaryCta: "Cotizar material",
     secondaryCta: "Ver materiales",
     home: "Volver al inicio",

@@ -72,7 +72,7 @@ export async function HomeActionBand() {
               {copy.cta}
             </ActionLink>
             <span className="text-sm font-semibold text-slate-400">
-              Greenway International LLC
+              Green Way International LLC
             </span>
           </div>
         </div>

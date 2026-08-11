@@ -11,12 +11,12 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   description:
-    "404 page for Greenway International industrial metal recovery routes.",
+    "404 page for Green Way International industrial metal recovery routes.",
   robots: {
     follow: false,
     index: false,
   },
-  title: "404 | Greenway International",
+  title: "404 | Green Way International",
 };
 
 export default function GlobalNotFound() {

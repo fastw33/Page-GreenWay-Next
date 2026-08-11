@@ -20,13 +20,13 @@ const fallbackCopy: Record<"en" | "es", FlowBreakerCopy> = {
     cta: "Contact Us",
     eyebrow: "Material quote",
     phrase:
-      "Do you have an industrial lot for Greenway to quote, buy, or recover? Send photos, estimated weight, and city.",
+      "Do you have an industrial lot for Green Way to quote, buy, or recover? Send photos, estimated weight, and city.",
   },
   es: {
     cta: "Contáctanos",
     eyebrow: "Cotización de material",
     phrase:
-      "¿Tienes un lote industrial para que Greenway lo cotice, compre o recupere? Envíanos fotos, peso aproximado y ciudad.",
+      "¿Tienes un lote industrial para que Green Way lo cotice, compre o recupere? Envíanos fotos, peso aproximado y ciudad.",
   },
 };
 

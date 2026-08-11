@@ -140,7 +140,7 @@ const chileGalleryImagesEn: GalleryImage[] = [
     src: "/countries/chile/santiago/chile-drill-bits-close-10.webp",
   },
   {
-    alt: "Greenway team visit at a Chile operating yard",
+    alt: "Green Way team visit at a Chile operating yard",
     src: "/countries/chile/santiago/chile-team-yard-11.webp",
     variant: "feature",
   },
@@ -196,7 +196,7 @@ const chileGalleryImagesEs: GalleryImage[] = [
     src: "/countries/chile/santiago/chile-drill-bits-close-10.webp",
   },
   {
-    alt: "Visita del equipo Greenway a patio operativo en Chile",
+    alt: "Visita del equipo Green Way a patio operativo en Chile",
     src: "/countries/chile/santiago/chile-team-yard-11.webp",
     variant: "feature",
   },
@@ -908,7 +908,7 @@ const colombiaRelatedEs: RelatedStory[] = [
 const fallbackStories: Record<"en" | "es", CountryStory[]> = {
   en: [
     {
-      body: "Greenway evaluates recoverable industrial metals, documents the lot, and defines the final purchase and logistics route.",
+      body: "Green Way evaluates recoverable industrial metals, documents the lot, and defines the final purchase and logistics route.",
       bodyTitle: "Overview",
       cta: "Contact Us",
       excerpt: "Industrial metal recovery experience with material evaluation, traceability, and commercial coordination.",
@@ -927,7 +927,7 @@ const fallbackStories: Record<"en" | "es", CountryStory[]> = {
       title: "United States",
     },
     {
-      body: "Greenway evaluates recoverable industrial metals, documents the lot, and defines the final purchase and logistics route.",
+      body: "Green Way evaluates recoverable industrial metals, documents the lot, and defines the final purchase and logistics route.",
       bodyTitle: "Overview",
       cta: "Contact Us",
       excerpt: "Industrial metal recovery experience with material evaluation, traceability, and commercial coordination.",
@@ -946,7 +946,7 @@ const fallbackStories: Record<"en" | "es", CountryStory[]> = {
       title: "Colombia",
     },
     {
-      body: "Greenway evaluates recoverable industrial metals, documents the lot, and defines the final purchase and logistics route.",
+      body: "Green Way evaluates recoverable industrial metals, documents the lot, and defines the final purchase and logistics route.",
       bodyTitle: "Overview",
       cta: "Contact Us",
       excerpt: "Industrial metal recovery experience with material evaluation, traceability, and commercial coordination.",
@@ -963,7 +963,7 @@ const fallbackStories: Record<"en" | "es", CountryStory[]> = {
       title: "Medellin",
     },
     {
-      body: "Greenway evaluates recoverable industrial metals, documents the lot, and defines the final purchase and logistics route.",
+      body: "Green Way evaluates recoverable industrial metals, documents the lot, and defines the final purchase and logistics route.",
       bodyTitle: "Overview",
       cta: "Contact Us",
       excerpt: "Industrial metal recovery experience with material evaluation, traceability, and commercial coordination.",
@@ -980,7 +980,7 @@ const fallbackStories: Record<"en" | "es", CountryStory[]> = {
       title: "Chile",
     },
     {
-      body: "Greenway evaluates recoverable industrial metals, documents the lot, and defines the final purchase and logistics route.",
+      body: "Green Way evaluates recoverable industrial metals, documents the lot, and defines the final purchase and logistics route.",
       bodyTitle: "Overview",
       cta: "Contact Us",
       excerpt: "Industrial metal recovery experience with material evaluation, traceability, and commercial coordination.",
@@ -998,7 +998,7 @@ const fallbackStories: Record<"en" | "es", CountryStory[]> = {
       title: "Spain",
     },
     {
-      body: "Greenway evaluates recoverable industrial metals, documents the lot, and defines the final purchase and logistics route.",
+      body: "Green Way evaluates recoverable industrial metals, documents the lot, and defines the final purchase and logistics route.",
       bodyTitle: "Overview",
       cta: "Contact Us",
       excerpt: "Industrial metal recovery experience with material evaluation, traceability, and commercial coordination.",
@@ -1015,7 +1015,7 @@ const fallbackStories: Record<"en" | "es", CountryStory[]> = {
       title: "Italy",
     },
     {
-      body: "Greenway evaluates recoverable industrial metals, documents the lot, and defines the final purchase and logistics route.",
+      body: "Green Way evaluates recoverable industrial metals, documents the lot, and defines the final purchase and logistics route.",
       bodyTitle: "Overview",
       cta: "Contact Us",
       excerpt: "Industrial metal recovery experience with material evaluation, traceability, and commercial coordination.",
@@ -1032,7 +1032,7 @@ const fallbackStories: Record<"en" | "es", CountryStory[]> = {
       title: "Houston, Texas",
     },
     {
-      body: "Greenway evaluates recoverable industrial metals, documents the lot, and defines the final purchase and logistics route.",
+      body: "Green Way evaluates recoverable industrial metals, documents the lot, and defines the final purchase and logistics route.",
       bodyTitle: "Overview",
       cta: "Contact Us",
       excerpt: "Industrial metal recovery experience with material evaluation, traceability, and commercial coordination.",
@@ -1049,7 +1049,7 @@ const fallbackStories: Record<"en" | "es", CountryStory[]> = {
       title: "Madisonville",
     },
     {
-      body: "Greenway evaluates recoverable industrial metals, documents the lot, and defines the final purchase and logistics route.",
+      body: "Green Way evaluates recoverable industrial metals, documents the lot, and defines the final purchase and logistics route.",
       bodyTitle: "Overview",
       cta: "Contact Us",
       excerpt: "Industrial metal recovery experience with material evaluation, traceability, and commercial coordination.",
@@ -1068,7 +1068,7 @@ const fallbackStories: Record<"en" | "es", CountryStory[]> = {
   ],
   es: [
     {
-      body: "Greenway evalúa materiales metálicos recuperables, documenta el lote y define la compra final con la ruta logística adecuada.",
+      body: "Green Way evalúa materiales metálicos recuperables, documenta el lote y define la compra final con la ruta logística adecuada.",
       bodyTitle: "Resumen",
       cta: "Contactanos",
       excerpt:
@@ -1092,7 +1092,7 @@ const fallbackStories: Record<"en" | "es", CountryStory[]> = {
       title: "Estados Unidos",
     },
     {
-      body: "Greenway evalúa materiales metálicos recuperables, documenta el lote y define la compra final con la ruta logística adecuada.",
+      body: "Green Way evalúa materiales metálicos recuperables, documenta el lote y define la compra final con la ruta logística adecuada.",
       bodyTitle: "Resumen",
       cta: "Contactanos",
       excerpt:
@@ -1116,7 +1116,7 @@ const fallbackStories: Record<"en" | "es", CountryStory[]> = {
       title: "Colombia",
     },
     {
-      body: "Greenway evalúa materiales metálicos recuperables, documenta el lote y define la compra final con la ruta logística adecuada.",
+      body: "Green Way evalúa materiales metálicos recuperables, documenta el lote y define la compra final con la ruta logística adecuada.",
       bodyTitle: "Resumen",
       cta: "Contáctanos",
       excerpt:
@@ -1138,7 +1138,7 @@ const fallbackStories: Record<"en" | "es", CountryStory[]> = {
       title: "Medellín",
     },
     {
-      body: "Greenway evalúa materiales metálicos recuperables, documenta el lote y define la compra final con la ruta logística adecuada.",
+      body: "Green Way evalúa materiales metálicos recuperables, documenta el lote y define la compra final con la ruta logística adecuada.",
       bodyTitle: "Resumen",
       cta: "Contactanos",
       excerpt:
@@ -1160,7 +1160,7 @@ const fallbackStories: Record<"en" | "es", CountryStory[]> = {
       title: "Chile",
     },
     {
-      body: "Greenway evalúa materiales metálicos recuperables, documenta el lote y define la compra final con la ruta logística adecuada.",
+      body: "Green Way evalúa materiales metálicos recuperables, documenta el lote y define la compra final con la ruta logística adecuada.",
       bodyTitle: "Resumen",
       cta: "Contactanos",
       excerpt:
@@ -1183,7 +1183,7 @@ const fallbackStories: Record<"en" | "es", CountryStory[]> = {
       title: "Espana",
     },
     {
-      body: "Greenway evalúa materiales metálicos recuperables, documenta el lote y define la compra final con la ruta logística adecuada.",
+      body: "Green Way evalúa materiales metálicos recuperables, documenta el lote y define la compra final con la ruta logística adecuada.",
       bodyTitle: "Resumen",
       cta: "Contactanos",
       excerpt:
@@ -1205,7 +1205,7 @@ const fallbackStories: Record<"en" | "es", CountryStory[]> = {
       title: "Italia",
     },
     {
-      body: "Greenway evalúa materiales metálicos recuperables, documenta el lote y define la compra final con la ruta logística adecuada.",
+      body: "Green Way evalúa materiales metálicos recuperables, documenta el lote y define la compra final con la ruta logística adecuada.",
       bodyTitle: "Resumen",
       cta: "Contactanos",
       excerpt:
@@ -1227,7 +1227,7 @@ const fallbackStories: Record<"en" | "es", CountryStory[]> = {
       title: "Houston, Texas",
     },
     {
-      body: "Greenway evalúa materiales metálicos recuperables, documenta el lote y define la compra final con la ruta logística adecuada.",
+      body: "Green Way evalúa materiales metálicos recuperables, documenta el lote y define la compra final con la ruta logística adecuada.",
       bodyTitle: "Resumen",
       cta: "Contactanos",
       excerpt:
@@ -1249,7 +1249,7 @@ const fallbackStories: Record<"en" | "es", CountryStory[]> = {
       title: "Madisonville",
     },
     {
-      body: "Greenway evalúa materiales metálicos recuperables, documenta el lote y define la compra final con la ruta logística adecuada.",
+      body: "Green Way evalúa materiales metálicos recuperables, documenta el lote y define la compra final con la ruta logística adecuada.",
       bodyTitle: "Resumen",
       cta: "Contactanos",
       excerpt:

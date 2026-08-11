@@ -75,8 +75,8 @@ const warehouses: Record<'en' | 'es', FooterWarehouse[]> = {
 }
 
 const footerWhatsAppMessages: Record<'en' | 'es', string> = {
-  en: 'Hello Greenway, I want to quote an industrial metal lot.',
-  es: 'Hola Greenway, quiero cotizar un lote de metal industrial.',
+  en: 'Hello Green Way, I want to quote an industrial metal lot.',
+  es: 'Hola Green Way, quiero cotizar un lote de metal industrial.',
 }
 
 function getFooterWhatsAppUrl(localeKey: 'en' | 'es') {
@@ -87,7 +87,7 @@ function getFooterWhatsAppUrl(localeKey: 'en' | 'es') {
 
 const fallbackCopy: Record<'en' | 'es', FooterCopy> = {
   en: {
-    brandAlt: 'Greenway International LLC',
+    brandAlt: 'Green Way International LLC',
     companyTitle: 'Company',
     copyright: 'All rights reserved.',
     designedBy: 'Designed by Fastwasas.',
@@ -104,7 +104,7 @@ const fallbackCopy: Record<'en' | 'es', FooterCopy> = {
       { href: '/comotrabajamos', label: 'How We Work' },
       { href: '/contacto', label: 'Contact' },
     ],
-    ownedBy: 'Property of Greenway.',
+    ownedBy: 'Property of Green Way.',
     socialLinks: [
       { href: '#', label: 'Instagram', shortLabel: 'Ig' },
       { href: '#', label: 'Facebook', shortLabel: 'Fb' },
@@ -112,11 +112,11 @@ const fallbackCopy: Record<'en' | 'es', FooterCopy> = {
       { href: '#', label: 'WhatsApp', shortLabel: 'Wa' },
     ],
     summary:
-      'Greenway International recovers, purchases, and coordinates industrial metal materials with focus on tungsten, carbide, specialty alloys, stainless steels, and non-ferrous metals.',
+      'Green Way International recovers, purchases, and coordinates industrial metal materials with focus on tungsten, carbide, specialty alloys, stainless steels, and non-ferrous metals.',
     warehouseTitle: 'Warehouses',
   },
   es: {
-    brandAlt: 'Greenway International LLC',
+    brandAlt: 'Green Way International LLC',
     companyTitle: 'Empresa',
     copyright: 'Todos los derechos reservados.',
     designedBy: 'Diseñado por Fastwasas.',
@@ -133,7 +133,7 @@ const fallbackCopy: Record<'en' | 'es', FooterCopy> = {
       { href: '/comotrabajamos', label: 'Como Trabajamos' },
       { href: '/contacto', label: 'Contacto' },
     ],
-    ownedBy: 'Propiedad de Greenway.',
+    ownedBy: 'Propiedad de Green Way.',
     socialLinks: [
       { href: '#', label: 'Instagram', shortLabel: 'Ig' },
       { href: '#', label: 'Facebook', shortLabel: 'Fb' },
@@ -141,7 +141,7 @@ const fallbackCopy: Record<'en' | 'es', FooterCopy> = {
       { href: '#', label: 'WhatsApp', shortLabel: 'Wa' },
     ],
     summary:
-      'Greenway International recupera, compra y coordina materiales metálicos industriales con enfoque en tungsteno, carburo, aleaciones especiales, inoxidables y no ferrosos.',
+      'Green Way International recupera, compra y coordina materiales metálicos industriales con enfoque en tungsteno, carburo, aleaciones especiales, inoxidables y no ferrosos.',
     warehouseTitle: 'Bodegas',
   },
 }
@@ -334,7 +334,7 @@ export async function SiteFooter() {
 
         <div className='mt-12 flex flex-col gap-3 border-t border-[#d7dde3] pt-6 text-sm font-medium text-[var(--color-muted)] md:flex-row md:items-center md:justify-between'>
           <p>
-            © {year} Greenway International LLC.{' '}
+            © {year} Green Way International LLC.{' '}
             {footer?.copyright ?? fallback.copyright}
           </p>
           <p>

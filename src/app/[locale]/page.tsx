@@ -51,7 +51,7 @@ const fallbackVideoHero: Record<"en" | "es", HomeVideoCopy> = {
     ],
     body:
       "We identify, value, and buy recoverable metals so every lot moves through a final purchasing process with traceability and speed.",
-    eyebrow: "Greenway International",
+    eyebrow: "Green Way International",
     title: "Industrial Metal Recovery With International Reach.",
   },
   es: {
@@ -69,7 +69,7 @@ const fallbackVideoHero: Record<"en" | "es", HomeVideoCopy> = {
     ],
     body:
       "Identificamos, valorizamos y compramos materiales metálicos recuperables para que cada lote avance con trazabilidad, velocidad y compra final.",
-    eyebrow: "Greenway International",
+    eyebrow: "Green Way International",
     title: "Recuperación De Metales Industriales Con Alcance Internacional.",
   },
 };
