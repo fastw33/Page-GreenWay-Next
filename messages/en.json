@@ -1,0 +1,897 @@
+{
+  "Navigation": {
+    "brand": "Greenway International",
+    "home": "Home",
+    "about": "About Us",
+    "work": "How We Work",
+    "products": "Materials and Services",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mobileLabel": "Mobile navigation"
+  },
+  "LanguageSwitcher": {
+    "label": "Change language",
+    "spanish": "Latin American Spanish",
+    "english": "United States English"
+  },
+  "Pages": {
+    "home": {
+      "route": "Route /en",
+      "title": "Experts in industrial metal recovery.",
+      "description": "We buy, evaluate, and coordinate recovery for tungsten, tungsten carbide, specialty alloys, and metal-bearing industrial residues.",
+      "videoHero": {
+        "eyebrow": "Greenway International",
+        "title": "Industrial metal recovery with international reach.",
+        "body": "We identify, value, and buy recoverable metals so every lot moves through a final purchasing process with traceability and speed.",
+        "announcements": [
+          {
+            "title": "Buying and recovery",
+            "body": "Tungsten, tungsten carbide, nickel, cobalt, titanium, stainless steels, and specialty alloys."
+          },
+          {
+            "title": "Technical evaluation",
+            "body": "Photos, industrial origin, weight, and initial sorting for more accurate quoting."
+          }
+        ]
+      },
+      "cards": {
+        "cta": "View page",
+        "about": {
+          "eyebrow": "Logistics service",
+          "title": "4PL",
+          "description": "4PL service for pickup, warehouses, documentation, partners, consolidation, and international movement when the metal lot requires it."
+        },
+        "work": {
+          "eyebrow": "Recovery",
+          "title": "Metal Recovery",
+          "description": "We identify, sort, value, and recover tungsten, tungsten carbide, alloys, and metal-bearing industrial residues."
+        },
+        "products": {
+          "eyebrow": "Market studies",
+          "title": "Market Intelligence",
+          "description": "We prepare market studies, demand analysis, price context, and opportunity reads for industrial metal decisions."
+        }
+      },
+      "flowBreaker": {
+        "eyebrow": "Material quote",
+        "phrase": "Do you have an industrial lot for Greenway to quote, buy, or recover? Send photos, estimated weight, and city.",
+        "cta": "Contact Us"
+      },
+      "workRoute": {
+        "title": "Metal recovery roadmap",
+        "steps": [
+          {
+            "title": "Information intake",
+            "body": "We receive photos, approximate weight, city, piece type, and industrial process context.",
+            "bullets": [
+              "General and close-up photos",
+              "Quantity, weight, or volume",
+              "Material origin"
+            ]
+          },
+          {
+            "title": "Initial identification",
+            "body": "We classify the lot by material family and detect signals of technical value or mixing.",
+            "bullets": [
+              "Tungsten and tungsten carbide",
+              "Stainless steels and specialty alloys",
+              "Non-ferrous and process materials"
+            ]
+          },
+          {
+            "title": "Valuation",
+            "body": "We structure a commercial read based on material, condition, cleanliness, volume, and demand.",
+            "bullets": [
+              "Material-oriented price",
+              "Condition and separation",
+              "Buying viability"
+            ]
+          },
+          {
+            "title": "Logistics coordination",
+            "body": "We define pickup, storage, or shipment depending on location and lot characteristics.",
+            "bullets": [
+              "Warehouse or pickup point",
+              "Basic documentation",
+              "Logistics partner"
+            ]
+          },
+          {
+            "title": "Close and payment",
+            "body": "We align final conditions so Greenway's purchase or recovery can move forward clearly.",
+            "bullets": [
+              "Lot confirmation",
+              "Commercial terms",
+              "Payment and support"
+            ]
+          },
+          {
+            "title": "Traceability",
+            "body": "We record lot learnings to improve future quotes and recurring operations.",
+            "bullets": [
+              "Photo evidence",
+              "Material history",
+              "Sorting improvement"
+            ]
+          }
+        ]
+      },
+      "allies": {
+        "eyebrow": "Metal recovery network",
+        "title": "Operating allies",
+        "items": [
+          {
+            "name": "Fastway Logistic SAS",
+            "logo": "/allies/fastway-transparent.png",
+            "logoAlt": "Fastway Logistic SAS logo",
+            "href": "https://www.fastwaysas.com/"
+          },
+          {
+            "name": "Metal Harvest",
+            "logo": "/allies/metal-harvest-transparent.png",
+            "logoAlt": "Metal Harvest logo",
+            "href": "https://metalharvest.io/"
+          },
+          {
+            "name": "Transport Logistic International",
+            "logo": "/allies/transport-logistic.webp",
+            "logoAlt": "Transport Logistic International logo",
+            "href": "https://tlimiami.com/"
+          }
+        ]
+      },
+      "places": {
+        "eyebrow": "Field operation",
+        "title": "Places where we have evaluated and recovered metals",
+        "cta": "View",
+        "items": [
+          {
+            "country": "Chile",
+            "label": "Santiago",
+            "image": "/countries/chile/santiago/chile-metales-santiago-01.webp",
+            "imageAlt": "Metals operation in Santiago, Chile",
+            "note": "Metal material evaluation and industrial operation in Chile.",
+            "href": "/about/chile"
+          },
+          {
+            "country": "Spain",
+            "label": "Barcelona",
+            "image": "/countries/espana/barcelona/spain-barcelona-warehouse-01.webp",
+            "imageAlt": "Barcelona, Spain",
+            "note": "Metal recovery and handling in a European industrial setting.",
+            "href": "/about/spain"
+          },
+          {
+            "country": "Italy",
+            "label": "Italy",
+            "image": "",
+            "imageAlt": "Italy",
+            "note": "Review of equipment, alloys, and recovery opportunities.",
+            "href": "/productosservicios"
+          },
+          {
+            "country": "Colombia",
+            "label": "Medellin",
+            "image": "/countries/colombia/medellin/medellin-greentech-booth-07.webp",
+            "imageAlt": "GreenTech booth participation in Medellin, Colombia",
+            "note": "Commercial and technical presence for industrial metals in Colombia.",
+            "href": "/about/medellin"
+          },
+          {
+            "country": "United States",
+            "label": "Houston, Texas",
+            "image": "/countries/estados-unidos/houston/houston-warehouse-storage-03.webp",
+            "imageAlt": "Industrial warehouse and recovered metal materials in Houston, Texas",
+            "note": "Warehouses, turnings, drums, and recoverable materials in operation.",
+            "href": "/about/houston"
+          },
+          {
+            "country": "United States",
+            "label": "Madisonville",
+            "image": "/countries/estados-unidos/madisonville/madisonville-tungco-yard-drums-01.webp",
+            "imageAlt": "Tungco yard with recovered metal drums in Madisonville, Kentucky",
+            "note": "Industrial lots, tungsten carbide, and high-wear materials.",
+            "href": "/about/madisonville"
+          },
+          {
+            "country": "United States",
+            "label": "Miami",
+            "image": "",
+            "imageAlt": "Miami, United States",
+            "note": "Operating point for logistics coordination and international movement.",
+            "href": "/productosservicios"
+          },
+          {
+            "country": "Colombia",
+            "label": "Bogota",
+            "image": "",
+            "imageAlt": "Bogota, Colombia",
+            "note": "Commercial coverage for metal buying and evaluation in Colombia.",
+            "href": "/productosservicios"
+          },
+          {
+            "country": "United States",
+            "label": "Silicon Valley",
+            "image": "/countries/estados-unidos/silicon-valley/silicon-valley-microsoft-campus-10.webp",
+            "imageAlt": "Microsoft campus visit in Silicon Valley",
+            "note": "Strategic relationships and commercial network development.",
+            "href": "/about/silicon-valley"
+          }
+        ]
+      },
+      "mapLocations": {
+        "eyebrow": "Warehouses and coordination",
+        "title": "Operating points to receive and move material",
+        "cta": "Open in Google Maps",
+        "locations": [
+          {
+            "title": "Miami - Warehouse",
+            "address": [
+              "10049 NW 89th Ave unit 4",
+              "Medley, FL 33178"
+            ],
+            "phone": "+1 (786) 661-0046",
+            "phoneHref": "tel:+17866610046",
+            "mapUrl": "https://www.google.com/maps?q=10049%20NW%2089th%20Ave%20unit%204%2C%20Medley%2C%20FL%2033178&output=embed",
+            "directionsUrl": "https://www.google.com/maps/search/?api=1&query=10049%20NW%2089th%20Ave%20unit%204%2C%20Medley%2C%20FL%2033178"
+          },
+          {
+            "title": "Bogota - Warehouse",
+            "address": [
+              "Cra. 129 #17f-74",
+              "Bogota, Colombia"
+            ],
+            "phone": "+57 314 3002760",
+            "phoneHref": "tel:+573143002760",
+            "mapUrl": "https://www.google.com/maps?q=Cra.%20129%20%2317f-74%2C%20Bogot%C3%A1%2C%20Colombia&output=embed",
+            "directionsUrl": "https://www.google.com/maps/search/?api=1&query=Cra.%20129%20%2317f-74%2C%20Bogot%C3%A1%2C%20Colombia"
+          }
+        ]
+      },
+      "actionBand": {
+        "eyebrow": "Next lot",
+        "title": "Turn your metal-bearing residues into recoverable value.",
+        "body": "Our team reviews the material, identifies recovery opportunities, and coordinates the operating path for purchase or recovery.",
+        "cta": "Contact Us"
+      }
+    },
+    "about": {
+      "eyebrow": "About Greenway",
+      "title": "Metal Recovery Experts",
+      "heroImageLabel": "Recoverable material and industrial operation",
+      "stats": [
+        {
+          "value": "5+",
+          "label": "Markets"
+        },
+        {
+          "value": "24h",
+          "label": "Initial review"
+        },
+        {
+          "value": "4PL",
+          "label": "Partner logistics"
+        }
+      ],
+      "introEyebrow": "Who we are",
+      "introTitle": "We buy and value industrial metal materials.",
+      "introBody": "Greenway International connects material knowledge, final purchasing capacity, 4PL service, and market studies to recover metals with technical value: tungsten, wolfram, tungsten carbide, specialty alloys, stainless steels, and non-ferrous metals.",
+      "introImageLabel": "Material sorting and evaluation",
+      "operatingEyebrow": "Recovery standard",
+      "operatingTitle": "Every lot is handled with identification, pricing, and traceability.",
+      "operatingBody": "We do not treat scrap as generic volume. We review origin, likely composition, physical form, cleanliness, mixing, location, 4PL logistics, and market context to structure a serious offer and an executable operation.",
+      "operatingItems": [
+        {
+          "title": "Material identification",
+          "body": "We review photos, piece type, process origin, mixing, and alloy signals to guide valuation."
+        },
+        {
+          "title": "Buying and valuation",
+          "body": "We structure offers for metals with demand and use market studies when a lot requires price, timing, and opportunity validation."
+        },
+        {
+          "title": "4PL and traceability",
+          "body": "We integrate 4PL service for pickup, documentation, warehouses, consolidation, and international movement when the lot requires it."
+        }
+      ],
+      "experienceEyebrow": "Where we operate",
+      "experienceTitle": "Presence designed to recover metals across markets.",
+      "proofTitle": "Documented industrial work",
+      "proofBody": "We have documented operations, visits, and opportunities in the United States, Colombia, Chile, Spain, and Italy, always around recoverable materials and final industrial purchasing.",
+      "proofImageLabel": "Metal operation evidence",
+      "countriesTitle": "Presence by country",
+      "closingEyebrow": "Next Step",
+      "closingTitle": "Send us your material and we will review the best recovery path.",
+      "footerBufferEyebrow": "Materials we handle",
+      "footerBufferTitle": "Tungsten, tungsten carbide, specialty alloys, and industrial metals.",
+      "footerBufferBody": "We prioritize materials with technical value: wear tools, inserts, drill bits, turnings, sludge, industrial parts, stainless steels, nickel, cobalt, titanium, and non-ferrous metals.",
+      "footerBufferImageLabel": "Recoverable industrial material",
+      "cta": "Contact Us",
+      "storyBack": "Back to About",
+      "storyEyebrow": "International Work",
+      "countryItems": [
+        {
+          "slug": "united-states",
+          "href": "/about/united-states",
+          "label": "United States",
+          "meta": "Country story",
+          "title": "United States",
+          "excerpt": "Operations and purchasing for specialty alloys, turnings, tungsten carbide, and industrial materials with international outlets.",
+          "image": "/countries/estados-unidos/houston/houston-warehouse-storage-03.webp",
+          "imageAlt": "Industrial warehouse and recovered metal materials in Houston, Texas",
+          "imageLabel": "United States",
+          "bodyTitle": "Overview",
+          "body": "The United States is a key market for recovering high-value metals: tungsten, tungsten carbide, nickel, cobalt, titanium, stainless steels, and high-temperature alloys. Greenway connects evaluation, warehouses, and final purchasing for industrial lots.",
+          "highlightsTitle": "Highlights",
+          "highlights": [
+            "Houston as an industrial operating point",
+            "Madisonville for technical lots and wear materials",
+            "Commercial network for specialty alloys"
+          ],
+          "galleryTitle": "Image spaces"
+        },
+        {
+          "slug": "colombia",
+          "href": "/about/colombia",
+          "label": "Colombia",
+          "meta": "Country story",
+          "title": "Colombia",
+          "excerpt": "National coverage for evaluation and purchase of tungsten, tungsten carbide, and industrial metals.",
+          "image": "/countries/colombia/medellin/medellin-greentech-booth-07.webp",
+          "imageAlt": "GreenTech booth participation in Medellin, Colombia",
+          "imageLabel": "Colombia",
+          "bodyTitle": "Overview",
+          "body": "In Colombia we operate with a direct-buying approach and technical evaluation of industrial metals. Through Metal Harvest, we connect shops, mining, manufacturing, and traders with a clear quoting and recovery path.",
+          "highlightsTitle": "Highlights",
+          "highlights": [
+            "Tungsten and tungsten carbide buying in Colombia",
+            "Evaluation by photos, weight, and city",
+            "National commercial and logistics coordination"
+          ],
+          "galleryTitle": "Image spaces"
+        },
+        {
+          "slug": "medellin",
+          "href": "/about/medellin",
+          "label": "Medellin",
+          "meta": "Colombia city story",
+          "title": "Medellin",
+          "excerpt": "Commercial and technical participation in events connected to sustainability, industry, and metal valuation.",
+          "image": "/countries/colombia/medellin/medellin-greentech-booth-07.webp",
+          "imageAlt": "GreenTech booth participation in Medellin, Colombia",
+          "imageLabel": "Medellin, Colombia",
+          "bodyTitle": "Overview",
+          "body": "Medellin is a relationship hub for industrial opportunities in Colombia, with focus on recoverable materials, sustainability, and companies that generate or buy technical metals.",
+          "highlightsTitle": "Highlights",
+          "highlights": [
+            "Relationships with industrial companies",
+            "Visibility for valuable materials",
+            "Bridge into national operations"
+          ],
+          "galleryTitle": "Operating Gallery in Medellin"
+        },
+        {
+          "slug": "chile",
+          "href": "/about/chile",
+          "label": "Chile",
+          "meta": "Country story",
+          "title": "Chile",
+          "excerpt": "Review of industrial materials, steels, wear parts, and recovery opportunities in mining and production operations.",
+          "image": "/countries/chile/santiago/chile-operacion-santiago-02.jpg",
+          "imageAlt": "Metals operation in Santiago, Chile",
+          "imageLabel": "Santiago, Chile",
+          "bodyTitle": "Overview",
+          "body": "Chile offers a strong industrial context for wear materials, tools, steels, and recoverable metals. Greenway documents and evaluates opportunities where technical sorting can improve our final purchase of the lot.",
+          "highlightsTitle": "Highlights",
+          "highlights": [
+            "Mining and heavy-industry materials",
+            "Wear parts and tools",
+            "Specialized recovery opportunities"
+          ],
+          "galleryTitle": "Operating Gallery in Chile"
+        },
+        {
+          "slug": "spain",
+          "href": "/about/spain",
+          "label": "Spain",
+          "meta": "Country story",
+          "title": "Spain",
+          "excerpt": "European operation focused on stainless steels, specialty alloys, and recovery of industrial materials.",
+          "image": "/countries/espana/barcelona/spain-barcelona-warehouse-01.webp",
+          "imageAlt": "Industrial metals warehouse in Barcelona, Spain",
+          "imageLabel": "Barcelona, Spain",
+          "bodyTitle": "Overview",
+          "body": "Spain brings recovery and valuation context in a mature market, with emphasis on stainless steels, specialty alloys, non-ferrous metals, and industrial lot handling.",
+          "highlightsTitle": "Highlights",
+          "highlights": [
+            "Stainless steels and specialty alloys",
+            "Valuation of recoverable materials",
+            "Connection with European network"
+          ],
+          "galleryTitle": "Operating Gallery in Spain"
+        },
+        {
+          "slug": "italy",
+          "href": "/about/italy",
+          "label": "Italy",
+          "meta": "Country story",
+          "title": "Italy",
+          "excerpt": "Review of industrial equipment, machined components, and recoverable materials within European operations.",
+          "image": "/countries/italia/operacion/italy-industrial-equipment-05.webp",
+          "imageAlt": "Industrial equipment and machined components in Italy",
+          "imageLabel": "Italy",
+          "bodyTitle": "Overview",
+          "body": "Italy adds industrial context for machinery, machined parts, process materials, and recovery opportunities where technical reading of the component can improve final purchase and valuation.",
+          "highlightsTitle": "Highlights",
+          "highlights": [
+            "Industrial equipment and components",
+            "Process materials with recoverable value",
+            "Evaluation for specialized purchase"
+          ],
+          "galleryTitle": "Operating Gallery in Italy"
+        },
+        {
+          "slug": "houston",
+          "href": "/about/houston",
+          "label": "Houston, Texas",
+          "meta": "City story",
+          "title": "Houston, Texas",
+          "excerpt": "Warehouses, turnings, drums, and recoverable metal lots inside an active industrial operation.",
+          "image": "/countries/estados-unidos/houston/houston-warehouse-storage-03.webp",
+          "imageAlt": "Industrial warehouse and recovered metal materials in Houston, Texas",
+          "imageLabel": "Houston, Texas",
+          "bodyTitle": "Operating overview",
+          "body": "Houston is a key industrial location to identify, sort, and move recoverable metal materials: turnings, drums, parts, alloys, and process residues with valuation potential.",
+          "highlightsTitle": "Highlights",
+          "highlights": [
+            "Turnings and process materials",
+            "Warehouse and industrial sorting",
+            "Final purchase for specialty alloys"
+          ],
+          "galleryTitle": "Operating Gallery in Houston"
+        },
+        {
+          "slug": "madisonville",
+          "href": "/about/madisonville",
+          "label": "Madisonville",
+          "meta": "City story",
+          "title": "Madisonville",
+          "excerpt": "Industrial lots connected to tungsten carbide, wear parts, and technical materials for recovery.",
+          "image": "/countries/estados-unidos/madisonville/madisonville-tungco-yard-drums-01.webp",
+          "imageAlt": "Tungco yard with recovered metal drums in Madisonville, Kentucky",
+          "imageLabel": "Madisonville, Kentucky",
+          "bodyTitle": "Operating overview",
+          "body": "Madisonville shows the type of lot Greenway wants to evaluate: wear materials, tungsten carbide, process residues, and industrial parts that require technical reading before purchase or recovery.",
+          "highlightsTitle": "Highlights",
+          "highlights": [
+            "Tungsten carbide and wear parts",
+            "Drums and industrial lots",
+            "Technical evaluation for valuation"
+          ],
+          "galleryTitle": "Operating Gallery in Madisonville"
+        },
+        {
+          "slug": "silicon-valley",
+          "href": "/about/silicon-valley",
+          "label": "Silicon Valley",
+          "meta": "Event story",
+          "title": "Silicon Valley",
+          "excerpt": "Strategic relationship building to expand commercial network, technology, and industrial recovery opportunities.",
+          "image": "/countries/estados-unidos/silicon-valley/silicon-valley-unicorns-01.webp",
+          "imageAlt": "Startup ecosystem visit in Silicon Valley",
+          "imageLabel": "Silicon Valley, United States",
+          "bodyTitle": "Overview",
+          "body": "Silicon Valley is included as a relationship and learning experience. The goal is to strengthen network, technology, and access to opportunities that improve recovery and traceability for industrial materials.",
+          "highlightsTitle": "Highlights",
+          "highlights": [
+            "Business ecosystem relationships",
+            "Technology learning applied to operations",
+            "Commercial network for industrial opportunities"
+          ],
+          "galleryTitle": "Operating Gallery in Silicon Valley"
+        }
+      ]
+    },
+    "work": {
+      "heroEyebrow": "How We Work",
+      "heroTitle": "How we buy and recover industrial metal lots.",
+      "heroBody": "Greenway reviews the material, validates technical value, structures a purchase offer, and coordinates the operation when the lot requires 4PL logistics or market reading.",
+      "heroImageLabel": "Greenway metal recovery operation",
+      "heroStats": [
+        {
+          "value": "Material",
+          "label": "Tungsten, carbide, and alloys"
+        },
+        {
+          "value": "Buying",
+          "label": "Final Greenway offer"
+        },
+        {
+          "value": "4PL",
+          "label": "Movement when required"
+        }
+      ],
+      "routeEyebrow": "Operating roadmap",
+      "routeTitle": "From lot evidence to a purchase ready to execute.",
+      "routeBody": "The priority is to decide quickly and correctly: what the material is, how much recoverable value it carries, where it is, how it is presented, and which operating path lets Greenway buy clearly.",
+      "routeSteps": [
+        {
+          "title": "We receive lot evidence",
+          "body": "We request general and close-up photos, approximate weight, city, part type, and industrial process context.",
+          "bullets": [
+            "Photos",
+            "Weight",
+            "Location"
+          ]
+        },
+        {
+          "title": "We read the material",
+          "body": "We classify the lot by metal family and detect signs of tungsten, tungsten carbide, stainless steel, nickel, cobalt, or other alloys.",
+          "bullets": [
+            "Tungsten",
+            "Carbide",
+            "Alloys"
+          ]
+        },
+        {
+          "title": "We define the purchase offer",
+          "body": "Greenway structures an offer based on probable composition, condition, cleanliness, volume, separation, and real material demand.",
+          "bullets": [
+            "Price",
+            "Condition",
+            "Viability"
+          ]
+        },
+        {
+          "title": "We activate 4PL when needed",
+          "body": "When the operation requires it, we coordinate pickup, warehouse, documentation, consolidation, and domestic or international movement.",
+          "bullets": [
+            "Pickup",
+            "Warehouse",
+            "Documentation"
+          ]
+        },
+        {
+          "title": "We close buying and recovery",
+          "body": "We align final conditions, payment, material receiving, and operating records for future recurring purchases.",
+          "bullets": [
+            "Close",
+            "Payment",
+            "Record"
+          ]
+        }
+      ],
+      "modelEyebrow": "Execution structure",
+      "modelTitle": "The purchase is decided by material, market, and operation.",
+      "modelBody": "We do not quote generic volume. We review the recoverable value of the metal, the market moment, and the logistics route required to make the operation viable.",
+      "modelImageLabel": "Tagged turnings and identified lot",
+      "modelLayers": [
+        {
+          "label": "Technical read",
+          "title": "Recoverable material",
+          "body": "Metal family, physical form, cleanliness, mixing, industrial origin, and composition signals."
+        },
+        {
+          "label": "Market study",
+          "title": "Demand and timing",
+          "body": "Demand by material family, price context, available volume, and purchase opportunity."
+        },
+        {
+          "label": "4PL service",
+          "title": "Executable route",
+          "body": "Pickup, warehouse, documentation, consolidation, shipment, and operational close."
+        }
+      ],
+      "alliesEyebrow": "Metal recovery partners",
+      "alliesTitle": "Partners for final purchasing, logistics, and recovery.",
+      "alliesBody": "We integrate operating and commercial partners so material can be evaluated, picked up, stored, and moved responsibly.",
+      "partnerLinkLabel": "Website",
+      "partners": [
+        {
+          "name": "Fastway Logistic SAS",
+          "logo": "/allies/fastway-transparent.png",
+          "logoAlt": "Fastway Logistic SAS logo",
+          "href": "https://www.fastwaysas.com/",
+          "role": "Logistics support for movements, warehouses, and operations across markets."
+        },
+        {
+          "name": "Metal Harvest",
+          "logo": "/allies/metal-harvest-transparent.png",
+          "logoAlt": "Metal Harvest logo",
+          "href": "https://metalharvest.io/",
+          "role": "Colombia channel for buying, evaluation, and quoting of industrial metals."
+        },
+        {
+          "name": "Transport Logistic International",
+          "logo": "/allies/transport-logistic.webp",
+          "logoAlt": "Transport Logistic International logo",
+          "href": "https://tlimiami.com/",
+          "role": "Partner for international transport coordination and cargo support."
+        }
+      ],
+      "evidenceEyebrow": "Documentation",
+      "evidenceTitle": "Better information improves the offer.",
+      "evidenceBody": "Clear photos, weight, location, origin, and lot condition allow faster buying, lower uncertainty, and better traceability.",
+      "evidenceImageLabel": "Recovered and classified material",
+      "evidenceItems": [
+        {
+          "title": "Photos and weight",
+          "body": "Visual evidence and approximate quantity accelerate initial review."
+        },
+        {
+          "title": "Industrial origin",
+          "body": "Knowing whether it comes from machining, mining, maintenance, or production improves the technical read."
+        },
+        {
+          "title": "Lot condition",
+          "body": "Separation, cleanliness, and mixing directly affect valuation."
+        }
+      ],
+      "closingEyebrow": "Next Step",
+      "closingTitle": "Do you have material to review?",
+      "closingBody": "Send photos, approximate quantity, city, and any information about the industrial origin. With that, we can guide the initial quote.",
+      "closingCta": "Contact Us",
+      "continuationEyebrow": "Operational continuity",
+      "continuationTitle": "Follow-up until recovery is closed.",
+      "continuationBody": "We support the operation from initial review through logistics coordination, payment, documentation, and learning for future lots.",
+      "continuationItems": [
+        {
+          "title": "Review",
+          "body": "We confirm material details and resolve technical questions before quoting."
+        },
+        {
+          "title": "Alignment",
+          "body": "We agree on price, timing, pickup, and required documentation."
+        },
+        {
+          "title": "Next lot",
+          "body": "We keep a record to make recurring operations easier with the same supplier."
+        }
+      ]
+    },
+    "contact": {
+      "heroEyebrow": "Contact",
+      "heroTitle": "Quote or coordinate recovery for your material.",
+      "heroBody": "Tell us what metal you have, where it is, how much it weighs, and attach photos. With that information we can guide the initial review.",
+      "channelsEyebrow": "Contact channels",
+      "channelsTitle": "Direct contact for metal buying and recovery.",
+      "channels": [
+        {
+          "title": "Miami Office",
+          "body": "Coordination for operations, warehouses, and materials with international outlets.",
+          "label": "+1 (786) 661-0046",
+          "href": "tel:+17866610046"
+        },
+        {
+          "title": "Bogota Office",
+          "body": "Buying and evaluation of industrial materials in Colombia.",
+          "label": "+57 314 3002760",
+          "href": "tel:+573143002760"
+        }
+      ],
+      "locationsEyebrow": "Warehouses",
+      "locationsTitle": "Warehouses and operating coordination points",
+      "locationsBody": "From Miami and Bogota we coordinate receiving, review, and movement of industrial metal materials according to the lot scope.",
+      "phoneLabel": "Call",
+      "directionsLabel": "Open in Google Maps",
+      "locations": [
+        {
+          "title": "Miami - Warehouse",
+          "address": [
+            "10049 NW 89th Ave unit 4",
+            "Medley, FL 33178"
+          ],
+          "phone": "+1 (786) 661-0046",
+          "phoneHref": "tel:+17866610046",
+          "mapUrl": "https://www.google.com/maps?q=10049%20NW%2089th%20Ave%20unit%204%2C%20Medley%2C%20FL%2033178&output=embed",
+          "directionsUrl": "https://www.google.com/maps/search/?api=1&query=10049%20NW%2089th%20Ave%20unit%204%2C%20Medley%2C%20FL%2033178"
+        },
+        {
+          "title": "Bogota - Warehouse",
+          "address": [
+            "Cra. 129 #17f-74",
+            "Bogota, Colombia"
+          ],
+          "phone": "+57 314 3002760",
+          "phoneHref": "tel:+573143002760",
+          "mapUrl": "https://www.google.com/maps?q=Cra.%20129%20%2317f-74%2C%20Bogot%C3%A1%2C%20Colombia&output=embed",
+          "directionsUrl": "https://www.google.com/maps/search/?api=1&query=Cra.%20129%20%2317f-74%2C%20Bogot%C3%A1%2C%20Colombia"
+        }
+      ],
+      "responseEyebrow": "Before the first call",
+      "responseTitle": "What to send to move faster.",
+      "responseBody": "The clearer the lot information is, the better we can value, quote, and coordinate the operation.",
+      "responseItems": [
+        "General and close-up photos of the material",
+        "Approximate weight or volume and city",
+        "Industry or process of origin"
+      ]
+    },
+    "products": {
+      "heroEyebrow": "Materials and Services",
+      "heroTitle": "Buying and recovery of industrial metals.",
+      "heroBody": "Greenway works with materials of high technical value: tungsten, tungsten carbide, stainless steels, nickel, cobalt, titanium, non-ferrous metals, and metal-bearing process residues.",
+      "heroStats": [
+        {
+          "value": "W",
+          "label": "Tungsten"
+        },
+        {
+          "value": "WC",
+          "label": "Tungsten carbide"
+        },
+        {
+          "value": "Ni/Co",
+          "label": "Alloys"
+        }
+      ],
+      "materialEyebrow": "Priority material",
+      "materialTitle": "The right material deserves technical evaluation.",
+      "materialBody": "A lot can be worth much more when it is properly identified. We review physical form, origin, cleanliness, mixing, weight, and likely composition to guide purchase and recovery.",
+      "materialLabel": "Tungsten",
+      "materialVisualCaption": "Industrial material focus",
+      "materialItems": [
+        {
+          "title": "Tungsten and tungsten carbide",
+          "body": "Drill bits, inserts, tips, wear parts, dies, rods, sludge, and high-wear components."
+        },
+        {
+          "title": "Specialty alloys",
+          "body": "Nickel, cobalt, titanium, molybdenum, Inconel, Monel, Hastelloy, and high-temperature materials."
+        },
+        {
+          "title": "Stainless and non-ferrous",
+          "body": "Stainless steels, copper, aluminum, bronze, zinc, and other materials made valuable through separation."
+        }
+      ],
+      "servicesEyebrow": "Service lines",
+      "servicesTitle": "We buy industrial metals and structure the recovery route.",
+      "servicesBody": "Greenway is a final buyer for tungsten, wolfram, tungsten carbide, specialty alloys, and metal-bearing residues. When a lot requires it, we integrate 4PL and market studies to evaluate, quote, and move the material with control.",
+      "servicesItems": [
+        {
+          "eyebrow": "4PL",
+          "title": "4PL",
+          "body": "4PL service for pickup, warehouse, documentation, partners, consolidation, and international movement for lots that fit Greenway's purchasing route."
+        },
+        {
+          "eyebrow": "Recovery",
+          "title": "Metal recovery",
+          "body": "Identification, sorting, valuation, and recovery of tungsten, tungsten carbide, specialty alloys, and metal-bearing residues."
+        },
+        {
+          "eyebrow": "Studies",
+          "title": "Market intelligence",
+          "body": "Market studies, demand analysis, price context, supply signals, and opportunity timing for industrial metals."
+        }
+      ],
+      "processEyebrow": "Operating path",
+      "processTitle": "From industrial lot to valued material.",
+      "processBody": "The path starts with simple information and ends with a clear decision: quote, buy, pick up, store, move, or prepare the lot for recovery.",
+      "processSteps": [
+        {
+          "title": "Send",
+          "body": "Photos, approximate weight, city, and a short material description."
+        },
+        {
+          "title": "Evaluate",
+          "body": "Initial review of metal family, presentation, mixing, and buying potential."
+        },
+        {
+          "title": "Quote",
+          "body": "Offer or recommended path based on material, volume, and lot conditions."
+        },
+        {
+          "title": "Recover",
+          "body": "Pickup, warehouse, payment, shipment, or recovery coordination."
+        }
+      ],
+      "intelligenceEyebrow": "Market intelligence",
+      "intelligenceTitle": "Market intelligence and studies for specialty materials.",
+      "intelligenceBody": "We prepare market studies for industrial metals: demand behavior, price context, supply signals, sector movement, and opportunity timing.",
+      "intelligenceItems": [
+        {
+          "title": "Alloy family",
+          "body": "Separating tungsten, tungsten carbide, nickel, cobalt, titanium, or stainless avoids generic pricing."
+        },
+        {
+          "title": "Material condition",
+          "body": "Cleanliness, mixing, moisture, oil, or process residue change expected recovery."
+        },
+        {
+          "title": "Market studies",
+          "body": "Market studies help compare demand, timing, and material opportunity across industrial sectors."
+        }
+      ],
+      "closingEyebrow": "Next Step",
+      "closingTitle": "Let us talk about the material you have available.",
+      "closingBody": "Share photos, estimated weight, city, and origin description. We will guide whether it fits for purchase, recovery, or additional sorting.",
+      "closingCta": "Contact Us",
+      "continuationEyebrow": "Portfolio in progress",
+      "continuationTitle": "A portfolio centered on recoverable metals.",
+      "continuationBody": "Greenway prioritizes industrial materials where technical identification, logistics, and final purchasing can create more value.",
+      "continuationItems": [
+        {
+          "title": "Material",
+          "body": "We prioritize metals with industrial demand and identifiable technical value."
+        },
+        {
+          "title": "Operation",
+          "body": "Logistics and documentation support every purchase or recovery."
+        },
+        {
+          "title": "Market",
+          "body": "The final purchase is structured around price, demand, and lot presentation."
+        }
+      ]
+    }
+  },
+  "Footer": {
+    "brandAlt": "Greenway International LLC",
+    "summary": "Greenway International recovers, buys, and coordinates industrial metal materials with focus on tungsten, tungsten carbide, specialty alloys, stainless steels, and non-ferrous metals.",
+    "companyTitle": "Company",
+    "warehouseTitle": "Warehouses",
+    "infoTitle": "Information",
+    "copyright": "All rights reserved.",
+    "ownedBy": "Property of Greenway.",
+    "designedBy": "Designed by Fastwasas.",
+    "navLinks": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Materials and Services",
+        "href": "/productosservicios"
+      },
+      {
+        "label": "About Us",
+        "href": "/about"
+      },
+      {
+        "label": "How We Work",
+        "href": "/comotrabajamos"
+      },
+      {
+        "label": "Contact",
+        "href": "/contacto"
+      }
+    ],
+    "legalLinks": [
+      {
+        "label": "Privacy Policy",
+        "href": "#"
+      },
+      {
+        "label": "Terms and Conditions",
+        "href": "#"
+      },
+      {
+        "label": "PQRS",
+        "href": "#"
+      }
+    ],
+    "socialLinks": [
+      {
+        "label": "Instagram",
+        "shortLabel": "Ig",
+        "href": "#"
+      },
+      {
+        "label": "Facebook",
+        "shortLabel": "Fb",
+        "href": "#"
+      },
+      {
+        "label": "LinkedIn",
+        "shortLabel": "In",
+        "href": "#"
+      },
+      {
+        "label": "WhatsApp",
+        "shortLabel": "Wa",
+        "href": "#"
+      }
+    ]
+  }
+}
