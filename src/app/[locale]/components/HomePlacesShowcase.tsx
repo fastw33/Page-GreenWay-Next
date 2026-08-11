@@ -190,12 +190,12 @@ const fallbackCopy: Record<"en" | "es", Omit<PlacesCopy, "items">> = {
   en: {
     cta: "View",
     eyebrow: "International Presence",
-    title: "Places where Greenway has participated",
+    title: "Our Reach",
   },
   es: {
     cta: "Ver",
-    eyebrow: "Presencia internacional",
-    title: "Lugares donde Greenway ha participado",
+    eyebrow: "Presencia Internacional",
+    title: "Nuestro Alcance",
   },
 };
 

@@ -81,13 +81,13 @@ export function FloatingWhatsApp({ locale }: FloatingWhatsAppProps) {
             aria: "Open WhatsApp contact options",
             close: "Close WhatsApp contact options",
             eyebrow: "WhatsApp",
-            title: "Talk to Greenway",
+            title: "Talk To Greenway",
           }
         : {
             aria: "Abrir opciones de contacto por WhatsApp",
             close: "Cerrar opciones de contacto por WhatsApp",
             eyebrow: "WhatsApp",
-            title: "Habla con Greenway",
+            title: "Habla Con Greenway",
           },
     [localeKey],
   );

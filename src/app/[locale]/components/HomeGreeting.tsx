@@ -56,13 +56,13 @@ const fallbackCards: Record<"en" | "es", Record<HomeCardKey, HomeCardCopy> & { c
       description:
         "Identificamos, clasificamos, valorizamos y recuperamos tungsteno, carburo de tungsteno, aleaciones y residuos metálicos industriales.",
       eyebrow: "Recuperación",
-      title: "Recuperación de metales",
+      title: "Recuperación De Metales",
     },
     products: {
       description:
         "Realizamos estudios de mercado, análisis de demanda, contexto de precios y lectura de oportunidad para decisiones industriales.",
       eyebrow: "Estudios de mercado",
-      title: "Inteligencia de mercado",
+      title: "Inteligencia De Mercado",
     },
   },
 };

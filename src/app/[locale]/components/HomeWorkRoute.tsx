@@ -24,10 +24,10 @@ type WorkRouteMessages = {
 
 const fallbackCopy: Record<"en" | "es", WorkRouteCopy> = {
   en: {
-    title: "Metal recovery roadmap",
+    title: "Metal Recovery Roadmap",
     steps: [
       {
-        title: "Information intake",
+        title: "Information Intake",
         body: "We receive photos, approximate weight, city, piece type, and industrial process context.",
         bullets: [
           "General and close-up photos",
@@ -36,7 +36,7 @@ const fallbackCopy: Record<"en" | "es", WorkRouteCopy> = {
         ],
       },
       {
-        title: "Initial identification",
+        title: "Initial Identification",
         body: "We classify the lot by material family and detect signals of technical value or mixing.",
         bullets: [
           "Tungsten and tungsten carbide",
@@ -54,7 +54,7 @@ const fallbackCopy: Record<"en" | "es", WorkRouteCopy> = {
         ],
       },
       {
-        title: "Logistics coordination",
+        title: "Logistics Coordination",
         body: "We define pickup, storage, or shipment depending on location and lot characteristics.",
         bullets: [
           "Warehouse or pickup point",
@@ -63,7 +63,7 @@ const fallbackCopy: Record<"en" | "es", WorkRouteCopy> = {
         ],
       },
       {
-        title: "Close and payment",
+        title: "Close and Payment",
         body: "We align final conditions so Greenway's purchase or recovery can move forward clearly.",
         bullets: [
           "Lot confirmation",
@@ -83,10 +83,10 @@ const fallbackCopy: Record<"en" | "es", WorkRouteCopy> = {
     ],
   },
   es: {
-    title: "Ruta de trabajo",
+    title: "Ruta De Trabajo",
     steps: [
       {
-        title: "Recepción de información",
+        title: "Recepción De Información",
         body: "Recibimos fotos, peso aproximado, ciudad, tipo de pieza y contexto del proceso industrial.",
         bullets: [
           "Fotos generales y de detalle",
@@ -95,7 +95,7 @@ const fallbackCopy: Record<"en" | "es", WorkRouteCopy> = {
         ],
       },
       {
-        title: "Identificación inicial",
+        title: "Identificación Inicial",
         body: "Clasificamos el lote por familia de material y detectamos señales de valor técnico o mezcla.",
         bullets: [
           "Tungsteno y carburo de tungsteno",
@@ -113,7 +113,7 @@ const fallbackCopy: Record<"en" | "es", WorkRouteCopy> = {
         ],
       },
       {
-        title: "Coordinación logística",
+        title: "Coordinación Logística",
         body: "Definimos recolección, almacenamiento o despacho según ubicación y características del lote.",
         bullets: [
           "Bodega o punto de retiro",
@@ -122,7 +122,7 @@ const fallbackCopy: Record<"en" | "es", WorkRouteCopy> = {
         ],
       },
       {
-        title: "Cierre y pago",
+        title: "Cierre y Pago",
         body: "Alineamos condiciones finales para que la compra o recuperación avance con claridad.",
         bullets: [
           "Confirmación del lote",

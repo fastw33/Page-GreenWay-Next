@@ -64,7 +64,7 @@ type AboutMessages = {
 const fallbackCopy: Record<"en" | "es", AboutCopy> = {
   en: {
     closingEyebrow: "Next Step",
-    closingTitle: "Send us your material and we will review the best recovery route.",
+    closingTitle: "Send Us Your Material and We Will Review The Best Recovery Route.",
     countriesTitle: "Country Stories",
     countryItems: [
       {
@@ -125,41 +125,41 @@ const fallbackCopy: Record<"en" | "es", AboutCopy> = {
     ],
     cta: "Contact Us",
     eyebrow: "About Greenway",
-    experienceEyebrow: "Where we have participated",
-    experienceTitle: "Presence designed to recover metals across markets.",
+    experienceEyebrow: "Where We Have Participated",
+    experienceTitle: "Presence Designed To Recover Metals Across Markets.",
     footerBufferBody:
       "We prioritize materials with technical value: wear tools, inserts, drill bits, turnings, sludge, industrial parts, stainless steels, nickel, cobalt, titanium, and non-ferrous metals.",
     footerBufferEyebrow: "Additional Section",
     footerBufferImageLabel: "Image slot",
-    footerBufferTitle: "Tungsten, tungsten carbide, specialty alloys, and industrial metals.",
+    footerBufferTitle: "Tungsten, Tungsten Carbide, Specialty Alloys, and Industrial Metals.",
     heroImageLabel: "Institutional image slot",
     introBody:
       "Greenway International connects material knowledge, final purchasing capacity, 4PL service, and market studies to recover metals with technical value: tungsten, wolfram, tungsten carbide, specialty alloys, stainless steels, and non-ferrous metals.",
-    introEyebrow: "Who we are",
+    introEyebrow: "Who We Are",
     introImageLabel: "Team and operation image slot",
-    introTitle: "We buy and value industrial metal materials.",
+    introTitle: "We Buy and Value Industrial Metal Materials.",
     operatingBody:
       "We do not treat scrap as generic volume. We review origin, probable composition, physical presentation, cleanliness, mix, location, 4PL logistics, and market context to structure a serious offer and an executable operation.",
-    operatingEyebrow: "Operating standard",
+    operatingEyebrow: "Operating Standard",
     operatingItems: [
       {
         body: "We review photos, part type, industrial origin, mix, and alloy signals to guide valuation.",
-        title: "Material identification",
+        title: "Material Identification",
       },
       {
         body: "We structure offers for metals with demand and use market studies when a lot requires price, timing, and opportunity validation.",
-        title: "Purchase and valuation",
+        title: "Purchase and Valuation",
       },
       {
         body: "We integrate 4PL service for pickup, documentation, warehouses, consolidation, and international movement when the lot requires it.",
-        title: "4PL and traceability",
+        title: "4PL and Traceability",
       },
     ],
-    operatingTitle: "A structured way to enter, operate, and scale.",
+    operatingTitle: "A Structured Way To Enter, Operate, and Scale.",
     proofBody:
       "We have documented operations, visits, and opportunities in the United States, Colombia, Chile, Spain, and Italy, always around recoverable materials and final industrial purchasing.",
     proofImageLabel: "International operation image slot",
-    proofTitle: "What we have done",
+    proofTitle: "What We Have Done",
     stats: [
       { label: "Markets", value: "00" },
       { label: "Operations", value: "00" },
@@ -168,9 +168,9 @@ const fallbackCopy: Record<"en" | "es", AboutCopy> = {
     title: "About Us",
   },
   es: {
-    closingEyebrow: "Siguiente paso",
-    closingTitle: "Envíanos tu material y revisamos la mejor ruta de recuperación.",
-    countriesTitle: "Historias por país",
+    closingEyebrow: "Siguiente Paso",
+    closingTitle: "Envíanos Tu Material y Revisamos La Mejor Ruta De Recuperación.",
+    countriesTitle: "Historias Por País",
     countryItems: [
       {
         excerpt:
@@ -235,41 +235,41 @@ const fallbackCopy: Record<"en" | "es", AboutCopy> = {
     ],
     cta: "Contáctanos",
     eyebrow: "Sobre Greenway",
-    experienceEyebrow: "Donde hemos participado",
-    experienceTitle: "Presencia pensada para recuperar metales entre mercados.",
+    experienceEyebrow: "Donde Hemos Participado",
+    experienceTitle: "Presencia Pensada Para Recuperar Metales Entre Mercados.",
     footerBufferBody:
       "Priorizamos materiales con valor técnico: herramientas de desgaste, insertos, brocas, turnings, lodos, piezas industriales, inoxidables, níquel, cobalto, titanio y metales no ferrosos.",
-    footerBufferEyebrow: "Sección adicional",
+    footerBufferEyebrow: "Sección Adicional",
     footerBufferImageLabel: "Espacio para imagen",
-    footerBufferTitle: "Tungsteno, carburo de tungsteno, aleaciones especiales y metales industriales.",
+    footerBufferTitle: "Tungsteno, Carburo De Tungsteno, Aleaciones Especiales y Metales Industriales.",
     heroImageLabel: "Espacio para imagen institucional",
     introBody:
       "Greenway International conecta conocimiento de materiales, capacidad de compra final, servicio 4PL y estudios de mercado para recuperar metales con valor técnico: tungsteno, carburo de tungsteno, aleaciones especiales, inoxidables y no ferrosos.",
-    introEyebrow: "Quienes somos",
+    introEyebrow: "Quienes Somos",
     introImageLabel: "Espacio para foto de equipo y operación",
-    introTitle: "Compramos y valorizamos materiales metálicos industriales.",
+    introTitle: "Compramos y Valorizamos Materiales Metálicos Industriales.",
     operatingBody:
       "No tratamos la chatarra como volumen genérico. Revisamos origen, composición probable, presentación física, limpieza, mezcla, ubicación, logística 4PL y contexto de mercado para estructurar una oferta seria y una operación ejecutable.",
-    operatingEyebrow: "Estándar operativo",
+    operatingEyebrow: "Estándar Operativo",
     operatingItems: [
       {
         body: "Revisamos fotos, tipo de pieza, proceso de origen, mezcla y señales de aleación para orientar la valorización.",
-        title: "Identificación de material",
+        title: "Identificación De Material",
       },
       {
         body: "Estructuramos ofertas para materiales metálicos con demanda y usamos estudios de mercado cuando el lote requiere validar precio, momento y oportunidad.",
-        title: "Compra y valorización",
+        title: "Compra y Valorización",
       },
       {
         body: "Integramos servicio 4PL para recolección, documentación, bodegas, consolidación y movimiento internacional cuando el lote lo requiere.",
-        title: "4PL y trazabilidad",
+        title: "4PL y Trazabilidad",
       },
     ],
-    operatingTitle: "Una forma estructurada de entrar, operar y escalar.",
+    operatingTitle: "Una Forma Estructurada De Entrar, Operar y Escalar.",
     proofBody:
       "Hemos documentado operaciones, visitas y oportunidades en Estados Unidos, Colombia, Chile, España e Italia, siempre alrededor de materiales recuperables y compra industrial final.",
     proofImageLabel: "Espacio para imagen de operación internacional",
-    proofTitle: "Lo que hemos hecho",
+    proofTitle: "Lo Que Hemos Hecho",
     stats: [
       { label: "Mercados", value: "00" },
       { label: "Operaciones", value: "00" },
@@ -375,12 +375,12 @@ export async function AboutShowcase() {
               {
                 body: "We define the pickup point, warehouse flow, and movement sequence around the lot conditions.",
                 icon: "logistics",
-                title: "Movement plan",
+                title: "Movement Plan",
               },
               {
                 body: "We align paperwork, traceability, partners, and receiving points before the material moves.",
                 icon: "check",
-                title: "Operational control",
+                title: "Operational Control",
               },
               {
                 body: "We coordinate consolidation when volume, route, or destination makes it necessary.",
@@ -388,7 +388,7 @@ export async function AboutShowcase() {
                 title: "Consolidation",
               },
             ],
-            title: "4PL for industrial metal lots that need controlled movement.",
+            title: "4PL For Industrial Metal Lots That Need Controlled Movement.",
           },
           market: {
             body: "Market studies help us read demand, timing, price context, and industrial appetite before defining how aggressively Greenway should quote or move a lot.",
@@ -399,7 +399,7 @@ export async function AboutShowcase() {
               "Signals from industrial sectors",
               "Opportunity by volume and location",
             ],
-            title: "Market intelligence around the purchase decision.",
+            title: "Market Intelligence Around The Purchase Decision.",
           },
         }
       : {
@@ -410,12 +410,12 @@ export async function AboutShowcase() {
               {
                 body: "Definimos punto de recolección, flujo de bodega y secuencia de movimiento según las condiciones del lote.",
                 icon: "logistics",
-                title: "Plan de movimiento",
+                title: "Plan De Movimiento",
               },
               {
                 body: "Alineamos documentación, trazabilidad, aliados y puntos de recepción antes de mover el material.",
                 icon: "check",
-                title: "Control operativo",
+                title: "Control Operativo",
               },
               {
                 body: "Coordinamos consolidación cuando el volumen, la ruta o el destino lo hacen necesario.",
@@ -423,7 +423,7 @@ export async function AboutShowcase() {
                 title: "Consolidación",
               },
             ],
-            title: "4PL para lotes metálicos industriales que necesitan movimiento controlado.",
+            title: "4PL Para Lotes Metálicos Industriales Que Necesitan Movimiento Controlado.",
           },
           market: {
             body: "Los estudios de mercado nos ayudan a leer demanda, momento, contexto de precio y apetito industrial antes de definir cómo Greenway debe cotizar o mover un lote.",
@@ -434,7 +434,7 @@ export async function AboutShowcase() {
               "Señales de sectores industriales",
               "Oportunidad por volumen y ubicación",
             ],
-            title: "Inteligencia de mercado alrededor de la decisión de compra.",
+            title: "Inteligencia De Mercado Alrededor De La Decisión De Compra.",
           },
         };
 

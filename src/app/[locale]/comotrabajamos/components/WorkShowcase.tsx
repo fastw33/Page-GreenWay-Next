@@ -83,16 +83,16 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
   en: {
     alliesBody:
       "We integrate operating and commercial partners so material can be evaluated, collected, stored, and moved responsibly.",
-    alliesEyebrow: "Metal recovery partners",
-    alliesTitle: "A connected operating network.",
+    alliesEyebrow: "Metal Recovery Partners",
+    alliesTitle: "A Connected Operating Network.",
     closingBody:
       "Send photos, approximate quantity, city, and any information about the material origin. With that we can guide the first quote.",
     closingCta: "Contact Us",
     closingEyebrow: "Next Step",
-    closingTitle: "Do you have material for review?",
+    closingTitle: "Do You Have Material For Review?",
     continuationBody:
       "We support the operation from the initial review through logistics coordination, payment, documentation, and learning for future lots.",
-    continuationEyebrow: "Operational continuity",
+    continuationEyebrow: "Operational Continuity",
     continuationItems: [
       {
         body: "We confirm material data and resolve technical questions before quoting.",
@@ -104,10 +104,10 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
       },
       {
         body: "We keep a record to make recurring operations easier for the same supplier.",
-        title: "Next move",
+        title: "Next Move",
       },
     ],
-    continuationTitle: "Follow-up that keeps the operation moving.",
+    continuationTitle: "Follow-Up That Keeps The Operation Moving.",
     evidenceBody:
       "Clear photos, weight, location, origin, and material condition help us quote faster and with less room for error.",
     evidenceEyebrow: "Documentation",
@@ -115,18 +115,18 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
     evidenceItems: [
       {
         body: "Visual evidence and approximate quantity speed up the initial review.",
-        title: "Operational records",
+        title: "Operational Records",
       },
       {
         body: "Knowing if it comes from machining, mining, maintenance, or production improves the technical read.",
-        title: "Partner coordination",
+        title: "Partner Coordination",
       },
       {
         body: "Separation, cleanliness, and mix directly influence valuation.",
-        title: "Market follow-up",
+        title: "Market Follow-Up",
       },
     ],
-    evidenceTitle: "Work prepared to be reviewed, tracked, and improved.",
+    evidenceTitle: "Work Prepared To Be Reviewed, Tracked, and Improved.",
     heroBody:
       "A clear process to identify materials, quote with technical judgment, coordinate logistics, and close metal recovery operations.",
     heroEyebrow: "How We Work",
@@ -136,10 +136,10 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
       { label: "Execution", value: "02" },
       { label: "Control", value: "03" },
     ],
-    heroTitle: "How we recover value from every metal lot.",
+    heroTitle: "How We Recover Value From Every Metal Lot.",
     modelBody:
       "Separation, cleanliness, industrial origin, and documentation change the value of a lot. Our process organizes that information before negotiating or transporting.",
-    modelEyebrow: "Execution structure",
+    modelEyebrow: "Execution Structure",
     modelImageLabel: "Field operation image slot",
     modelLayers: [
       {
@@ -158,7 +158,7 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
         title: "Movement",
       },
     ],
-    modelTitle: "Technical control before moving the material.",
+    modelTitle: "Technical Control Before Moving The Material.",
     partnerLinkLabel: "Website",
     partners: [
       {
@@ -185,7 +185,7 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
     ],
     routeBody:
       "The priority is to reduce uncertainty: what material it is, how much exists, where it is, how it is presented, and which Greenway purchasing and logistics route makes sense.",
-    routeEyebrow: "Operating roadmap",
+    routeEyebrow: "Operating Roadmap",
     routeSteps: [
       {
         body: "We receive photos, approximate weight, city, piece type, and industrial process context.",
@@ -194,7 +194,7 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
           "Quantity, weight, or volume",
           "Material origin",
         ],
-        title: "Information intake",
+        title: "Information Intake",
       },
       {
         body: "We classify the lot by material family and detect signals of technical value or mixing.",
@@ -203,7 +203,7 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
           "Stainless steels and specialty alloys",
           "Non-ferrous and process materials",
         ],
-        title: "Initial identification",
+        title: "Initial Identification",
       },
       {
         body: "We structure a commercial read based on material, condition, cleanliness, volume, and demand.",
@@ -221,7 +221,7 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
           "Basic documentation",
           "Logistics partner",
         ],
-        title: "Logistics coordination",
+        title: "Logistics Coordination",
       },
       {
         body: "We align final conditions so Greenway's purchase or recovery can move forward clearly.",
@@ -230,7 +230,7 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
           "Commercial terms",
           "Payment and support",
         ],
-        title: "Close and payment",
+        title: "Close and Payment",
       },
       {
         body: "We record lot learnings to improve future quotes and recurring operations.",
@@ -242,21 +242,21 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
         title: "Traceability",
       },
     ],
-    routeTitle: "From material photos to an operation ready to execute.",
+    routeTitle: "From Material Photos To An Operation Ready To Execute.",
   },
   es: {
     alliesBody:
       "Integramos socios operativos y comerciales para que el material pueda evaluarse, recogerse, almacenarse y moverse con responsabilidad.",
-    alliesEyebrow: "Aliados para recuperación de metales",
-    alliesTitle: "Una red operativa conectada.",
+    alliesEyebrow: "Aliados Para Recuperación De Metales",
+    alliesTitle: "Una Red Operativa Conectada.",
     closingBody:
       "Envíanos fotos, cantidad aproximada, ciudad y cualquier información del proceso de origen. Con eso podemos orientar la cotización inicial.",
     closingCta: "Contáctanos",
-    closingEyebrow: "Siguiente paso",
-    closingTitle: "¿Tienes material para revisar?",
+    closingEyebrow: "Siguiente Paso",
+    closingTitle: "¿Tienes Material Para Revisar?",
     continuationBody:
       "Acompañamos la operación desde la revisión inicial hasta la coordinación logística, pago, documentación y aprendizaje para próximos lotes.",
-    continuationEyebrow: "Continuidad operativa",
+    continuationEyebrow: "Continuidad Operativa",
     continuationItems: [
       {
         body: "Confirmamos datos del material y resolvemos dudas técnicas antes de cotizar.",
@@ -268,10 +268,10 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
       },
       {
         body: "Dejamos registro para facilitar operaciones recurrentes con el mismo proveedor.",
-        title: "Próximo movimiento",
+        title: "Próximo Movimiento",
       },
     ],
-    continuationTitle: "Seguimiento para mantener la operación en marcha.",
+    continuationTitle: "Seguimiento Para Mantener La Operación En Marcha.",
     evidenceBody:
       "Fotos claras, peso, ubicación, origen y condición del material permiten cotizar con más velocidad y menor margen de error.",
     evidenceEyebrow: "Documentación",
@@ -279,18 +279,18 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
     evidenceItems: [
       {
         body: "La evidencia visual y la cantidad aproximada aceleran la revisión inicial.",
-        title: "Registros operativos",
+        title: "Registros Operativos",
       },
       {
         body: "Saber si viene de mecanizado, minería, mantenimiento o producción mejora la lectura técnica.",
-        title: "Coordinación con aliados",
+        title: "Coordinación Con Aliados",
       },
       {
         body: "Separación, limpieza y mezcla influyen directamente en la valorización.",
-        title: "Seguimiento de mercado",
+        title: "Seguimiento De Mercado",
       },
     ],
-    evidenceTitle: "Trabajo preparado para revisar, medir y mejorar.",
+    evidenceTitle: "Trabajo Preparado Para Revisar, Medir y Mejorar.",
     heroBody:
       "Un proceso claro para identificar materiales, cotizar con criterio técnico, coordinar logística y cerrar operaciones de recuperación de metales.",
     heroEyebrow: "Como Trabajamos",
@@ -300,10 +300,10 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
       { label: "Ejecución", value: "02" },
       { label: "Control", value: "03" },
     ],
-    heroTitle: "Cómo recuperamos valor de cada lote metálico.",
+    heroTitle: "Cómo Recuperamos Valor De Cada Lote Metálico.",
     modelBody:
       "Separación, limpieza, origen industrial y documentación cambian el valor de un lote. Nuestro proceso ordena esa información antes de negociar o transportar.",
-    modelEyebrow: "Estructura de ejecución",
+    modelEyebrow: "Estructura De Ejecución",
     modelImageLabel: "Imagen de campo",
     modelLayers: [
       {
@@ -322,7 +322,7 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
         title: "Movimiento",
       },
     ],
-    modelTitle: "Control técnico antes de mover el material.",
+    modelTitle: "Control Técnico Antes De Mover El Material.",
     partnerLinkLabel: "Sitio web",
     partners: [
       {
@@ -349,7 +349,7 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
     ],
     routeBody:
       "La prioridad es reducir incertidumbre: saber qué material es, cuánto hay, dónde está, cómo se presenta y qué ruta de compra y logística tiene sentido para Greenway.",
-    routeEyebrow: "Ruta de trabajo",
+    routeEyebrow: "Ruta De Trabajo",
     routeSteps: [
       {
         body: "Recibimos fotos, peso aproximado, ciudad, tipo de pieza y contexto del proceso industrial.",
@@ -358,7 +358,7 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
           "Cantidad, peso o volumen",
           "Origen del material",
         ],
-        title: "Recepción de información",
+        title: "Recepción De Información",
       },
       {
         body: "Clasificamos el lote por familia de material y detectamos señales de valor técnico o mezcla.",
@@ -367,7 +367,7 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
           "Inoxidables y aleaciones especiales",
           "No ferrosos y materiales de proceso",
         ],
-        title: "Identificación inicial",
+        title: "Identificación Inicial",
       },
       {
         body: "Estructuramos una lectura comercial según material, estado, limpieza, volumen y demanda.",
@@ -385,7 +385,7 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
           "Documentación básica",
           "Aliado logístico",
         ],
-        title: "Coordinación logística",
+        title: "Coordinación Logística",
       },
       {
         body: "Alineamos condiciones finales para que la compra o recuperación avance con claridad.",
@@ -394,7 +394,7 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
           "Condiciones comerciales",
           "Pago y soporte",
         ],
-        title: "Cierre y pago",
+        title: "Cierre y Pago",
       },
       {
         body: "Registramos aprendizajes del lote para mejorar futuras cotizaciones y operaciones recurrentes.",
@@ -406,7 +406,7 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
         title: "Trazabilidad",
       },
     ],
-    routeTitle: "Una ruta pensada para controlar antes de escalar.",
+    routeTitle: "Una Ruta Pensada Para Controlar Antes De Escalar.",
   },
 };
 

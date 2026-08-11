@@ -8,12 +8,12 @@ type NotFoundLocale = "es" | "en";
 const copy = {
   en: {
     eyebrow: "Route not found",
-    title: "This material route is not in our system.",
+    title: "This Material Route Is Not In Our System.",
     body: "The page may have moved, but Greenway still buys and evaluates tungsten, wolfram, tungsten carbide, specialty alloys, and recoverable industrial metals.",
     primaryCta: "Quote material",
     secondaryCta: "View materials",
     home: "Return home",
-    routesTitle: "Useful routes",
+    routesTitle: "Useful Routes",
     routes: [
       { href: "/tungsten", label: "Tungsten and wolfram buying" },
       { href: "/tungsten-carbide", label: "Tungsten carbide buying" },
@@ -23,12 +23,12 @@ const copy = {
   },
   es: {
     eyebrow: "Ruta no encontrada",
-    title: "Esta ruta de material no está en nuestro sistema.",
+    title: "Esta Ruta De Material No Está En Nuestro Sistema.",
     body: "La página pudo moverse, pero Greenway sigue comprando y evaluando tungsteno, wolframio, carburo de tungsteno, aleaciones especiales y metales industriales recuperables.",
     primaryCta: "Cotizar material",
     secondaryCta: "Ver materiales",
     home: "Volver al inicio",
-    routesTitle: "Rutas útiles",
+    routesTitle: "Rutas Útiles",
     routes: [
       { href: "/tungsteno", label: "Compra de tungsteno y wolframio" },
       { href: "/carburo-de-tungsteno", label: "Compra de carburo de tungsteno" },

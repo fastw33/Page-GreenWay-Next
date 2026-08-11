@@ -52,25 +52,25 @@ const fallbackVideoHero: Record<"en" | "es", HomeVideoCopy> = {
     body:
       "We identify, value, and buy recoverable metals so every lot moves through a final purchasing process with traceability and speed.",
     eyebrow: "Greenway International",
-    title: "Industrial metal recovery with international reach.",
+    title: "Industrial Metal Recovery With International Reach.",
   },
   es: {
     announcements: [
       {
         body: "Tungsteno, carburo de tungsteno, níquel, cobalto, titanio, inoxidables y aleaciones especiales.",
         id: "operations",
-        title: "Compra y recuperación",
+        title: "Compra y Recuperación",
       },
       {
         body: "Fotos, origen industrial, peso y clasificación inicial para cotizar con mayor precisión.",
         id: "market",
-        title: "Evaluación técnica",
+        title: "Evaluación Técnica",
       },
     ],
     body:
       "Identificamos, valorizamos y compramos materiales metálicos recuperables para que cada lote avance con trazabilidad, velocidad y compra final.",
     eyebrow: "Greenway International",
-    title: "Recuperación de metales industriales con alcance internacional.",
+    title: "Recuperación De Metales Industriales Con Alcance Internacional.",
   },
 };
 

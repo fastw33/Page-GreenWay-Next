@@ -42,7 +42,7 @@ const fallbackCopy: Record<"en" | "es", MapLocationsCopy> = {
   en: {
     cta: "Open in Google Maps",
     eyebrow: "Warehouse Locations",
-    title: "Operational locations",
+    title: "Our Main HUBs",
     locations: [
       {
         address: ["10049 NW 89th Ave unit 4", "Medley, FL 33178"],
@@ -64,8 +64,8 @@ const fallbackCopy: Record<"en" | "es", MapLocationsCopy> = {
   },
   es: {
     cta: "Abrir en Google Maps",
-    eyebrow: "Ubicaciones warehouse",
-    title: "Ubicaciones operativas",
+    eyebrow: "Ubicaciones Warehouse",
+    title: "Nuestros HUBs Principales",
     locations: [
       {
         address: ["10049 NW 89th Ave unit 4", "Medley, FL 33178"],

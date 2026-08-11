@@ -68,10 +68,10 @@ const fallbackCopy: Record<"en" | "es", ProductsCopy> = {
       "We can review scope, available information, logistics requirements, and the best path to structure the conversation.",
     closingCta: "Contact Us",
     closingEyebrow: "Next Step",
-    closingTitle: "Talk to Greenway about tungsten and metal operations.",
+    closingTitle: "Talk To Greenway About Tungsten and Metal Operations.",
     continuationBody:
       "The page is prepared to incorporate material profiles, imagery, and cases with a clearer purchasing read.",
-    continuationEyebrow: "Portfolio in progress",
+    continuationEyebrow: "Portfolio In Progress",
     continuationItems: [
       {
         body: "Tungsten remains positioned as the priority material within the industrial buying conversation.",
@@ -87,7 +87,7 @@ const fallbackCopy: Record<"en" | "es", ProductsCopy> = {
       },
     ],
     continuationTitle:
-      "Tungsten, metals, and intelligence stay organized by commercial priority.",
+      "Tungsten, Metals, and Intelligence Stay Organized By Commercial Priority.",
     heroBody:
       "Greenway works with materials of high technical value: tungsten, tungsten carbide, stainless steels, nickel, cobalt, titanium, non-ferrous metals, and metal-bearing process residues.",
     heroEyebrow: "Materials and Services",
@@ -96,48 +96,48 @@ const fallbackCopy: Record<"en" | "es", ProductsCopy> = {
       { label: "Tungsten carbide", value: "WC" },
       { label: "Alloys", value: "Ni/Co" },
     ],
-    heroTitle: "Buying and recovery of industrial metals.",
+    heroTitle: "Buying and Recovery Of Industrial Metals.",
     intelligenceBody:
       "We prepare market studies for industrial metals: demand behavior, price context, supply signals, sector movement, and opportunity timing.",
-    intelligenceEyebrow: "Market intelligence",
+    intelligenceEyebrow: "Market Intelligence",
     intelligenceItems: [
       {
         body: "Separating tungsten, tungsten carbide, nickel, cobalt, titanium, or stainless steel helps avoid generic pricing.",
-        title: "Demand signals",
+        title: "Demand Signals",
       },
       {
         body: "Cleanliness, mix, moisture, oil, and process residue change the expected recovery.",
-        title: "Counterpart review",
+        title: "Counterpart Review",
       },
       {
         body: "Market studies help compare demand, timing, and material opportunity across industrial sectors.",
-        title: "Market studies",
+        title: "Market Studies",
       },
     ],
-    intelligenceTitle: "Market intelligence and studies for specialty materials.",
+    intelligenceTitle: "Market Intelligence and Studies For Specialty Materials.",
     materialBody:
       "Tungsten gives the page a clear material focus: dense, technical, industrial, and relevant for conversations where quality, recovery, and final purchase matter.",
-    materialEyebrow: "Priority material",
+    materialEyebrow: "Priority Material",
     materialItems: [
       {
         body: "Used as a reference point for technical, industrial, and high-performance demand conversations.",
-        title: "Industrial relevance",
+        title: "Industrial Relevance",
       },
       {
         body: "Presented with a sober framework for review, sourcing, coordination, and commercial follow-up.",
-        title: "Commercial structure",
+        title: "Commercial Structure",
       },
       {
         body: "Connected with 4PL, metal recovery, and market intelligence instead of being treated as generic scrap.",
-        title: "Operating context",
+        title: "Operating Context",
       },
     ],
     materialLabel: "Tungsten",
-    materialTitle: "The material focus should be unmistakable.",
+    materialTitle: "The Material Focus Should Be Unmistakable.",
     materialVisualCaption: "Industrial material focus",
     processBody:
       "The route starts with simple information and ends with a clear decision: quote, buy, collect, store, move, or prepare the lot for recovery.",
-    processEyebrow: "Operating path",
+    processEyebrow: "Operating Path",
     processSteps: [
       {
         body: "Photos, approximate weight, city, and a short description of the material.",
@@ -156,10 +156,10 @@ const fallbackCopy: Record<"en" | "es", ProductsCopy> = {
         title: "Move",
       },
     ],
-    processTitle: "From material opportunity to controlled execution.",
+    processTitle: "From Material Opportunity To Controlled Execution.",
     servicesBody:
       "Greenway is a final buyer for tungsten, wolfram, tungsten carbide, specialty alloys, and metal-bearing residues. When a lot requires it, we integrate 4PL and market studies to evaluate, quote, and move the material with control.",
-    servicesEyebrow: "Service lines",
+    servicesEyebrow: "Service Lines",
     servicesItems: [
       {
         body: "4PL service for pickup, warehouse, documentation, partners, consolidation, and international movement for lots that fit Greenway's purchasing route.",
@@ -169,25 +169,25 @@ const fallbackCopy: Record<"en" | "es", ProductsCopy> = {
       {
         body: "Identification, sorting, valuation, and recovery of tungsten, tungsten carbide, specialty alloys, and metal-bearing residues.",
         eyebrow: "Recovery",
-        title: "Metal recovery",
+        title: "Metal Recovery",
       },
       {
         body: "Market studies, demand analysis, price context, supply signals, and opportunity timing for industrial metals.",
         eyebrow: "Studies",
-        title: "Market intelligence",
+        title: "Market Intelligence",
       },
     ],
-    servicesTitle: "We buy industrial metals and structure the recovery route.",
+    servicesTitle: "We Buy Industrial Metals and Structure The Recovery Route.",
   },
   es: {
     closingBody:
       "Podemos revisar alcance, información disponible, requerimientos logísticos y el mejor camino para estructurar la conversación.",
     closingCta: "Contáctanos",
-    closingEyebrow: "Siguiente paso",
-    closingTitle: "Conversemos sobre tungsteno y operaciones de metales.",
+    closingEyebrow: "Siguiente Paso",
+    closingTitle: "Conversemos Sobre Tungsteno y Operaciones De Metales.",
     continuationBody:
       "La página queda preparada para incorporar fichas de material, imágenes y casos con una lectura de compra clara.",
-    continuationEyebrow: "Portafolio en construcción",
+    continuationEyebrow: "Portafolio En Construcción",
     continuationItems: [
       {
         body: "El tungsteno se mantiene como material prioritario dentro de la conversación industrial.",
@@ -199,11 +199,11 @@ const fallbackCopy: Record<"en" | "es", ProductsCopy> = {
       },
       {
         body: "Los estudios de mercado conectan demanda, contexto de precios, comportamiento industrial y momento de compra.",
-        title: "Inteligencia de mercado",
+        title: "Inteligencia De Mercado",
       },
     ],
     continuationTitle:
-      "Tungsteno, metales e inteligencia ordenados por prioridad comercial.",
+      "Tungsteno, Metales E Inteligencia Ordenados Por Prioridad Comercial.",
     heroBody:
       "Greenway trabaja con materiales de alto valor técnico: tungsteno, carburo de tungsteno, aceros inoxidables, níquel, cobalto, titanio, no ferrosos y residuos metálicos de proceso.",
     heroEyebrow: "Materiales y Servicios",
@@ -212,48 +212,48 @@ const fallbackCopy: Record<"en" | "es", ProductsCopy> = {
       { label: "Carburo de tungsteno", value: "WC" },
       { label: "Aleaciones", value: "Ni/Co" },
     ],
-    heroTitle: "Compra y recuperación de metales industriales.",
+    heroTitle: "Compra y Recuperación De Metales Industriales.",
     intelligenceBody:
       "Realizamos estudios de mercado para metales industriales: comportamiento de demanda, contexto de precios, señales de oferta, movimiento por sector y momento de oportunidad.",
-    intelligenceEyebrow: "Inteligencia de mercado",
+    intelligenceEyebrow: "Inteligencia De Mercado",
     intelligenceItems: [
       {
         body: "Separar tungsteno, carburo de tungsteno, níquel, cobalto, titanio o inoxidable evita precios genéricos.",
-        title: "Señales de demanda",
+        title: "Señales De Demanda",
       },
       {
         body: "Limpieza, mezcla, humedad, aceite o residuo de proceso cambian la recuperación esperada.",
-        title: "Revisión de contrapartes",
+        title: "Revisión De Contrapartes",
       },
       {
         body: "Los estudios de mercado ayudan a comparar demanda, momento y oportunidad del material entre sectores industriales.",
-        title: "Estudios de mercado",
+        title: "Estudios De Mercado",
       },
     ],
-    intelligenceTitle: "Inteligencia y estudios de mercado para materiales especiales.",
+    intelligenceTitle: "Inteligencia y Estudios De Mercado Para Materiales Especiales.",
     materialBody:
       "El tungsteno le da a la página un foco claro de material: denso, técnico, industrial y relevante para conversaciones donde importan calidad, recuperación y compra final.",
-    materialEyebrow: "Material prioritario",
+    materialEyebrow: "Material Prioritario",
     materialItems: [
       {
         body: "Funciona como punto de referencia para conversaciones técnicas, industriales y de demanda especializada.",
-        title: "Relevancia industrial",
+        title: "Relevancia Industrial",
       },
       {
         body: "Se presenta con una estructura sobria para revisión, origen, coordinación y seguimiento comercial.",
-        title: "Estructura comercial",
+        title: "Estructura Comercial",
       },
       {
         body: "Se conecta con 4PL, recuperación de metales e inteligencia de mercado, no como chatarra genérica.",
-        title: "Contexto operativo",
+        title: "Contexto Operativo",
       },
     ],
     materialLabel: "Tungsteno",
-    materialTitle: "El enfoque en material debe ser imposible de ignorar.",
+    materialTitle: "El Enfoque En Material Debe Ser Imposible De Ignorar.",
     materialVisualCaption: "Material industrial prioritario",
     processBody:
       "La ruta empieza con información simple y termina con una decisión clara: cotizar, comprar, recolectar, almacenar, mover o preparar el lote para recuperación.",
-    processEyebrow: "Ruta operativa",
+    processEyebrow: "Ruta Operativa",
     processSteps: [
       {
         body: "Fotos, peso aproximado, ciudad y breve descripción del material.",
@@ -272,10 +272,10 @@ const fallbackCopy: Record<"en" | "es", ProductsCopy> = {
         title: "Mover",
       },
     ],
-    processTitle: "De oportunidad de material a ejecución controlada.",
+    processTitle: "De Oportunidad De Material A Ejecución Controlada.",
     servicesBody:
       "Greenway es comprador final de tungsteno, carburo de tungsteno, aleaciones especiales y residuos metálicos. Cuando el lote lo exige, integramos 4PL y estudios de mercado para evaluar, cotizar y mover el material con control.",
-    servicesEyebrow: "Líneas de servicio",
+    servicesEyebrow: "Líneas De Servicio",
     servicesItems: [
       {
         body: "Servicio 4PL para recolección, bodega, documentación, aliados, consolidación y movimiento internacional de lotes que encajan con la ruta de compra de Greenway.",
@@ -285,15 +285,15 @@ const fallbackCopy: Record<"en" | "es", ProductsCopy> = {
       {
         body: "Identificación, clasificación, valorización y recuperación de tungsteno, carburo de tungsteno, aleaciones especiales y residuos metálicos.",
         eyebrow: "Recuperación",
-        title: "Recuperación de metales",
+        title: "Recuperación De Metales",
       },
       {
         body: "Estudios de mercado, análisis de demanda, contexto de precios, señales de oferta y momento de oportunidad para metales industriales.",
         eyebrow: "Estudios",
-        title: "Inteligencia de mercado",
+        title: "Inteligencia De Mercado",
       },
     ],
-    servicesTitle: "Compramos metales industriales y estructuramos la ruta de recuperación.",
+    servicesTitle: "Compramos Metales Industriales y Estructuramos La Ruta De Recuperación.",
   },
 };
 

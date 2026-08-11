@@ -121,13 +121,13 @@ const pageSeo: Record<
       description:
         "Compra, evaluacion y recuperacion de tungsteno, carburo de tungsteno, aleaciones especiales y metales industriales con trazabilidad internacional.",
       path: "",
-      title: "Compra de tungsteno y carburo de tungsteno",
+      title: "Compra De Tungsteno y Carburo De Tungsteno",
     },
     en: {
       description:
         "Buying, evaluation, and recovery of tungsten, wolfram, tungsten carbide, specialty alloys, and industrial metals with international traceability.",
       path: "",
-      title: "Tungsten and tungsten carbide buying",
+      title: "Tungsten and Tungsten Carbide Buying",
     },
   },
   about: {
@@ -135,13 +135,13 @@ const pageSeo: Record<
       description:
         "Greenway International recupera tungsteno, carburo de tungsteno y metales industriales con presencia por pais, ciudades operativas y aliados comerciales.",
       path: "/about",
-      title: "Expertos en recuperacion de tungsteno y metales",
+      title: "Expertos En Recuperacion De Tungsteno y Metales",
     },
     en: {
       description:
         "Greenway International recovers tungsten, wolfram, tungsten carbide, and industrial metals with country presence, operating cities, and commercial partners.",
       path: "/about",
-      title: "Experts in tungsten and metal recovery",
+      title: "Experts In Tungsten and Metal Recovery",
     },
   },
   work: {
@@ -149,13 +149,13 @@ const pageSeo: Record<
       description:
         "Proceso para cotizar, comprar y recuperar tungsteno, carburo de tungsteno, aleaciones especiales y residuos metalicos industriales.",
       path: "/comotrabajamos",
-      title: "Como compramos y recuperamos metales",
+      title: "Como Compramos y Recuperamos Metales",
     },
     en: {
       description:
         "Process to quote, buy, and recover tungsten, wolfram, tungsten carbide, specialty alloys, and industrial metal-bearing residues.",
       path: "/comotrabajamos",
-      title: "How we buy and recover metals",
+      title: "How We Buy and Recover Metals",
     },
   },
   products: {
@@ -163,13 +163,13 @@ const pageSeo: Record<
       description:
         "Compramos y recuperamos tungsteno, carburo de tungsteno, aleaciones especiales y residuos metalicos con soporte 4PL, recuperacion de metales e inteligencia de mercado.",
       path: "/productosservicios",
-      title: "Tungsteno y carburo de tungsteno",
+      title: "Tungsteno y Carburo De Tungsteno",
     },
     en: {
       description:
         "We buy and recover tungsten, wolfram, tungsten carbide, specialty alloys, and metal-bearing residues with 4PL service, metal recovery, and market intelligence.",
       path: "/productosservicios",
-      title: "Tungsten and tungsten carbide",
+      title: "Tungsten and Tungsten Carbide",
     },
   },
   contact: {
@@ -177,13 +177,13 @@ const pageSeo: Record<
       description:
         "Contacta a Greenway para cotizar, comprar y coordinar recuperacion de tungsteno, carburo de tungsteno, chatarra industrial, lodos, insertos y aleaciones especiales.",
       path: "/contacto",
-      title: "Cotizar tungsteno y metales industriales",
+      title: "Cotizar Tungsteno y Metales Industriales",
     },
     en: {
       description:
         "Contact Greenway to quote, buy, and coordinate recovery for tungsten, wolfram, tungsten carbide, industrial scrap, sludge, inserts, and specialty alloys.",
       path: "/contacto",
-      title: "Quote tungsten and industrial metals",
+      title: "Quote Tungsten and Industrial Metals",
     },
   },
 };

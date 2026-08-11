@@ -71,12 +71,12 @@ const fallbackItems: Record<"en" | "es", AllyItem[]> = {
 
 const fallbackCopy: Record<"en" | "es", Omit<AlliesCopy, "items">> = {
   en: {
-    eyebrow: "Metal recovery network",
-    title: "Operating allies",
+    eyebrow: "Metal Recovery Network",
+    title: "Our Allies",
   },
   es: {
-    eyebrow: "Red operativa de metales",
-    title: "Aliados operativos",
+    eyebrow: "Red Operativa De Metales",
+    title: "Nuestros Aliados",
   },
 };
 

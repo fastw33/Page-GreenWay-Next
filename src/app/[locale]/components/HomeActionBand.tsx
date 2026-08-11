@@ -21,13 +21,13 @@ const fallbackCopy: Record<"en" | "es", ActionBandCopy> = {
     body: "Our team reviews the material, identifies recovery opportunities, and coordinates the operating route for purchase or recovery.",
     cta: "Contact Us",
     eyebrow: "Next lot",
-    title: "Turn your metallic waste into recoverable value.",
+    title: "Turn Your Metallic Waste Into Recoverable Value.",
   },
   es: {
     body: "Nuestro equipo revisa el material, identifica oportunidades de valorización y coordina la ruta operativa para compra o recuperación.",
     cta: "Contáctanos",
     eyebrow: "Siguiente lote",
-    title: "Convirtamos tus residuos metálicos en valor recuperable.",
+    title: "Convirtamos Tus Residuos Metálicos En Valor Recuperable.",
   },
 };
 

@@ -63,13 +63,13 @@ const fallbackCopy: Record<"en" | "es", ContactCopy> = {
         title: "Bogota Office",
       },
     ],
-    channelsEyebrow: "Contact channels",
-    channelsTitle: "Direct access to the Greenway operating team.",
+    channelsEyebrow: "Contact Channels",
+    channelsTitle: "Direct Access To The Greenway Operating Team.",
     directionsLabel: "Open in Google Maps",
     heroBody:
       "Tell us what metal you have, where it is located, estimated weight, and send photos. With that information we can guide the first review.",
     heroEyebrow: "Contact",
-    heroTitle: "Quote or coordinate recovery for your material.",
+    heroTitle: "Quote Or Coordinate Recovery For Your Material.",
     locations: [
       {
         address: ["10049 NW 89th Ave unit 4", "Medley, FL 33178"],
@@ -95,17 +95,17 @@ const fallbackCopy: Record<"en" | "es", ContactCopy> = {
     locationsBody:
       "From Miami and Bogota we coordinate receiving, review, and movement of industrial metal materials according to the lot scope.",
     locationsEyebrow: "Warehouses",
-    locationsTitle: "Operational locations",
+    locationsTitle: "Our Main HUBs",
     phoneLabel: "Call",
     responseBody:
       "The clearer the lot information is, the faster we can value, quote, and coordinate the operation.",
-    responseEyebrow: "Before the first call",
+    responseEyebrow: "Before The First Call",
     responseItems: [
       "General and detailed photos of the material",
       "Approximate weight or volume and city",
       "Industry or process of origin",
     ],
-    responseTitle: "Information that helps move faster.",
+    responseTitle: "Information That Helps Move Faster.",
   },
   es: {
     channels: [
@@ -122,13 +122,13 @@ const fallbackCopy: Record<"en" | "es", ContactCopy> = {
         title: "Oficina Bogotá",
       },
     ],
-    channelsEyebrow: "Canales de contacto",
-    channelsTitle: "Acceso directo al equipo operativo de Greenway.",
+    channelsEyebrow: "Canales De Contacto",
+    channelsTitle: "Acceso Directo Al Equipo Operativo De Greenway.",
     directionsLabel: "Abrir en Google Maps",
     heroBody:
       "Cuéntanos qué metal tienes, en qué ciudad está, cuánto pesa y adjunta fotos. Con esa información podemos orientar la revisión inicial.",
     heroEyebrow: "Contacto",
-    heroTitle: "Cotiza o coordina la recuperación de tu material.",
+    heroTitle: "Cotiza O Coordina La Recuperación De Tu Material.",
     locations: [
       {
         address: ["10049 NW 89th Ave unit 4", "Medley, FL 33178"],
@@ -154,17 +154,17 @@ const fallbackCopy: Record<"en" | "es", ContactCopy> = {
     locationsBody:
       "Desde Miami y Bogotá coordinamos recepción, revisión y movimiento de materiales metálicos industriales según el alcance del lote.",
     locationsEyebrow: "Bodegas",
-    locationsTitle: "Ubicaciones operativas",
+    locationsTitle: "Nuestros HUBs Principales",
     phoneLabel: "Llamar",
     responseBody:
       "Mientras más clara sea la información del lote, mejor podremos valorar, cotizar y coordinar la operación.",
-    responseEyebrow: "Antes de la primera conversación",
+    responseEyebrow: "Antes De La Primera Conversación",
     responseItems: [
       "Fotos generales y de detalle del material",
       "Peso o volumen aproximado y ciudad",
       "Tipo de industria o proceso de origen",
     ],
-    responseTitle: "Información que ayuda a avanzar más rápido.",
+    responseTitle: "Información Que Ayuda A Avanzar Más Rápido.",
   },
 };
 
@@ -226,7 +226,7 @@ export async function ContactShowcase() {
           submit: "Send lot details",
           success: "Information sent. We will contact you soon.",
           subtitle: "Lot quote",
-          title: "Send material details",
+          title: "Send Material Details",
           weight: "Approximate weight",
           weightPlaceholder: "2,500 lb / 1,200 kg",
         }
@@ -259,7 +259,7 @@ export async function ContactShowcase() {
           submit: "Enviar datos del lote",
           success: "Información enviada. Te contactaremos pronto.",
           subtitle: "Cotización de lote",
-          title: "Envía los datos del material",
+          title: "Envía Los Datos Del Material",
           weight: "Peso aproximado",
           weightPlaceholder: "2.500 lb / 1.200 kg",
         };
