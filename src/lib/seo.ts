@@ -203,6 +203,18 @@ const countryRoutes = [
   },
   {
     enDescription:
+      "Miami warehouse logistics for receiving, staging, truck loading, and international movement of industrial metal materials.",
+    enLabel: "Miami",
+    enSlug: "miami",
+    esDescription:
+      "Bodega logistica en Miami para recepcion, alistamiento, cargue de camiones y movimiento internacional de materiales metalicos industriales.",
+    esLabel: "Miami",
+    esSlug: "miami",
+    key: "miami",
+    priority: 0.72,
+  },
+  {
+    enDescription:
       "Colombia coverage for direct buying, evaluation, and recovery of tungsten, wolfram, tungsten carbide, and industrial metals through Metal Harvest.",
     enLabel: "Colombia",
     enSlug: "colombia",
@@ -212,6 +224,18 @@ const countryRoutes = [
     esSlug: "colombia",
     key: "colombia",
     priority: 0.82,
+  },
+  {
+    enDescription:
+      "Bogota operating context for matrix drill bits, tungsten inserts, wear materials, and technical evaluation for industrial metal recovery.",
+    enLabel: "Bogota",
+    enSlug: "bogota",
+    esDescription:
+      "Bogota como contexto operativo para brocas matriz, insertos de tungsteno, materiales de desgaste y evaluacion tecnica para recuperacion de metales industriales.",
+    esLabel: "Bogota",
+    esSlug: "bogota",
+    key: "bogota",
+    priority: 0.72,
   },
   {
     enDescription:

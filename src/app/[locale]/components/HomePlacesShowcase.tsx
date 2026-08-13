@@ -28,8 +28,12 @@ type PlacesMessages = {
 
 const siliconValleyImage =
   "/countries/estados-unidos/silicon-valley/silicon-valley-microsoft-campus-10.webp";
+const miamiImage =
+  "/countries/estados-unidos/miami/miami-warehouse-logistics-01.webp";
 const medellinImage =
   "/countries/colombia/medellin/medellin-greentech-booth-07.webp";
+const bogotaImage =
+  "/countries/colombia/bogota/bogota-matrix-bits-inserts-05.webp";
 const houstonImage =
   "/countries/estados-unidos/houston/houston-warehouse-storage-03.webp";
 const madisonvilleImage =
@@ -87,19 +91,19 @@ const fallbackItems: Record<"en" | "es", PlaceItem[]> = {
     },
     {
       country: "United States",
-      href: "/productosservicios",
-      image: "",
-      imageAlt: "Miami, United States",
+      href: "/about/miami",
+      image: miamiImage,
+      imageAlt: "Miami warehouse logistics and truck loading",
       label: "Miami",
-      note: "Operating point for logistics coordination and international movement.",
+      note: "Warehouse logistics, truck loading, and international movement coordination.",
     },
     {
       country: "Colombia",
-      href: "/productosservicios",
-      image: "",
-      imageAlt: "Bogota, Colombia",
+      href: "/about/bogota",
+      image: bogotaImage,
+      imageAlt: "Matrix drill bits and tungsten inserts in Bogota, Colombia",
       label: "Bogota",
-      note: "Commercial coverage for metal purchasing and evaluation in Colombia.",
+      note: "Matrix drill bits and tungsten inserts received for technical evaluation.",
     },
     {
       country: "United States",
@@ -161,19 +165,19 @@ const fallbackItems: Record<"en" | "es", PlaceItem[]> = {
     },
     {
       country: "Estados Unidos",
-      href: "/productosservicios",
-      image: "",
-      imageAlt: "Miami, Estados Unidos",
+      href: "/about/miami",
+      image: miamiImage,
+      imageAlt: "Bodega logística de Miami y cargue de camión",
       label: "Miami",
-      note: "Punto operativo para coordinación logística y salida internacional.",
+      note: "Bodega logística, cargue de camiones y coordinación de salida internacional.",
     },
     {
       country: "Colombia",
-      href: "/productosservicios",
-      image: "",
-      imageAlt: "Bogotá, Colombia",
+      href: "/about/bogota",
+      image: bogotaImage,
+      imageAlt: "Brocas matriz e insertos de tungsteno en Bogotá, Colombia",
       label: "Bogotá",
-      note: "Cobertura comercial para compra y evaluación de metales en Colombia.",
+      note: "Brocas matriz e insertos de tungsteno recibidos para evaluación técnica.",
     },
     {
       country: "Estados Unidos",
@@ -218,12 +222,22 @@ function getItems(
       item.label === "Silicon Valley" ||
       label === "Silicon Valley" ||
       href.includes("silicon-valley");
+    const isMiami =
+      item.label === "Miami" ||
+      label === "Miami" ||
+      href.includes("miami");
     const isMedellin =
       item.label === "Medellin" ||
       item.label === "Medellín" ||
       label === "Medellin" ||
       label === "Medellín" ||
       href.includes("medellin");
+    const isBogota =
+      item.label === "Bogota" ||
+      item.label === "Bogotá" ||
+      label === "Bogota" ||
+      label === "Bogotá" ||
+      href.includes("bogota");
     const isHouston =
       item.label === "Houston, Texas" ||
       label === "Houston, Texas" ||
@@ -241,22 +255,28 @@ function getItems(
           : isSpainBarcelona ||
               isItaly ||
               isSiliconValley ||
+              isMiami ||
               isMedellin ||
+              isBogota ||
               isHouston ||
               isMadisonville
             ? item.href
             : (message?.href ?? item.href),
       image: isSiliconValley
         ? siliconValleyImage
-        : isMedellin
-          ? medellinImage
-          : isHouston
-            ? houstonImage
-            : isMadisonville
-              ? madisonvilleImage
-          : message?.image || item.image,
+        : isMiami
+          ? miamiImage
+          : isMedellin
+            ? medellinImage
+            : isBogota
+              ? bogotaImage
+              : isHouston
+                ? houstonImage
+                : isMadisonville
+                  ? madisonvilleImage
+                  : message?.image || item.image,
       imageAlt:
-        isHouston || isMadisonville
+        isMiami || isBogota || isHouston || isMadisonville
           ? item.imageAlt
           : message?.imageAlt || item.imageAlt,
       label,

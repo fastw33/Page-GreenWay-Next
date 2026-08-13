@@ -197,18 +197,18 @@
           {
             "country": "United States",
             "label": "Miami",
-            "image": "",
-            "imageAlt": "Miami, United States",
-            "note": "Operating point for logistics coordination and international movement.",
-            "href": "/productosservicios"
+            "image": "/countries/estados-unidos/miami/miami-warehouse-logistics-01.webp",
+            "imageAlt": "Miami warehouse logistics and truck loading",
+            "note": "Warehouse logistics, truck loading, and international movement coordination.",
+            "href": "/about/miami"
           },
           {
             "country": "Colombia",
             "label": "Bogota",
-            "image": "",
-            "imageAlt": "Bogota, Colombia",
-            "note": "Commercial coverage for metal buying and evaluation in Colombia.",
-            "href": "/productosservicios"
+            "image": "/countries/colombia/bogota/bogota-matrix-bits-inserts-05.webp",
+            "imageAlt": "Matrix drill bits and tungsten inserts in Bogota, Colombia",
+            "note": "Matrix drill bits and tungsten inserts received for technical evaluation.",
+            "href": "/about/bogota"
           },
           {
             "country": "United States",

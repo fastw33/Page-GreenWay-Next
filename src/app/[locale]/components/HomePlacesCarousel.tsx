@@ -121,13 +121,13 @@ export function HomePlacesCarousel({
                 {items.map((item, itemIndex) => (
                   <Link
                     aria-label={`${cta}: ${item.label}, ${item.country}`}
-                    className="group flex min-h-[342px] w-[300px] shrink-0 flex-col overflow-hidden rounded-[4px] border border-[#d7dde3] bg-white transition-colors duration-200 hover:border-[var(--gw-blue)] sm:w-[360px]"
+                    className="group flex h-[380px] w-[300px] shrink-0 flex-col overflow-hidden rounded-[4px] border border-[#d7dde3] bg-white transition-colors duration-200 hover:border-[var(--gw-blue)] sm:h-[398px] sm:w-[360px]"
                     data-place-card={setIndex === 1 ? true : undefined}
                     href={item.href}
                     key={`${setIndex}-${itemIndex}-${item.href}-${item.label}`}
                     tabIndex={hasLoop && setIndex !== 1 ? -1 : undefined}
                   >
-                    <span className="relative block h-[156px] overflow-hidden bg-[#eef4f1]">
+                    <span className="relative block h-[184px] shrink-0 overflow-hidden bg-[#eef4f1] sm:h-[196px]">
                       {item.image ? (
                         <Image
                           alt={item.imageAlt}
@@ -149,7 +149,7 @@ export function HomePlacesCarousel({
                       <span className="mt-5 text-2xl font-bold leading-tight text-[var(--gw-ink)]">
                         {item.label}
                       </span>
-                      <span className="mt-3 text-sm leading-6 text-[var(--color-muted)]">
+                      <span className="mt-3 overflow-hidden text-sm leading-6 text-[var(--color-muted)] [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3]">
                         {item.note}
                       </span>
                       <span className="mt-auto pt-5 text-sm font-bold text-[var(--gw-green)] transition-colors duration-200 group-hover:text-[var(--gw-blue)]">

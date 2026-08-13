@@ -24,15 +24,15 @@ export async function SiteHeader() {
           className="flex shrink-0 items-center rounded-md outline-none focus-visible:ring-2 focus-visible:ring-[var(--gw-green)] focus-visible:ring-offset-4"
           href="/"
         >
-          <span className="relative h-[72px] w-[118px] shrink-0 sm:h-[88px] sm:w-[144px] lg:h-[104px] lg:w-[170px]">
+          <span className="relative h-[58px] w-[176px] shrink-0 sm:h-[68px] sm:w-[214px] lg:h-[78px] lg:w-[246px]">
             <Image
               alt={t("brand")}
               className="h-full w-full object-contain"
               height={1440}
               priority
               quality={100}
-              sizes="(max-width: 639px) 118px, (max-width: 1023px) 144px, 170px"
-              src="/brand/greenway-logo.webp"
+              sizes="(max-width: 639px) 176px, (max-width: 1023px) 214px, 246px"
+              src="/brand/greenway-logo-full-transparent.png"
               width={1600}
             />
           </span>

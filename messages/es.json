@@ -197,18 +197,18 @@
           {
             "country": "Estados Unidos",
             "label": "Miami",
-            "image": "",
-            "imageAlt": "Miami, Estados Unidos",
-            "note": "Punto operativo para coordinación logística y salida internacional.",
-            "href": "/productosservicios"
+            "image": "/countries/estados-unidos/miami/miami-warehouse-logistics-01.webp",
+            "imageAlt": "Bodega logística de Miami y cargue de camión",
+            "note": "Bodega logística, cargue de camiones y coordinación de salida internacional.",
+            "href": "/about/miami"
           },
           {
             "country": "Colombia",
             "label": "Bogotá",
-            "image": "",
-            "imageAlt": "Bogotá, Colombia",
-            "note": "Cobertura comercial para compra y evaluación de metales en Colombia.",
-            "href": "/productosservicios"
+            "image": "/countries/colombia/bogota/bogota-matrix-bits-inserts-05.webp",
+            "imageAlt": "Brocas matriz e insertos de tungsteno en Bogotá, Colombia",
+            "note": "Brocas matriz e insertos de tungsteno recibidos para evaluación técnica.",
+            "href": "/about/bogota"
           },
           {
             "country": "Estados Unidos",

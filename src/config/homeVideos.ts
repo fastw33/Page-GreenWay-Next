@@ -7,9 +7,8 @@ export type HomeVideo = {
 
 export const homeVideos: HomeVideo[] = [
   {
-    id: "greenway-home-hero",
+    id: "page-greenway-home",
     label: "Green Way International home video",
-    poster: "/videos/home/greenway-home-hero-poster.jpg",
-    src: "/videos/home/greenway-home-hero.mp4",
+    src: "/videos/home/page-greenway.mp4",
   },
 ];
