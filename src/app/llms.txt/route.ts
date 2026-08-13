@@ -21,17 +21,17 @@ Green Way buys and evaluates recoverable industrial metals from companies, gener
 
 ## Important pages
 
-- Homepage: ${siteBaseUrl}/
-- Materials and Services: ${absoluteUrl("/productosservicios")}
-- How Green Way Works: ${absoluteUrl("/comotrabajamos")}
-- About Green Way: ${absoluteUrl("/about")}
-- Contact: ${absoluteUrl("/contacto")}
-- Spanish tungsten / wolframio page: ${absoluteUrl("/tungsteno")}
-- English tungsten / wolfram page: ${absoluteUrl("/en/tungsten")}
-- Spanish tungsten carbide / carburo de wolframio page: ${absoluteUrl("/carburo-de-tungsteno")}
-- English tungsten carbide / wolfram carbide page: ${absoluteUrl("/en/tungsten-carbide")}
-- Sitemap: ${absoluteUrl("/sitemap.xml")}
-- Full AI summary: ${absoluteUrl("/llms-full.txt")}
+- [Homepage](${siteBaseUrl}/)
+- [Materials and Services](${absoluteUrl("/productosservicios")})
+- [How Green Way Works](${absoluteUrl("/comotrabajamos")})
+- [About Green Way](${absoluteUrl("/about")})
+- [Contact](${absoluteUrl("/contacto")})
+- [Spanish tungsten / wolframio page](${absoluteUrl("/tungsteno")})
+- [English tungsten / wolfram page](${absoluteUrl("/en/tungsten")})
+- [Spanish tungsten carbide / carburo de wolframio page](${absoluteUrl("/carburo-de-tungsteno")})
+- [English tungsten carbide / wolfram carbide page](${absoluteUrl("/en/tungsten-carbide")})
+- [Sitemap](${absoluteUrl("/sitemap.xml")})
+- [Full AI summary](${absoluteUrl("/llms-full.txt")})
 
 ## AI and crawler access
 
@@ -42,7 +42,7 @@ export function GET() {
   return new Response(content, {
     headers: {
       "Cache-Control": "public, max-age=86400, s-maxage=86400",
-      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Type": "text/markdown; charset=utf-8",
     },
   });
 }

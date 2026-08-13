@@ -85,22 +85,22 @@ Important English phrases:
 
 ## Canonical pages for search engines
 
-- Spanish home: ${siteBaseUrl}/
-- English home: ${absoluteUrl("/en")}
-- Spanish materials and services: ${absoluteUrl("/productosservicios")}
-- English materials and services: ${absoluteUrl("/en/productosservicios")}
-- Spanish tungsten / wolframio: ${absoluteUrl("/tungsteno")}
-- English tungsten / wolfram: ${absoluteUrl("/en/tungsten")}
-- Spanish tungsten carbide / carburo de wolframio: ${absoluteUrl("/carburo-de-tungsteno")}
-- English tungsten carbide / wolfram carbide: ${absoluteUrl("/en/tungsten-carbide")}
-- Spanish process: ${absoluteUrl("/comotrabajamos")}
-- English process: ${absoluteUrl("/en/comotrabajamos")}
-- Spanish about: ${absoluteUrl("/about")}
-- English about: ${absoluteUrl("/en/about")}
-- Spanish contact: ${absoluteUrl("/contacto")}
-- English contact: ${absoluteUrl("/en/contacto")}
-- Sitemap: ${absoluteUrl("/sitemap.xml")}
-- Robots: ${absoluteUrl("/robots.txt")}
+- [Spanish home](${siteBaseUrl}/)
+- [English home](${absoluteUrl("/en")})
+- [Spanish materials and services](${absoluteUrl("/productosservicios")})
+- [English materials and services](${absoluteUrl("/en/productosservicios")})
+- [Spanish tungsten / wolframio](${absoluteUrl("/tungsteno")})
+- [English tungsten / wolfram](${absoluteUrl("/en/tungsten")})
+- [Spanish tungsten carbide / carburo de wolframio](${absoluteUrl("/carburo-de-tungsteno")})
+- [English tungsten carbide / wolfram carbide](${absoluteUrl("/en/tungsten-carbide")})
+- [Spanish process](${absoluteUrl("/comotrabajamos")})
+- [English process](${absoluteUrl("/en/comotrabajamos")})
+- [Spanish about](${absoluteUrl("/about")})
+- [English about](${absoluteUrl("/en/about")})
+- [Spanish contact](${absoluteUrl("/contacto")})
+- [English contact](${absoluteUrl("/en/contacto")})
+- [Sitemap](${absoluteUrl("/sitemap.xml")})
+- [Robots](${absoluteUrl("/robots.txt")})
 
 ## Country and operation context
 
@@ -117,7 +117,7 @@ export function GET() {
   return new Response(content, {
     headers: {
       "Cache-Control": "public, max-age=86400, s-maxage=86400",
-      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Type": "text/markdown; charset=utf-8",
     },
   });
 }
