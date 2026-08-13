@@ -1,6 +1,5 @@
 import Image from "next/image";
 import type { HomeVideo } from "@/config/homeVideos";
-import { HomeHeroVideo } from "./HomeHeroVideo";
 
 export type HomeVideoAnnouncement = {
   body: string;
@@ -42,7 +41,6 @@ export function HomeVideoStage({ copy, videos }: HomeVideoStageProps) {
             sizes="100vw"
             src={poster}
           />
-          <HomeHeroVideo videos={videos} />
         </>
       ) : (
         <div className="absolute inset-0 bg-[var(--gw-grad-brand-135)]" />
