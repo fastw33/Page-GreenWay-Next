@@ -360,13 +360,14 @@ export function normalizeLocale(locale: string): Locale {
 }
 
 export function localizedPath(locale: Locale, path = "") {
-  const cleanPath = path === "/" ? "" : `/${path.replace(/^\/+/, "")}`;
+  const cleanPath =
+    path === "" || path === "/" ? "" : `/${path.replace(/^\/+/, "")}`;
 
   if (locale === defaultLocale) {
     return cleanPath || "/";
   }
 
-  return `/en${cleanPath}`;
+  return cleanPath ? `/en${cleanPath}` : "/en";
 }
 
 export function absoluteUrl(path = "") {
