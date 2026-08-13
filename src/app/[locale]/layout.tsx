@@ -10,7 +10,6 @@ import { AssetProtection } from "@/components/global/AssetProtection";
 import { FloatingWhatsApp } from "@/components/global/FloatingWhatsApp";
 import { routing } from "@/i18n/routing";
 import { getOrganizationJsonLd, getRootMetadata } from "@/lib/seo";
-import "aos/dist/aos.css";
 import "../globals.css";
 
 const montserrat = Montserrat({

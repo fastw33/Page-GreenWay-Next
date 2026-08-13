@@ -1,14 +1,12 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import Lottie from "lottie-react";
-import type { LottieRefCurrentProps } from "lottie-react";
-import companyAnimation from "@/assets/lotties/company.json";
-import drillingGearsAnimation from "@/assets/lotties/drilling-gears.json";
-import marketIntelligenceAnimation from "@/assets/lotties/market-intelligence.json";
-import processAnimation from "@/assets/lotties/process.json";
-import solutionsAnimation from "@/assets/lotties/solutions.json";
-import technologyAnimation from "@/assets/lotties/technology.json";
+import {
+  useEffect,
+  useRef,
+  useState,
+  type ComponentType,
+  type CSSProperties,
+} from "react";
 
 export type BrandLottieName =
   | "company"
@@ -23,54 +21,96 @@ type BrandLottieProps = {
   name: BrandLottieName;
 };
 
-const animations = {
-  company: companyAnimation,
-  drillingGears: drillingGearsAnimation,
-  marketIntelligence: marketIntelligenceAnimation,
-  process: processAnimation,
-  solutions: solutionsAnimation,
-  technology: technologyAnimation,
-} satisfies Record<BrandLottieName, unknown>;
+type LottieComponent = ComponentType<{
+  animationData: unknown;
+  autoplay?: boolean;
+  loop?: boolean;
+  rendererSettings?: { preserveAspectRatio: string };
+  style?: CSSProperties;
+}>;
+
+const animationLoaders = {
+  company: () => import("@/assets/lotties/company.json"),
+  drillingGears: () => import("@/assets/lotties/drilling-gears.json"),
+  marketIntelligence: () => import("@/assets/lotties/market-intelligence.json"),
+  process: () => import("@/assets/lotties/process.json"),
+  solutions: () => import("@/assets/lotties/solutions.json"),
+  technology: () => import("@/assets/lotties/technology.json"),
+} satisfies Record<BrandLottieName, () => Promise<{ default: unknown }>>;
 
 export function BrandLottie({ className, name }: BrandLottieProps) {
-  const lottieRef = useRef<LottieRefCurrentProps>(null);
+  const rootRef = useRef<HTMLDivElement>(null);
+  const [Lottie, setLottie] = useState<LottieComponent | null>(null);
+  const [animationData, setAnimationData] = useState<unknown>(null);
+  const [shouldAnimate, setShouldAnimate] = useState(true);
 
   useEffect(() => {
+    const target = rootRef.current;
+    let isCancelled = false;
+
+    async function loadAnimation() {
+      const [{ default: LottieModule }, { default: data }] = await Promise.all([
+        import("lottie-react"),
+        animationLoaders[name](),
+      ]);
+
+      if (isCancelled) {
+        return;
+      }
+
+      setLottie(() => LottieModule as LottieComponent);
+      setAnimationData(data);
+    }
+
     const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const updateMotion = () => {
-      const player = lottieRef.current;
-
-      if (!player) {
-        return;
-      }
-
-      player.setSubframe(true);
-
-      if (motionQuery.matches) {
-        player.goToAndStop(0, true);
-        return;
-      }
-
-      player.goToAndPlay(0, true);
-    };
+    const updateMotion = () => setShouldAnimate(!motionQuery.matches);
 
     updateMotion();
     motionQuery.addEventListener("change", updateMotion);
 
-    return () => motionQuery.removeEventListener("change", updateMotion);
+    if (!target || !("IntersectionObserver" in window)) {
+      void loadAnimation();
+      return () => {
+        isCancelled = true;
+        motionQuery.removeEventListener("change", updateMotion);
+      };
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        observer.disconnect();
+        void loadAnimation();
+      },
+      {
+        rootMargin: "260px",
+        threshold: 0.01,
+      },
+    );
+
+    observer.observe(target);
+
+    return () => {
+      isCancelled = true;
+      observer.disconnect();
+      motionQuery.removeEventListener("change", updateMotion);
+    };
   }, [name]);
 
   return (
-    <div aria-hidden="true" className={className}>
-      <Lottie
-        lottieRef={lottieRef}
-        animationData={animations[name]}
-        autoplay
-        loop
-        onDOMLoaded={() => lottieRef.current?.goToAndPlay(0, true)}
-        rendererSettings={{ preserveAspectRatio: "xMidYMid meet" }}
-        style={{ height: "100%", width: "100%" }}
-      />
+    <div aria-hidden="true" className={className} ref={rootRef}>
+      {Lottie && animationData ? (
+        <Lottie
+          animationData={animationData}
+          autoplay={shouldAnimate}
+          loop={shouldAnimate}
+          rendererSettings={{ preserveAspectRatio: "xMidYMid meet" }}
+          style={{ height: "100%", width: "100%" }}
+        />
+      ) : null}
     </div>
   );
 }

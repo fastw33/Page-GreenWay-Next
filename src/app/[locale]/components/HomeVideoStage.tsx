@@ -1,7 +1,6 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import type { HomeVideo } from "@/config/homeVideos";
+import { HomeHeroVideo } from "./HomeHeroVideo";
 
 export type HomeVideoAnnouncement = {
   body: string;
@@ -22,80 +21,29 @@ type HomeVideoStageProps = {
 };
 
 export function HomeVideoStage({ copy, videos }: HomeVideoStageProps) {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const sectionRef = useRef<HTMLElement | null>(null);
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-  const activeVideo = videos[activeIndex];
-  const hasMultipleVideos = videos.length > 1;
-
-  useEffect(() => {
-    const section = sectionRef.current;
-    const video = videoRef.current;
-
-    if (!section || !video || !activeVideo) {
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          video.play().catch(() => undefined);
-        } else {
-          video.pause();
-        }
-      },
-      { threshold: 0.45 },
-    );
-
-    observer.observe(section);
-
-    return () => observer.disconnect();
-  }, [activeVideo]);
-
-  useEffect(() => {
-    const video = videoRef.current;
-
-    if (!video || !activeVideo) {
-      return;
-    }
-
-    video.load();
-    video.play().catch(() => undefined);
-  }, [activeVideo]);
-
-  function goToVideo(index: number) {
-    setActiveIndex(index);
-  }
-
-  function goToNextVideo() {
-    if (!hasMultipleVideos) {
-      return;
-    }
-
-    setActiveIndex((currentIndex) => (currentIndex + 1) % videos.length);
-  }
+  const activeVideo = videos[0];
+  const poster =
+    activeVideo?.poster ??
+    "/countries/estados-unidos/houston/houston-metal-turnings-tag-01.webp";
 
   return (
     <section
       className="relative isolate min-h-[calc(100svh-var(--gw-nav-h))] overflow-hidden bg-[var(--gw-ink)]"
-      ref={sectionRef}
     >
       {activeVideo ? (
-        <video
-          aria-label={activeVideo.label}
-          className="absolute inset-0 h-full w-full object-cover"
-          controls={false}
-          key={activeVideo.id}
-          loop={!hasMultipleVideos}
-          muted
-          onEnded={goToNextVideo}
-          playsInline
-          poster={activeVideo.poster}
-          preload="metadata"
-          ref={videoRef}
-        >
-          <source src={activeVideo.src} type="video/mp4" />
-        </video>
+        <>
+          <Image
+            alt=""
+            aria-hidden="true"
+            className="object-cover"
+            fill
+            preload
+            quality={72}
+            sizes="100vw"
+            src={poster}
+          />
+          <HomeHeroVideo videos={videos} />
+        </>
       ) : (
         <div className="absolute inset-0 bg-[var(--gw-grad-brand-135)]" />
       )}
@@ -135,29 +83,6 @@ export function HomeVideoStage({ copy, videos }: HomeVideoStageProps) {
             ))}
           </div>
         </div>
-
-        {hasMultipleVideos ? (
-          <div className="flex items-center gap-2" aria-label="Videos destacados">
-            {videos.map((video, index) => {
-              const isActive = index === activeIndex;
-
-              return (
-                <button
-                  aria-label={video.label}
-                  aria-pressed={isActive}
-                  className={`h-2.5 cursor-pointer rounded-full transition-all duration-200 ${
-                    isActive
-                      ? "w-10 bg-[var(--color-highlight)]"
-                      : "w-2.5 bg-white/60 hover:bg-white"
-                  }`}
-                  key={video.id}
-                  onClick={() => goToVideo(index)}
-                  type="button"
-                />
-              );
-            })}
-          </div>
-        ) : null}
       </div>
     </section>
   );
