@@ -379,9 +379,9 @@ export function absoluteUrl(path = "") {
 
 function getLanguageAlternates(path: string) {
   return {
-    en: localizedPath("en", path),
-    es: localizedPath("es", path),
-    "x-default": localizedPath("es", path),
+    en: absoluteUrl(localizedPath("en", path)),
+    es: absoluteUrl(localizedPath("es", path)),
+    "x-default": absoluteUrl(localizedPath("es", path)),
   };
 }
 
@@ -517,9 +517,9 @@ export function getMaterialRouteBySlug(slug: string) {
 
 function getMaterialAlternates(route: (typeof materialRoutes)[number]) {
   return {
-    en: localizedPath("en", `/${route.enSlug}`),
-    es: localizedPath("es", `/${route.esSlug}`),
-    "x-default": localizedPath("es", `/${route.esSlug}`),
+    en: absoluteUrl(localizedPath("en", `/${route.enSlug}`)),
+    es: absoluteUrl(localizedPath("es", `/${route.esSlug}`)),
+    "x-default": absoluteUrl(localizedPath("es", `/${route.esSlug}`)),
   };
 }
 
@@ -600,9 +600,9 @@ export function getMaterialMetadata(
 
 function getCountryAlternates(route: (typeof countryRoutes)[number]) {
   return {
-    en: localizedPath("en", `/about/${route.enSlug}`),
-    es: localizedPath("es", `/about/${route.esSlug}`),
-    "x-default": localizedPath("es", `/about/${route.esSlug}`),
+    en: absoluteUrl(localizedPath("en", `/about/${route.enSlug}`)),
+    es: absoluteUrl(localizedPath("es", `/about/${route.esSlug}`)),
+    "x-default": absoluteUrl(localizedPath("es", `/about/${route.esSlug}`)),
   };
 }
 
