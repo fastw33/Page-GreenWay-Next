@@ -19,6 +19,7 @@ const defaultLocale: Locale = "es";
 
 const siteName = "Green Way International";
 const ogImage = "/brand/greenway-logo-full-transparent.png";
+const googleSiteVerification = "KM2DSOQXaEkwlQMlLRfTRDkasnEaZgbtaOT1lx6T7dA";
 
 const baseKeywords: Record<Locale, string[]> = {
   es: [
@@ -448,6 +449,9 @@ function buildMetadata({
       description,
       images: [ogImage],
       title,
+    },
+    verification: {
+      google: googleSiteVerification,
     },
     alternates: {
       canonical,
