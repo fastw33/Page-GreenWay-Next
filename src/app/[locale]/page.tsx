@@ -101,7 +101,7 @@ export default async function HomePage() {
   };
 
   return (
-    <main data-aos="fade-in" data-aos-offset="0">
+    <main>
       <HomeVideoStage copy={videoHeroCopy} videos={homeVideos} />
       <HomeGreeting />
       <HomeFlowBreaker />

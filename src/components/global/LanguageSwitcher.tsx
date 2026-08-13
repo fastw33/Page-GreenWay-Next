@@ -83,12 +83,7 @@ export function LanguageSwitcher() {
   const t = useTranslations("LanguageSwitcher");
 
   return (
-    <div
-      aria-label={t("label")}
-      className="flex items-center gap-2"
-      data-aos="fade-down"
-      data-aos-delay="160"
-    >
+    <div aria-label={t("label")} className="flex items-center gap-2">
       {languages.map((language) => {
         const isActive = activeLocale === language.locale;
 

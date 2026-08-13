@@ -78,9 +78,6 @@ export function HomeVideoStage({ copy, videos }: HomeVideoStageProps) {
   return (
     <section
       className="relative isolate min-h-[calc(100svh-var(--gw-nav-h))] overflow-hidden bg-[var(--gw-ink)]"
-      data-aos="fade-in"
-      data-aos-duration="900"
-      data-aos-offset="0"
       ref={sectionRef}
     >
       {activeVideo ? (
@@ -108,8 +105,6 @@ export function HomeVideoStage({ copy, videos }: HomeVideoStageProps) {
 
       <div
         className="relative z-10 mx-auto flex min-h-[calc(100svh-var(--gw-nav-h))] max-w-7xl flex-col justify-end gap-9 px-6 pb-12 pt-16"
-        data-aos="fade-up"
-        data-aos-delay="180"
       >
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_440px] lg:items-end">
           <div className="max-w-3xl">
@@ -125,11 +120,9 @@ export function HomeVideoStage({ copy, videos }: HomeVideoStageProps) {
           </div>
 
           <div className="grid gap-3">
-            {copy.announcements.map((announcement, index) => (
+            {copy.announcements.map((announcement) => (
               <div
                 className="border-l-4 border-[var(--gw-green)] bg-white/[0.08] px-5 py-4 backdrop-blur-sm transition-colors duration-200 hover:bg-white/[0.13]"
-                data-aos="fade-left"
-                data-aos-delay={260 + index * 90}
                 key={announcement.id}
               >
                 <p className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-highlight)]">

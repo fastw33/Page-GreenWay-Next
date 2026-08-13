@@ -163,14 +163,14 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
     partners: [
       {
         href: "https://www.fastwaysas.com/",
-        logo: "/allies/fastway-transparent.png",
+        logo: "/allies/fastway.webp",
         logoAlt: "Fastway Logistic SAS logo",
         name: "Fastway Logistic SAS",
         role: "Logistics support for movements, warehouses, and operations between markets.",
       },
       {
         href: "https://metalharvest.io/",
-        logo: "/allies/metal-harvest-transparent.png",
+        logo: "/allies/metal-harvest.webp",
         logoAlt: "Metal Harvest logo",
         name: "Metal Harvest",
         role: "Channel in Colombia for purchasing, evaluation, and quoting of industrial metals.",
@@ -327,14 +327,14 @@ const fallbackCopy: Record<"en" | "es", WorkCopy> = {
     partners: [
       {
         href: "https://www.fastwaysas.com/",
-        logo: "/allies/fastway-transparent.png",
+        logo: "/allies/fastway.webp",
         logoAlt: "Logo de Fastway Logistic SAS",
         name: "Fastway Logistic SAS",
         role: "Soporte logístico para coordinar movimientos, bodegas y operación entre mercados.",
       },
       {
         href: "https://metalharvest.io/",
-        logo: "/allies/metal-harvest-transparent.png",
+        logo: "/allies/metal-harvest.webp",
         logoAlt: "Logo de Metal Harvest",
         name: "Metal Harvest",
         role: "Canal en Colombia para compra, evaluación y cotización de metales industriales.",
@@ -677,6 +677,7 @@ export async function WorkShowcase() {
                     alt={partner.logoAlt}
                     className="h-24 w-72 max-w-full object-contain"
                     height={220}
+                    sizes="288px"
                     src={partner.logo}
                     width={420}
                   />

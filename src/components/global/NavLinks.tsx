@@ -21,7 +21,7 @@ export function NavLinks() {
       : {};
 
   return (
-    <div className="hidden items-center gap-2 lg:flex" data-aos="fade-down" data-aos-delay="100">
+    <div className="hidden items-center gap-2 lg:flex">
       {navigationItems.map((item) => {
         const isActive = isActivePath(pathname, item.href);
         const label = navigationMessages[item.labelKey] ?? item.fallbackLabel;

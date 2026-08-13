@@ -30,13 +30,13 @@ const fallbackItems: Record<"en" | "es", AllyItem[]> = {
   en: [
     {
       href: "https://www.fastwaysas.com/",
-      logo: "/allies/fastway-transparent.png",
+      logo: "/allies/fastway.webp",
       logoAlt: "Fastway Logistic SAS logo",
       name: "Fastway Logistic SAS",
     },
     {
       href: "https://metalharvest.io/",
-      logo: "/allies/metal-harvest-transparent.png",
+      logo: "/allies/metal-harvest.webp",
       logoAlt: "Metal Harvest logo",
       name: "Metal Harvest",
     },
@@ -50,13 +50,13 @@ const fallbackItems: Record<"en" | "es", AllyItem[]> = {
   es: [
     {
       href: "https://www.fastwaysas.com/",
-      logo: "/allies/fastway-transparent.png",
+      logo: "/allies/fastway.webp",
       logoAlt: "Logo de Fastway Logistic SAS",
       name: "Fastway Logistic SAS",
     },
     {
       href: "https://metalharvest.io/",
-      logo: "/allies/metal-harvest-transparent.png",
+      logo: "/allies/metal-harvest.webp",
       logoAlt: "Logo de Metal Harvest",
       name: "Metal Harvest",
     },
@@ -123,6 +123,11 @@ export async function HomeAllies() {
           {items.map((item, index) => {
             const Wrapper = item.href === "#" ? "div" : "a";
             const isWideLogo = item.logo.includes("transport-logistic");
+            const imageSizes = item.logo.includes("metal-harvest")
+              ? "(min-width: 768px) 150px, 55vw"
+              : isWideLogo
+                ? "(min-width: 768px) 340px, 80vw"
+                : "(min-width: 768px) 210px, 65vw";
 
             return (
               <Wrapper
@@ -146,11 +151,7 @@ export async function HomeAllies() {
                       alt={item.logoAlt}
                       className="object-contain transition-transform duration-300 group-hover:scale-[1.03]"
                       fill
-                      sizes={
-                        isWideLogo
-                          ? "(min-width: 768px) 340px, 80vw"
-                          : "(min-width: 768px) 260px, 70vw"
-                      }
+                      sizes={imageSizes}
                       src={item.logo}
                     />
                   </span>
