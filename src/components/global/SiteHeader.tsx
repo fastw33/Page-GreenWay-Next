@@ -24,7 +24,8 @@ export async function SiteHeader() {
               alt={t("brand")}
               className="h-full w-full object-contain"
               height={1440}
-              sizes="(max-width: 639px) 176px, (max-width: 1023px) 214px, 246px"
+              quality={55}
+              sizes="(max-width: 639px) 84px, (max-width: 1023px) 102px, 112px"
               src="/brand/greenway-logo-full-transparent.png"
               width={1600}
             />

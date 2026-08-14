@@ -133,6 +133,7 @@ export function HomePlacesCarousel({
                           alt={item.imageAlt}
                           className="object-cover transition-transform duration-500 group-hover:scale-105"
                           fill
+                          quality={60}
                           sizes="(min-width: 640px) 360px, 300px"
                           src={item.image}
                         />

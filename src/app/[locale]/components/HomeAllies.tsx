@@ -124,10 +124,10 @@ export async function HomeAllies() {
             const Wrapper = item.href === "#" ? "div" : "a";
             const isWideLogo = item.logo.includes("transport-logistic");
             const imageSizes = item.logo.includes("metal-harvest")
-              ? "(min-width: 768px) 150px, 55vw"
+              ? "(min-width: 768px) 132px, 48vw"
               : isWideLogo
                 ? "(min-width: 768px) 340px, 80vw"
-                : "(min-width: 768px) 210px, 65vw";
+                : "(min-width: 768px) 190px, 62vw";
 
             return (
               <Wrapper
@@ -151,6 +151,7 @@ export async function HomeAllies() {
                       alt={item.logoAlt}
                       className="object-contain transition-transform duration-300 group-hover:scale-[1.03]"
                       fill
+                      quality={55}
                       sizes={imageSizes}
                       src={item.logo}
                     />

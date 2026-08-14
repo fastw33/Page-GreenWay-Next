@@ -36,9 +36,10 @@ export function HomeVideoStage({ copy, videos }: HomeVideoStageProps) {
             alt=""
             aria-hidden="true"
             className="object-cover"
+            fetchPriority="high"
             fill
-            preload
-            quality={58}
+            loading="eager"
+            quality={45}
             sizes="100vw"
             src={poster}
           />

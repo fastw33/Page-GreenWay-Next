@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   experimental: {
     globalNotFound: true,
   },
+  images: {
+    qualities: [45, 55, 60, 65, 75],
+  },
   async headers() {
     return [
       {

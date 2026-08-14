@@ -1,4 +1,5 @@
 import { getLocale, getMessages } from "next-intl/server";
+import { DeferredMapFrame } from "./DeferredMapFrame";
 
 type MapLocation = {
   address: string[];
@@ -160,12 +161,8 @@ export async function HomeMapLocations() {
                 </div>
 
                 <div className="relative min-h-[260px] border-t border-[#d7dde3] bg-[#eef4f1]">
-                  <iframe
-                    allowFullScreen
-                    className="absolute inset-0 h-full w-full"
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    src={location.mapUrl}
+                  <DeferredMapFrame
+                    mapUrl={location.mapUrl}
                     title={`${location.title} Google Map`}
                   />
                   <a
