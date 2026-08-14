@@ -70,6 +70,14 @@ export const localizedMaterialSlugs = [
     enSlug: "tungsten-carbide-recycling-florida",
     esSlug: "compramos-carburo-de-tungsteno-florida",
   },
+  {
+    enSlug: "we-buy-tungsten-california",
+    esSlug: "compramos-tungsteno-california",
+  },
+  {
+    enSlug: "tungsten-carbide-recycling-california",
+    esSlug: "compramos-carburo-de-tungsteno-california",
+  },
   { enSlug: "we-buy-tungsten-georgia", esSlug: "compramos-tungsteno-georgia" },
   {
     enSlug: "tungsten-carbide-recycling-georgia",

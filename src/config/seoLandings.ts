@@ -260,6 +260,23 @@ const markets: Market[] = [
     priority: 0.98,
   },
   {
+    areaServed: ["California", "United States"],
+    enContext: "California review for aerospace suppliers, machining, technology manufacturing, maintenance, and specialty metal lots",
+    enIndustries: "aerospace supply, machining, technology manufacturing, maintenance, tooling, and recycling yards",
+    enName: "California",
+    enSlug: "california",
+    esContext: "revision en California para proveedores aeroespaciales, mecanizado, manufactura tecnologica, mantenimiento y lotes de metales especiales",
+    esIndustries: "suministro aeroespacial, mecanizado, manufactura tecnologica, mantenimiento, herramientas y patios de reciclaje",
+    esName: "California",
+    esSlug: "california",
+    image: "/countries/estados-unidos/silicon-valley/silicon-valley-microsoft-campus-10.webp",
+    imageAlt: {
+      en: "California technology and industrial network visit connected to specialty metal recovery",
+      es: "Visita a red tecnologica e industrial en California conectada con recuperacion de metales especiales",
+    },
+    priority: 0.96,
+  },
+  {
     areaServed: ["Georgia", "United States"],
     enContext: "Southeast US review for machine shops, manufacturing, maintenance, and metal recovery lots",
     enIndustries: "manufacturing, machining, maintenance, logistics, and metal recycling yards",
