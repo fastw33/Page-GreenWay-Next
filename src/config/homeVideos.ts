@@ -9,7 +9,7 @@ export const homeVideos: HomeVideo[] = [
   {
     id: "page-greenway-home",
     label: "Green Way International home video",
-    poster: "/countries/estados-unidos/houston/houston-metal-turnings-tag-01.webp",
+    poster: "/videos/home/page-greenway-poster.webp",
     src: "/videos/home/page-greenway.mp4",
   },
 ];
