@@ -1,4 +1,9 @@
 import type { Metadata, MetadataRoute } from "next";
+import {
+  getSeoLandingPageBySlug,
+  seoLandingPages,
+  type SeoLandingPage,
+} from "@/config/seoLandings";
 
 export type Locale = "es" | "en";
 export type SeoPage =
@@ -524,6 +529,14 @@ function getMaterialAlternates(route: (typeof materialRoutes)[number]) {
   };
 }
 
+function getSeoLandingAlternates(route: SeoLandingPage) {
+  return {
+    en: absoluteUrl(localizedPath("en", `/${route.enSlug}`)),
+    es: absoluteUrl(localizedPath("es", `/${route.esSlug}`)),
+    "x-default": absoluteUrl(localizedPath("es", `/${route.esSlug}`)),
+  };
+}
+
 export function getMaterialMetadata(
   localeInput: string,
   slug: string,
@@ -532,7 +545,29 @@ export function getMaterialMetadata(
   const route = getMaterialRouteBySlug(slug);
 
   if (!route) {
-    return getPageMetadata(locale, "products");
+    const landing = getSeoLandingPageBySlug(slug);
+
+    if (!landing) {
+      return getPageMetadata(locale, "products");
+    }
+
+    const activeSlug = locale === "en" ? landing.enSlug : landing.esSlug;
+    const description =
+      locale === "en" ? landing.enDescription : landing.esDescription;
+
+    return {
+      ...buildMetadata({
+        description,
+        keywords: landing.keywords[locale],
+        locale,
+        path: `/${activeSlug}`,
+        title: landing.title[locale],
+      }),
+      alternates: {
+        canonical: localizedPath(locale, `/${activeSlug}`),
+        languages: getSeoLandingAlternates(landing),
+      },
+    };
   }
 
   const activeSlug = locale === "en" ? route.enSlug : route.esSlug;
@@ -669,10 +704,15 @@ export function getOrganizationJsonLd(localeInput: string) {
         ],
         areaServed: [
           "United States",
-          "Colombia",
+          "Peru",
           "Chile",
-          "Spain",
-          "Italy",
+          "Ecuador",
+          "Bolivia",
+          "Argentina",
+          "Panama",
+          "Uruguay",
+          "Paraguay",
+          "Venezuela",
         ],
         contactPoint: [
           {
@@ -703,7 +743,7 @@ export function getOrganizationJsonLd(localeInput: string) {
         logo: absoluteUrl("/brand/greenway-logo-full-transparent.png"),
         name: siteName,
         telephone: "+1-786-661-0046",
-        sameAs: ["https://metalharvest.io/"],
+        sameAs: ["https://www.instagram.com/greenwayllc/"],
         url: siteBaseUrl,
       },
       {
@@ -810,5 +850,26 @@ export function getSitemapEntries(): MetadataRoute.Sitemap {
     }),
   );
 
-  return [...pageEntries, ...countryEntries, ...materialEntries];
+  const landingEntries = seoLandingPages.flatMap((route) =>
+    (["es", "en"] as const).map((locale) => {
+      const slug = locale === "en" ? route.enSlug : route.esSlug;
+
+      return {
+        alternates: {
+          languages: getSeoLandingAlternates(route),
+        },
+        changeFrequency: "weekly" as const,
+        lastModified,
+        priority: route.priority,
+        url: absoluteUrl(localizedPath(locale, `/${slug}`)),
+      };
+    }),
+  );
+
+  return [
+    ...pageEntries,
+    ...countryEntries,
+    ...materialEntries,
+    ...landingEntries,
+  ];
 }

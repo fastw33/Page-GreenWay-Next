@@ -3,6 +3,12 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ActionLink } from "@/components/global/ActionLink";
 import {
+  getSeoLandingPageBySlug,
+  seoLandingPages,
+  type SeoLandingPageCopy,
+} from "@/config/seoLandings";
+import { Link } from "@/i18n/navigation";
+import {
   absoluteUrl,
   getMaterialMetadata,
   getMaterialRouteBySlug,
@@ -12,29 +18,7 @@ import {
   type Locale,
 } from "@/lib/seo";
 
-type MaterialPageCopy = {
-  accepted: string[];
-  acceptedIntro: string;
-  acceptedTitle: string;
-  ctaBody: string;
-  ctaTitle: string;
-  detailBody: string;
-  detailEyebrow: string;
-  detailPoints: Array<{ body: string; title: string }>;
-  detailTitle: string;
-  evidence: string[];
-  evidenceTitle: string;
-  faqs: Array<{ answer: string; question: string }>;
-  heroBody: string;
-  heroEyebrow: string;
-  heroImage: string;
-  heroImageAlt: string;
-  heroImageLabel: string;
-  heroTitle: string;
-  proofBody: string;
-  proofEyebrow: string;
-  proofTitle: string;
-};
+type MaterialPageCopy = SeoLandingPageCopy;
 
 const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
   tungsten: {
@@ -325,18 +309,30 @@ const materialPages: Record<string, Record<Locale, MaterialPageCopy>> = {
 function getMaterialPage(slug: string, locale: Locale) {
   const route = getMaterialRouteBySlug(slug);
 
-  if (!route) {
-    return undefined;
+  if (route) {
+    return materialPages[route.key][locale];
   }
 
-  return materialPages[route.key][locale];
+  return getSeoLandingPageBySlug(slug)?.copy[locale];
 }
 
-export function generateStaticParams() {
-  return materialRoutes.flatMap((route) => [
-    { material: route.esSlug },
-    { material: route.enSlug },
-  ]);
+export const dynamicParams = false;
+
+export function generateStaticParams({
+  params,
+}: {
+  params?: { locale?: string };
+} = {}) {
+  const locale = normalizeLocale(params?.locale ?? "es");
+
+  return [
+    ...materialRoutes.map((route) => ({
+      material: locale === "en" ? route.enSlug : route.esSlug,
+    })),
+    ...seoLandingPages.map((route) => ({
+      material: locale === "en" ? route.enSlug : route.esSlug,
+    })),
+  ];
 }
 
 function getMaterialJsonLd({
@@ -349,10 +345,15 @@ function getMaterialJsonLd({
   slug: string;
 }) {
   const route = getMaterialRouteBySlug(slug);
+  const landing = route ? undefined : getSeoLandingPageBySlug(slug);
   const activeSlug = route
     ? locale === "en"
       ? route.enSlug
       : route.esSlug
+    : landing
+      ? locale === "en"
+        ? landing.enSlug
+        : landing.esSlug
     : slug;
   const pageUrl = absoluteUrl(
     locale === "en" ? `/en/${activeSlug}` : `/${activeSlug}`,
@@ -370,7 +371,11 @@ function getMaterialJsonLd({
       {
         "@id": `${pageUrl}#service`,
         "@type": "Service",
-        areaServed: ["United States", "Colombia", "Latin America"],
+        areaServed: landing?.areaServed ?? [
+          "United States",
+          "Colombia",
+          "Latin America",
+        ],
         category:
           locale === "en"
             ? "Industrial metal recovery and purchasing"
@@ -457,6 +462,14 @@ export default async function MaterialSeoPage({
   const { locale: localeInput, material } = await params;
   const locale = normalizeLocale(localeInput);
   const copy = getMaterialPage(material, locale);
+  const currentRoute = getMaterialRouteBySlug(material);
+  const currentLanding = currentRoute
+    ? undefined
+    : getSeoLandingPageBySlug(material);
+  const currentMaterial = currentLanding?.material ?? currentRoute?.key;
+  const marketLinks = currentMaterial
+    ? seoLandingPages.filter((page) => page.material === currentMaterial)
+    : [];
 
   if (!copy) {
     notFound();
@@ -621,6 +634,56 @@ export default async function MaterialSeoPage({
           </div>
         </div>
       </section>
+
+      {marketLinks.length ? (
+        <section className="border-y border-[#d7dde3] bg-[var(--gw-sand)] px-6 py-18 sm:py-20">
+          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.78fr_1.22fr]">
+            <div
+              className="border-l-4 border-[var(--gw-green)] pl-6 sm:pl-8"
+              data-aos="fade-up"
+            >
+              <p className="text-xs font-bold uppercase tracking-[0.24em] text-[var(--gw-blue)]">
+                {locale === "en" ? "Priority Markets" : "Mercados Prioritarios"}
+              </p>
+              <h2 className="mt-5 text-4xl font-bold leading-tight text-[var(--gw-ink)] sm:text-5xl">
+                {locale === "en"
+                  ? "Country and US market pages for tungsten recovery."
+                  : "Paginas por pais y mercado de Estados Unidos para tungsteno."}
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-[var(--color-muted)]">
+                {locale === "en"
+                  ? "Each page focuses on search intent by market, material type, lot evidence, and final-buyer recovery route."
+                  : "Cada pagina trabaja intencion de busqueda por mercado, tipo de material, evidencia del lote y ruta de compra final."}
+              </p>
+            </div>
+
+            <div
+              className="grid border-y border-[#d7dde3] bg-white sm:grid-cols-2"
+              data-aos="fade-left"
+            >
+              {marketLinks.map((page) => {
+                const slug = locale === "en" ? page.enSlug : page.esSlug;
+                const isCurrent =
+                  slug ===
+                  (locale === "en"
+                    ? currentLanding?.enSlug
+                    : currentLanding?.esSlug);
+
+                return (
+                  <Link
+                    aria-current={isCurrent ? "page" : undefined}
+                    className="border-b border-[#d7dde3] px-5 py-4 text-base font-bold leading-6 text-[var(--gw-ink)] transition-colors duration-200 hover:bg-[var(--gw-sand)] hover:text-[var(--gw-green)] sm:border-r sm:odd:border-r"
+                    href={`/${slug}`}
+                    key={page.key}
+                  >
+                    {page.title[locale]}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <section className="border-y border-[var(--gw-green)] bg-[var(--gw-ink)] px-6 py-18 text-white sm:py-20">
         <div className="mx-auto mb-16 grid max-w-7xl gap-8 border-b border-white/14 pb-14 lg:grid-cols-[0.75fr_1.25fr]">

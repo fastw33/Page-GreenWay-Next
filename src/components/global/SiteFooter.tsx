@@ -74,16 +74,7 @@ const warehouses: Record<'en' | 'es', FooterWarehouse[]> = {
   ],
 }
 
-const footerWhatsAppMessages: Record<'en' | 'es', string> = {
-  en: 'Hello Green Way, I want to quote an industrial metal lot.',
-  es: 'Hola Green Way, quiero cotizar un lote de metal industrial.',
-}
-
-function getFooterWhatsAppUrl(localeKey: 'en' | 'es') {
-  return `https://wa.me/17866610046?text=${encodeURIComponent(
-    footerWhatsAppMessages[localeKey]
-  )}`
-}
+const instagramUrl = 'https://www.instagram.com/greenwayllc/'
 
 const fallbackCopy: Record<'en' | 'es', FooterCopy> = {
   en: {
@@ -160,21 +151,6 @@ function getLinks(
   })
 }
 
-function getSocialLinks(
-  messages: Array<Partial<FooterSocial>> | undefined,
-  fallback: FooterSocial[]
-) {
-  return fallback.map((link, index) => {
-    const message = messages?.[index]
-
-    return {
-      href: message?.href ?? link.href,
-      label: message?.label ?? link.label,
-      shortLabel: message?.shortLabel ?? link.shortLabel,
-    }
-  })
-}
-
 export async function SiteFooter() {
   const locale = await getLocale()
   const messages = (await getMessages()) as FooterMessages
@@ -184,14 +160,13 @@ export async function SiteFooter() {
   const year = new Date().getFullYear()
   const navLinks = getLinks(footer?.navLinks, fallback.navLinks)
   const legalLinks = getLinks(footer?.legalLinks, fallback.legalLinks)
-  const socialLinks = getSocialLinks(
-    footer?.socialLinks,
-    fallback.socialLinks
-  ).map(link =>
-    link.label.toLowerCase() === 'whatsapp'
-      ? { ...link, href: getFooterWhatsAppUrl(localeKey) }
-      : link
-  )
+  const socialLinks = [
+    {
+      href: instagramUrl,
+      label: 'Instagram',
+      shortLabel: 'Ig',
+    },
+  ]
   const materialLinks =
     localeKey === 'en'
       ? [
