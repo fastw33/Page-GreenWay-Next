@@ -18,7 +18,7 @@ const variantClasses: Record<ActionLinkVariant, string> = {
   primary:
     "bg-[var(--gw-grad-brand-90)] text-white shadow-[0_12px_26px_rgba(28,110,164,0.22)] hover:shadow-[0_14px_32px_rgba(34,181,115,0.28)] focus-visible:ring-[var(--gw-green)]",
   secondary:
-    "border border-[var(--color-border)] bg-white text-[var(--gw-ink)] hover:border-[var(--gw-green)] hover:bg-[var(--gw-sand)] hover:text-[var(--gw-green)] focus-visible:ring-[var(--gw-blue)]",
+    "border border-[var(--color-border)] bg-white !text-[var(--gw-green)] hover:border-[var(--gw-green)] hover:bg-[var(--gw-sand)] hover:!text-[var(--gw-blue)] focus-visible:ring-[var(--gw-blue)]",
   solid:
     "border border-[var(--gw-green)] bg-[var(--gw-green)] text-white shadow-[0_14px_30px_rgba(34,181,115,0.22)] hover:border-[var(--gw-blue)] hover:bg-[var(--gw-blue)] focus-visible:ring-[var(--gw-green)]",
 };
