@@ -1,22 +1,13 @@
 import createMiddleware from "next-intl/middleware";
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
-import { seoLandingPages } from "./config/seoLandings";
+import {
+  getLocalizedMaterialPath,
+  localizedMaterialSlugs,
+} from "./config/localizedMaterialSlugs";
 import { routing } from "./i18n/routing";
-import { materialRoutes } from "./lib/seo";
 
 const intlMiddleware = createMiddleware(routing);
-
-const localizedMaterialRoutes = [
-  ...materialRoutes.map((route) => ({
-    enSlug: route.enSlug,
-    esSlug: route.esSlug,
-  })),
-  ...seoLandingPages.map((route) => ({
-    enSlug: route.enSlug,
-    esSlug: route.esSlug,
-  })),
-];
 
 function getLocalizedMaterialRedirect(pathname: string) {
   const segments = pathname.split("/").filter(Boolean);
@@ -31,7 +22,7 @@ function getLocalizedMaterialRedirect(pathname: string) {
     return undefined;
   }
 
-  const route = localizedMaterialRoutes.find(
+  const route = localizedMaterialSlugs.find(
     (item) => item.enSlug === slug || item.esSlug === slug,
   );
 
@@ -40,11 +31,11 @@ function getLocalizedMaterialRedirect(pathname: string) {
   }
 
   if (locale === "en" && slug === route.esSlug) {
-    return `/en/${route.enSlug}`;
+    return `/en${getLocalizedMaterialPath(pathname, "en")}`;
   }
 
   if (locale === "es" && slug === route.enSlug) {
-    return `/${route.esSlug}`;
+    return getLocalizedMaterialPath(pathname, "es");
   }
 
   return undefined;
