@@ -47,12 +47,7 @@ export function BrandLottie({ className, name }: BrandLottieProps) {
   useEffect(() => {
     const target = rootRef.current;
     let isCancelled = false;
-    const desktopQuery = window.matchMedia("(min-width: 1024px)");
     const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-
-    if (!desktopQuery.matches) {
-      return;
-    }
 
     async function loadAnimation() {
       const [{ default: LottieModule }, { default: data }] = await Promise.all([

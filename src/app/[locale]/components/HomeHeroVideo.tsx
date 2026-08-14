@@ -15,14 +15,15 @@ export function HomeHeroVideo({ videos }: HomeHeroVideoProps) {
     const desktopQuery = window.matchMedia("(min-width: 1024px)");
     const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-    if (!desktopQuery.matches || motionQuery.matches) {
+    if (motionQuery.matches) {
       return;
     }
 
     let timeout: number | undefined;
+    const loadDelay = desktopQuery.matches ? 1800 : 3200;
 
     function loadAfterInitialPaint() {
-      timeout = window.setTimeout(() => setCanLoadVideo(true), 1800);
+      timeout = window.setTimeout(() => setCanLoadVideo(true), loadDelay);
     }
 
     if (document.readyState === "complete") {
