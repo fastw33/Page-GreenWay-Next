@@ -12,15 +12,32 @@ export function HomeHeroVideo({ videos }: HomeHeroVideoProps) {
   const activeVideo = videos[0];
 
   useEffect(() => {
+    const desktopQuery = window.matchMedia("(min-width: 1024px)");
     const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-    if (motionQuery.matches) {
+    if (!desktopQuery.matches || motionQuery.matches) {
       return;
     }
 
-    const timeout = window.setTimeout(() => setCanLoadVideo(true), 350);
+    let timeout: number | undefined;
 
-    return () => window.clearTimeout(timeout);
+    function loadAfterInitialPaint() {
+      timeout = window.setTimeout(() => setCanLoadVideo(true), 1800);
+    }
+
+    if (document.readyState === "complete") {
+      loadAfterInitialPaint();
+    } else {
+      window.addEventListener("load", loadAfterInitialPaint, { once: true });
+    }
+
+    return () => {
+      window.removeEventListener("load", loadAfterInitialPaint);
+
+      if (timeout) {
+        window.clearTimeout(timeout);
+      }
+    };
   }, []);
 
   if (!activeVideo || !canLoadVideo) {
@@ -37,8 +54,7 @@ export function HomeHeroVideo({ videos }: HomeHeroVideoProps) {
       loop
       muted
       playsInline
-      poster={activeVideo.poster}
-      preload="metadata"
+      preload="none"
     >
       <source src={activeVideo.src} type="video/mp4" />
     </video>

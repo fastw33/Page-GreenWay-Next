@@ -47,6 +47,12 @@ export function BrandLottie({ className, name }: BrandLottieProps) {
   useEffect(() => {
     const target = rootRef.current;
     let isCancelled = false;
+    const desktopQuery = window.matchMedia("(min-width: 1024px)");
+    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    if (!desktopQuery.matches) {
+      return;
+    }
 
     async function loadAnimation() {
       const [{ default: LottieModule }, { default: data }] = await Promise.all([
@@ -62,7 +68,6 @@ export function BrandLottie({ className, name }: BrandLottieProps) {
       setAnimationData(data);
     }
 
-    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     const updateMotion = () => setShouldAnimate(!motionQuery.matches);
 
     updateMotion();
@@ -86,8 +91,8 @@ export function BrandLottie({ className, name }: BrandLottieProps) {
         void loadAnimation();
       },
       {
-        rootMargin: "260px",
-        threshold: 0.01,
+        rootMargin: "80px",
+        threshold: 0.12,
       },
     );
 

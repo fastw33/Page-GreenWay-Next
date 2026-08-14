@@ -38,7 +38,7 @@ export function HomeVideoStage({ copy, videos }: HomeVideoStageProps) {
             className="object-cover"
             fill
             preload
-            quality={72}
+            quality={58}
             sizes="100vw"
             src={poster}
           />
