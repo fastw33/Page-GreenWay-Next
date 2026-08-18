@@ -97,7 +97,6 @@ export function FloatingWhatsApp({ locale }: FloatingWhatsAppProps) {
       {isOpen ? (
         <div
           className="mb-3 w-[min(360px,calc(100vw-2rem))] overflow-hidden border border-[#d7dde3] bg-white shadow-[0_24px_60px_rgba(15,23,42,0.18)]"
-          data-aos="fade-up"
         >
           <div className="flex items-start justify-between gap-5 bg-[var(--gw-ink)] p-5 text-white">
             <div>
