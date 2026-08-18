@@ -140,12 +140,6 @@ export const localizedMaterialSlugs = [
   },
 ];
 
-export const localizedCountrySlugs = [
-  { enSlug: "united-states", esSlug: "estados-unidos" },
-  { enSlug: "spain", esSlug: "espana" },
-  { enSlug: "italy", esSlug: "italia" },
-];
-
 export function getLocalizedMaterialPath(
   pathname: string,
   targetLocale: "es" | "en",
@@ -170,46 +164,4 @@ export function getLocalizedMaterialPath(
   }
 
   return targetLocale === "en" ? `/${route.enSlug}` : `/${route.esSlug}`;
-}
-
-export function getLocalizedCountryPath(
-  pathname: string,
-  targetLocale: "es" | "en",
-) {
-  const segments = pathname.split("/").filter(Boolean);
-  const explicitLocale = segments[0] === "en" || segments[0] === "es"
-    ? segments[0]
-    : undefined;
-  const baseIndex = explicitLocale ? 1 : 0;
-  const basePath = segments[baseIndex];
-  const slug = segments[baseIndex + 1];
-
-  if (basePath !== "about" || !slug || segments.length !== baseIndex + 2) {
-    return pathname || "/";
-  }
-
-  const route = localizedCountrySlugs.find(
-    (item) => item.enSlug === slug || item.esSlug === slug,
-  );
-
-  if (!route) {
-    return pathname || "/";
-  }
-
-  return targetLocale === "en"
-    ? `/about/${route.enSlug}`
-    : `/about/${route.esSlug}`;
-}
-
-export function getLocalizedRoutePath(
-  pathname: string,
-  targetLocale: "es" | "en",
-) {
-  const countryPath = getLocalizedCountryPath(pathname, targetLocale);
-
-  if (countryPath !== (pathname || "/")) {
-    return countryPath;
-  }
-
-  return getLocalizedMaterialPath(pathname, targetLocale);
 }

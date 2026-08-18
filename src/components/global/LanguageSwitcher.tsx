@@ -1,8 +1,8 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
-import { getLocalizedRoutePath } from "@/config/localizedMaterialSlugs";
-import { usePathname } from "@/i18n/navigation";
+import { getLocalizedMaterialPath } from "@/config/localizedMaterialSlugs";
+import { Link, usePathname } from "@/i18n/navigation";
 import type { AppLocale } from "@/i18n/routing";
 
 const languages: Array<{
@@ -87,16 +87,10 @@ export function LanguageSwitcher() {
     <div aria-label={t("label")} className="flex items-center gap-2">
       {languages.map((language) => {
         const isActive = activeLocale === language.locale;
-        const localizedPath = getLocalizedRoutePath(pathname, language.locale);
-        const href =
-          language.locale === "en"
-            ? localizedPath === "/"
-              ? "/en"
-              : `/en${localizedPath}`
-            : localizedPath;
+        const href = getLocalizedMaterialPath(pathname, language.locale);
 
         return (
-          <a
+          <Link
             aria-current={isActive ? "true" : undefined}
             className={`inline-flex items-center gap-1.5 rounded-[4px] border px-2 py-2 text-[11px] font-semibold transition-colors sm:gap-2 sm:px-3 sm:text-xs ${
               isActive
@@ -105,11 +99,12 @@ export function LanguageSwitcher() {
             }`}
             href={href}
             key={language.locale}
+            locale={language.locale}
             title={t(language.nameKey)}
           >
             <LocaleMark mark={language.mark} />
             {language.code}
-          </a>
+          </Link>
         );
       })}
     </div>
