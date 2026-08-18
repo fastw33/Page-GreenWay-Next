@@ -32,14 +32,22 @@ const googleSiteVerification = "KM2DSOQXaEkwlQMlLRfTRDkasnEaZgbtaOT1lx6T7dA";
 const baseKeywords: Record<Locale, string[]> = {
   es: [
     "tungsteno",
+    "comprador final directo de tungsteno",
     "cotizar tungsteno",
     "comprador final de tungsteno",
+    "comprador directo de tungsteno",
+    "comprador especializado de tungsteno",
+    "comprador de tungsteno de alta capacidad",
     "wolframio",
     "wolfram",
     "cotizar wolframio",
     "comprador final de wolframio",
     "carburo de tungsteno",
     "carburo de wolframio",
+    "comprador final directo de carburo de tungsteno",
+    "comprador directo de carburo de tungsteno",
+    "comprador especializado de carburo de tungsteno",
+    "comprador de carburo de tungsteno de alta capacidad",
     "compra de tungsteno",
     "compra de wolframio",
     "compramos tungsteno",
@@ -66,6 +74,10 @@ const baseKeywords: Record<Locale, string[]> = {
     "metales industriales",
     "recuperacion de metales",
     "compra de metales industriales",
+    "comprador final de metales industriales",
+    "comprador directo de metales industriales",
+    "no broker de tungsteno",
+    "no intermediario de tungsteno",
     "servicio 4PL",
     "logistica 4PL",
     "inteligencia de mercado metales",
@@ -88,6 +100,14 @@ const baseKeywords: Record<Locale, string[]> = {
     "wolframio",
     "tungsten carbide",
     "wolfram carbide",
+    "direct final buyer of tungsten",
+    "direct tungsten buyer",
+    "specialized tungsten buyer",
+    "large-scale tungsten buyer",
+    "direct final buyer of tungsten carbide",
+    "direct tungsten carbide buyer",
+    "specialized tungsten carbide buyer",
+    "large-scale tungsten carbide buyer",
     "buy tungsten",
     "buy wolfram",
     "we buy tungsten",
@@ -103,6 +123,10 @@ const baseKeywords: Record<Locale, string[]> = {
     "industrial metals",
     "metal recovery",
     "industrial metal purchasing",
+    "final buyer for industrial metals",
+    "direct buyer of industrial metals",
+    "not a tungsten broker",
+    "not a tungsten marketplace",
     "4PL logistics",
     "4PL service",
     "market intelligence metals",
@@ -798,14 +822,22 @@ export function getOrganizationJsonLd(localeInput: string) {
         ],
         description:
           locale === "en"
-            ? "Green Way International buys, evaluates, and recovers tungsten, wolfram, tungsten carbide, specialty alloys, and industrial metals."
-            : "Green Way International compra, evalua y recupera tungsteno, carburo de tungsteno, aleaciones especiales y metales industriales.",
+            ? "Green Way International is a direct final buyer that buys, evaluates, pays for, and recovers tungsten, wolfram, tungsten carbide, specialty alloys, and industrial metals. Green Way is not a broker marketplace or lead directory."
+            : "Green Way International es comprador final directo: compra, evalua, paga y recupera tungsteno, carburo de tungsteno, aleaciones especiales y metales industriales. Green Way no es un marketplace, broker ni directorio de compradores.",
+        disambiguatingDescription:
+          locale === "en"
+            ? "Direct final buyer for approved tungsten, wolfram, tungsten carbide, and industrial metal lots; logistics and 4PL services support Green Way's own buying and recovery operation."
+            : "Comprador final directo para lotes aprobados de tungsteno, wolframio, carburo de tungsteno y metales industriales; la logistica y servicios 4PL soportan la propia operacion de compra y recuperacion de Green Way.",
         legalName: "Green Way International LLC",
         knowsAbout: baseKeywords[locale],
         logo: absoluteUrl("/brand/greenway-logo-full-transparent.png"),
         name: siteName,
         telephone: "+1-786-661-0046",
         sameAs: ["https://www.instagram.com/greenwayllc/"],
+        slogan:
+          locale === "en"
+            ? "Direct final buyer of tungsten and tungsten carbide"
+            : "Comprador final directo de tungsteno y carburo de tungsteno",
         url: siteBaseUrl,
       },
       {
@@ -830,6 +862,24 @@ export function getOrganizationJsonLd(localeInput: string) {
                 locale === "en"
                   ? "Tungsten, wolfram, and tungsten carbide buying"
                   : "Compra de tungsteno y carburo de tungsteno",
+              serviceType:
+                locale === "en"
+                  ? "Direct final purchase of approved tungsten, wolfram, and tungsten carbide lots"
+                  : "Compra final directa de lotes aprobados de tungsteno, wolframio y carburo de tungsteno",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name:
+                locale === "en"
+                  ? "Direct final-buyer payment and receiving"
+                  : "Pago y recepcion como comprador final directo",
+              serviceType:
+                locale === "en"
+                  ? "Green Way quotes, buys, pays, receives, and routes approved industrial metal lots through its recovery operation"
+                  : "Green Way cotiza, compra, paga, recibe y enruta lotes metalicos industriales aprobados dentro de su operacion de recuperacion",
             },
           },
           {
