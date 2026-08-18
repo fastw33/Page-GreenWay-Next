@@ -860,15 +860,15 @@
     "legalLinks": [
       {
         "label": "Privacy Policy",
-        "href": "#"
+        "href": "/privacy-policy"
       },
       {
         "label": "Terms and Conditions",
-        "href": "#"
+        "href": "/terms-and-conditions"
       },
       {
         "label": "PQRS",
-        "href": "#"
+        "href": "/pqrs"
       }
     ],
     "socialLinks": [

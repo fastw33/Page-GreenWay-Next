@@ -11,7 +11,10 @@ export type SeoPage =
   | "about"
   | "work"
   | "products"
-  | "contact";
+  | "contact"
+  | "privacy"
+  | "terms"
+  | "pqrs";
 export type MaterialPageKey = "tungsten" | "tungsten-carbide";
 
 const fallbackSiteUrl = "https://www.greenwayinter.com";
@@ -190,6 +193,48 @@ const pageSeo: Record<
         "Contact Green Way to quote, buy, and coordinate recovery for tungsten, wolfram, tungsten carbide, industrial scrap, sludge, inserts, and specialty alloys.",
       path: "/contacto",
       title: "Quote Tungsten and Industrial Metals",
+    },
+  },
+  privacy: {
+    es: {
+      description:
+        "Politica de privacidad de Green Way International para el manejo de datos recibidos desde el sitio web, formularios y canales comerciales.",
+      path: "/politica-de-privacidad",
+      title: "Politica De Privacidad",
+    },
+    en: {
+      description:
+        "Green Way International privacy policy for information received through the website, forms, and business contact channels.",
+      path: "/privacy-policy",
+      title: "Privacy Policy",
+    },
+  },
+  terms: {
+    es: {
+      description:
+        "Terminos y condiciones generales de uso del sitio web y comunicaciones comerciales de Green Way International.",
+      path: "/terminos-y-condiciones",
+      title: "Terminos Y Condiciones",
+    },
+    en: {
+      description:
+        "General terms and conditions for Green Way International website use and business communications.",
+      path: "/terms-and-conditions",
+      title: "Terms And Conditions",
+    },
+  },
+  pqrs: {
+    es: {
+      description:
+        "Canal PQRS de Green Way International para peticiones, quejas, reclamos y sugerencias relacionadas con la atencion comercial.",
+      path: "/pqrs",
+      title: "PQRS",
+    },
+    en: {
+      description:
+        "Green Way International PQRS channel for petitions, complaints, claims, and suggestions related to business attention.",
+      path: "/pqrs",
+      title: "PQRS",
     },
   },
 };
@@ -391,6 +436,17 @@ function getLanguageAlternates(path: string) {
   };
 }
 
+function getPageAlternates(page: SeoPage) {
+  const esPath = pageSeo[page].es.path;
+  const enPath = pageSeo[page].en.path;
+
+  return {
+    en: absoluteUrl(localizedPath("en", enPath)),
+    es: absoluteUrl(localizedPath("es", esPath)),
+    "x-default": absoluteUrl(localizedPath("es", esPath)),
+  };
+}
+
 function buildMetadata({
   description,
   locale,
@@ -491,22 +547,28 @@ export function getPageMetadata(
   const locale = normalizeLocale(localeInput);
   const seo = pageSeo[page][locale];
 
-  return buildMetadata({
-    description: seo.description,
-    keywords:
-      page === "products"
-        ? locale === "en"
-          ? ["tungsten carbide scrap", "carbide recycling", "buy carbide"]
-          : [
-              "chatarra de carburo de tungsteno",
-              "reciclaje de carburo",
-              "comprar carburo",
-            ]
-        : undefined,
-    locale,
-    path: seo.path,
-    title: seo.title,
-  });
+  return {
+    ...buildMetadata({
+      description: seo.description,
+      keywords:
+        page === "products"
+          ? locale === "en"
+            ? ["tungsten carbide scrap", "carbide recycling", "buy carbide"]
+            : [
+                "chatarra de carburo de tungsteno",
+                "reciclaje de carburo",
+                "comprar carburo",
+              ]
+          : undefined,
+      locale,
+      path: seo.path,
+      title: seo.title,
+    }),
+    alternates: {
+      canonical: localizedPath(locale, seo.path),
+      languages: getPageAlternates(page),
+    },
+  };
 }
 
 function findCountryRoute(slug: string) {
@@ -802,19 +864,33 @@ export function getOrganizationJsonLd(localeInput: string) {
 
 export function getSitemapEntries(): MetadataRoute.Sitemap {
   const lastModified = new Date("2026-08-10T00:00:00.000Z");
-  const basePages: SeoPage[] = ["home", "about", "work", "products", "contact"];
+  const basePages: SeoPage[] = [
+    "home",
+    "about",
+    "work",
+    "products",
+    "contact",
+    "privacy",
+    "terms",
+    "pqrs",
+  ];
 
   const pageEntries = basePages.flatMap((page) => {
-    const path = pageSeo[page].es.path;
-
     return (["es", "en"] as const).map((locale) => ({
       alternates: {
-        languages: getLanguageAlternates(path),
+        languages: getPageAlternates(page),
       },
       changeFrequency: "weekly" as const,
       lastModified,
-      priority: page === "home" ? 1 : page === "products" ? 0.94 : 0.86,
-      url: absoluteUrl(localizedPath(locale, path)),
+      priority:
+        page === "home"
+          ? 1
+          : page === "products"
+            ? 0.94
+            : page === "privacy" || page === "terms" || page === "pqrs"
+              ? 0.42
+              : 0.86,
+      url: absoluteUrl(localizedPath(locale, pageSeo[page][locale].path)),
     }));
   });
 

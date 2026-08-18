@@ -860,15 +860,15 @@
     "legalLinks": [
       {
         "label": "Política de privacidad",
-        "href": "#"
+        "href": "/politica-de-privacidad"
       },
       {
         "label": "Términos y condiciones",
-        "href": "#"
+        "href": "/terminos-y-condiciones"
       },
       {
         "label": "PQRS",
-        "href": "#"
+        "href": "/pqrs"
       }
     ],
     "socialLinks": [

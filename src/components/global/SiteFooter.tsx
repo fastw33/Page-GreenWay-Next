@@ -84,9 +84,9 @@ const fallbackCopy: Record<'en' | 'es', FooterCopy> = {
     designedBy: 'Designed by Fastwasas.',
     infoTitle: 'Information',
     legalLinks: [
-      { href: '#', label: 'Privacy Policy' },
-      { href: '#', label: 'Terms and Conditions' },
-      { href: '#', label: 'PQRS' },
+      { href: '/privacy-policy', label: 'Privacy Policy' },
+      { href: '/terms-and-conditions', label: 'Terms and Conditions' },
+      { href: '/pqrs', label: 'PQRS' },
     ],
     navLinks: [
       { href: '/', label: 'Home' },
@@ -113,9 +113,9 @@ const fallbackCopy: Record<'en' | 'es', FooterCopy> = {
     designedBy: 'Diseñado por Fastwasas.',
     infoTitle: 'Información',
     legalLinks: [
-      { href: '#', label: 'Política de privacidad' },
-      { href: '#', label: 'Términos y condiciones' },
-      { href: '#', label: 'PQRS' },
+      { href: '/politica-de-privacidad', label: 'Política de privacidad' },
+      { href: '/terminos-y-condiciones', label: 'Términos y condiciones' },
+      { href: '/pqrs', label: 'PQRS' },
     ],
     navLinks: [
       { href: '/', label: 'Inicio' },
