@@ -8,6 +8,7 @@ import { SiteHeader } from "@/components/global/SiteHeader";
 import { AosProvider } from "@/components/global/AosProvider";
 import { AssetProtection } from "@/components/global/AssetProtection";
 import { FloatingWhatsApp } from "@/components/global/FloatingWhatsApp";
+import { LeadExitTracker } from "@/components/global/LeadExitTracker";
 import { routing } from "@/i18n/routing";
 import { getOrganizationJsonLd, getRootMetadata } from "@/lib/seo";
 import "../globals.css";
@@ -70,6 +71,7 @@ export default async function LocaleLayout({
             <SiteHeader />
             {children}
             <SiteFooter />
+            <LeadExitTracker locale={locale} />
             <FloatingWhatsApp locale={locale} />
           </AosProvider>
         </NextIntlClientProvider>

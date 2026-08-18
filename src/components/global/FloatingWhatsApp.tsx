@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { BrandIcon } from "@/components/global/BrandIcons";
+import { trackLeadEvent } from "@/services/leadEvents.service";
 
 type FloatingWhatsAppProps = {
   locale: string;
@@ -13,6 +14,7 @@ type WhatsAppContact = {
   message: string;
   phone: string;
   title: string;
+  trackingTarget: string;
 };
 
 const contacts: Record<"en" | "es", WhatsAppContact[]> = {
@@ -24,6 +26,7 @@ const contacts: Record<"en" | "es", WhatsAppContact[]> = {
         "Hello Green Way, I want to quote an industrial metal lot. I have material, photos, and location details.",
       phone: "17866610046",
       title: "Miami / USA",
+      trackingTarget: "miami-usa",
     },
     {
       body: "Metal recovery and evaluation for Colombia and LATAM operations.",
@@ -32,6 +35,7 @@ const contacts: Record<"en" | "es", WhatsAppContact[]> = {
         "Hello Green Way, I want to quote tungsten, tungsten carbide, or another industrial metal lot.",
       phone: "573143002760",
       title: "Bogota / LATAM",
+      trackingTarget: "bogota-latam",
     },
   ],
   es: [
@@ -42,6 +46,7 @@ const contacts: Record<"en" | "es", WhatsAppContact[]> = {
         "Hola Green Way, quiero cotizar un lote de metal industrial. Tengo material, fotos y ubicación para revisar.",
       phone: "17866610046",
       title: "Miami / USA",
+      trackingTarget: "miami-usa",
     },
     {
       body: "Recuperación y evaluación de metales para Colombia y operaciones LATAM.",
@@ -50,6 +55,7 @@ const contacts: Record<"en" | "es", WhatsAppContact[]> = {
         "Hola Green Way, quiero cotizar tungsteno, carburo de tungsteno u otro lote de metal industrial.",
       phone: "573143002760",
       title: "Bogotá / LATAM",
+      trackingTarget: "bogota-latam",
     },
   ],
 };
@@ -92,6 +98,31 @@ export function FloatingWhatsApp({ locale }: FloatingWhatsAppProps) {
     [localeKey],
   );
 
+  function handleToggle() {
+    setIsOpen((value) => {
+      const nextValue = !value;
+
+      if (nextValue) {
+        void trackLeadEvent("whatsapp_modal_open", {
+          contactTarget: "floating-whatsapp",
+          locale: localeKey,
+        });
+      }
+
+      return nextValue;
+    });
+  }
+
+  function handleContactClick(contact: WhatsAppContact) {
+    void trackLeadEvent("whatsapp_contact_click", {
+      contactChannel: "whatsapp",
+      contactTarget: contact.trackingTarget,
+      locale: localeKey,
+      whatsappPhone: contact.phone,
+      whatsappUrl: getWhatsAppUrl(contact),
+    });
+  }
+
   return (
     <div className="fixed bottom-[calc(env(safe-area-inset-bottom,0px)+1rem)] right-4 z-[80] sm:bottom-6 sm:right-6">
       {isOpen ? (
@@ -126,6 +157,7 @@ export function FloatingWhatsApp({ locale }: FloatingWhatsAppProps) {
                 className="group block bg-white p-5 outline-none transition-colors duration-200 hover:bg-[#f8fafc] focus-visible:ring-2 focus-visible:ring-[var(--gw-blue)] focus-visible:ring-inset"
                 href={getWhatsAppUrl(contact)}
                 key={contact.phone}
+                onClick={() => handleContactClick(contact)}
                 rel="noreferrer"
                 target="_blank"
               >
@@ -156,7 +188,7 @@ export function FloatingWhatsApp({ locale }: FloatingWhatsAppProps) {
         aria-expanded={isOpen}
         aria-label={copy.aria}
         className="ml-auto flex h-14 min-w-14 items-center justify-center gap-3 rounded-full border border-[var(--gw-green)] bg-[var(--gw-green)] px-4 font-bold text-white shadow-[0_18px_36px_rgba(34,181,115,0.28)] outline-none transition-colors duration-200 hover:border-[var(--gw-blue)] hover:bg-[var(--gw-blue)] focus-visible:ring-2 focus-visible:ring-[var(--gw-green)] focus-visible:ring-offset-4"
-        onClick={() => setIsOpen((value) => !value)}
+        onClick={handleToggle}
         type="button"
       >
         <WhatsAppIcon className="h-6 w-6" />
