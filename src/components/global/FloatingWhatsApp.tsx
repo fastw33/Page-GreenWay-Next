@@ -98,21 +98,6 @@ export function FloatingWhatsApp({ locale }: FloatingWhatsAppProps) {
     [localeKey],
   );
 
-  function handleToggle() {
-    setIsOpen((value) => {
-      const nextValue = !value;
-
-      if (nextValue) {
-        void trackLeadEvent("whatsapp_modal_open", {
-          contactTarget: "floating-whatsapp",
-          locale: localeKey,
-        });
-      }
-
-      return nextValue;
-    });
-  }
-
   function handleContactClick(contact: WhatsAppContact) {
     void trackLeadEvent("whatsapp_contact_click", {
       contactChannel: "whatsapp",
@@ -188,7 +173,7 @@ export function FloatingWhatsApp({ locale }: FloatingWhatsAppProps) {
         aria-expanded={isOpen}
         aria-label={copy.aria}
         className="ml-auto flex h-14 min-w-14 items-center justify-center gap-3 rounded-full border border-[var(--gw-green)] bg-[var(--gw-green)] px-4 font-bold text-white shadow-[0_18px_36px_rgba(34,181,115,0.28)] outline-none transition-colors duration-200 hover:border-[var(--gw-blue)] hover:bg-[var(--gw-blue)] focus-visible:ring-2 focus-visible:ring-[var(--gw-green)] focus-visible:ring-offset-4"
-        onClick={handleToggle}
+        onClick={() => setIsOpen((value) => !value)}
         type="button"
       >
         <WhatsAppIcon className="h-6 w-6" />

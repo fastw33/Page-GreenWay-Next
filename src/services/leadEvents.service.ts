@@ -5,22 +5,14 @@ const EVENTS_ENDPOINT =
   process.env.NEXT_PUBLIC_LEAD_EVENTS_ENDPOINT ||
   "https://leads.appfastway.com/Leads/public/events/track";
 
-type LeadEventType =
-  | "whatsapp_modal_open"
-  | "whatsapp_contact_click"
-  | "page_exit";
+type LeadEventType = "whatsapp_contact_click";
 
 type LeadEventPayload = {
   contactChannel?: string;
   contactTarget?: string;
   locale?: string;
-  metadata?: Record<string, unknown>;
   whatsappPhone?: string;
   whatsappUrl?: string;
-};
-
-type TrackOptions = {
-  keepalive?: boolean;
 };
 
 function randomId() {
@@ -39,7 +31,11 @@ function readStorageValue(storage: Storage | undefined, key: string) {
   }
 }
 
-function writeStorageValue(storage: Storage | undefined, key: string, value: string) {
+function writeStorageValue(
+  storage: Storage | undefined,
+  key: string,
+  value: string,
+) {
   try {
     storage?.setItem(key, value);
   } catch {
@@ -80,12 +76,10 @@ function eventDedupeKey(eventType: LeadEventType, payload: LeadEventPayload) {
 export async function trackLeadEvent(
   eventType: LeadEventType,
   payload: LeadEventPayload = {},
-  options: TrackOptions = {},
 ) {
   if (typeof window === "undefined") return;
 
   const sessionId = getStableId(window.sessionStorage, "greenway_session_id");
-  const visitorId = getStableId(window.localStorage, "greenway_visitor_id");
   const body = {
     attribution: readAttribution(),
     contactChannel: payload.contactChannel,
@@ -93,11 +87,9 @@ export async function trackLeadEvent(
     eventId: eventDedupeKey(eventType, payload),
     eventType,
     locale: payload.locale || document.documentElement.lang || "",
-    metadata: payload.metadata || {},
     pageUrl: window.location.href,
     referrer: document.referrer || "",
     sessionId,
-    visitorId,
     whatsappPhone: payload.whatsappPhone,
     whatsappUrl: payload.whatsappUrl,
   };
@@ -109,7 +101,7 @@ export async function trackLeadEvent(
         "Content-Type": "application/json",
         "x-api-key": PUBLIC_KEY,
       },
-      keepalive: Boolean(options.keepalive),
+      keepalive: true,
       method: "POST",
     });
   } catch {
