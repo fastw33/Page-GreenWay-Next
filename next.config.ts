@@ -17,11 +17,6 @@ const nextConfig: NextConfig = {
         source:
           "/countries/estados-unidos/silicon-valley/silicon-valley-microsoft-portrait-04.webp-3",
       },
-      {
-        destination: "/about",
-        permanent: true,
-        source: "/About",
-      },
     ];
   },
   async headers() {
