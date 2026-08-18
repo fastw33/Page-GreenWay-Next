@@ -8,6 +8,22 @@ const nextConfig: NextConfig = {
   images: {
     qualities: [45, 55, 60, 65, 75],
   },
+  async redirects() {
+    return [
+      {
+        destination:
+          "/countries/estados-unidos/silicon-valley/silicon-valley-microsoft-portrait-04.webp",
+        permanent: true,
+        source:
+          "/countries/estados-unidos/silicon-valley/silicon-valley-microsoft-portrait-04.webp-3",
+      },
+      {
+        destination: "/about",
+        permanent: true,
+        source: "/About",
+      },
+    ];
+  },
   async headers() {
     return [
       {

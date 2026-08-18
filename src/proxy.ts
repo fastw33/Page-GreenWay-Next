@@ -1,48 +1,36 @@
 import createMiddleware from "next-intl/middleware";
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
-import {
-  getLocalizedMaterialPath,
-  localizedMaterialSlugs,
-} from "./config/localizedMaterialSlugs";
+import { getLocalizedRoutePath } from "./config/localizedMaterialSlugs";
 import { routing } from "./i18n/routing";
 
 const intlMiddleware = createMiddleware(routing);
 
-function getLocalizedMaterialRedirect(pathname: string) {
-  const segments = pathname.split("/").filter(Boolean);
-  const explicitLocale = segments[0] === "en" || segments[0] === "es"
+function getCanonicalPathname(pathname: string) {
+  const lowerPathname = pathname.toLowerCase();
+  const segments = lowerPathname.split("/").filter(Boolean);
+  const explicitLocale =
+    segments[0] === "en" || segments[0] === "es"
     ? segments[0]
     : undefined;
   const locale = explicitLocale === "en" ? "en" : "es";
-  const slugIndex = explicitLocale ? 1 : 0;
-  const slug = segments[slugIndex];
+  const pathSegments = explicitLocale ? segments.slice(1) : segments;
+  const pathWithoutLocale = pathSegments.length
+    ? `/${pathSegments.join("/")}`
+    : "/";
+  const localizedPath = getLocalizedRoutePath(pathWithoutLocale, locale);
+  const canonicalPath =
+    locale === "en"
+      ? localizedPath === "/"
+        ? "/en"
+        : `/en${localizedPath}`
+      : localizedPath;
 
-  if (!slug || segments.length !== slugIndex + 1) {
-    return undefined;
-  }
-
-  const route = localizedMaterialSlugs.find(
-    (item) => item.enSlug === slug || item.esSlug === slug,
-  );
-
-  if (!route) {
-    return undefined;
-  }
-
-  if (locale === "en" && slug === route.esSlug) {
-    return `/en${getLocalizedMaterialPath(pathname, "en")}`;
-  }
-
-  if (locale === "es" && slug === route.enSlug) {
-    return getLocalizedMaterialPath(pathname, "es");
-  }
-
-  return undefined;
+  return canonicalPath === pathname ? undefined : canonicalPath;
 }
 
 export default function proxy(request: NextRequest) {
-  const redirectPath = getLocalizedMaterialRedirect(request.nextUrl.pathname);
+  const redirectPath = getCanonicalPathname(request.nextUrl.pathname);
 
   if (redirectPath) {
     const redirectUrl = request.nextUrl.clone();
