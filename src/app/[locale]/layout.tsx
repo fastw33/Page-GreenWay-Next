@@ -8,6 +8,7 @@ import { SiteHeader } from "@/components/global/SiteHeader";
 import { AosProvider } from "@/components/global/AosProvider";
 import { AssetProtection } from "@/components/global/AssetProtection";
 import { FloatingWhatsApp } from "@/components/global/FloatingWhatsApp";
+import { GoogleAdsTag } from "@/components/global/GoogleAdsTag";
 import { routing } from "@/i18n/routing";
 import { getOrganizationJsonLd, getRootMetadata } from "@/lib/seo";
 import "../globals.css";
@@ -58,6 +59,7 @@ export default async function LocaleLayout({
     <html className={montserrat.variable} lang={locale}>
       <head>
         <link href="/llms.txt" rel="describedby" type="text/plain" />
+        <GoogleAdsTag />
       </head>
       <body>
         <script

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import { GoogleAdsTag } from "@/components/global/GoogleAdsTag";
 import { NotFoundExperience } from "@/components/global/NotFoundExperience";
 import "./globals.css";
 
@@ -22,6 +23,9 @@ export const metadata: Metadata = {
 export default function GlobalNotFound() {
   return (
     <html className={montserrat.variable} lang="es">
+      <head>
+        <GoogleAdsTag />
+      </head>
       <body>
         <NotFoundExperience locale="es" />
       </body>
