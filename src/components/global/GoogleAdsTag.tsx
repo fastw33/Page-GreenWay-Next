@@ -1,13 +1,17 @@
-const googleAdsId = "AW-18389831110";
+import Script from "next/script";
+import { googleAdsId } from "@/config/googleAds";
 
 export function GoogleAdsTag() {
   return (
     <>
-      <script
-        async
+      <Script
+        id="google-ads-tag"
         src={`https://www.googletagmanager.com/gtag/js?id=${googleAdsId}`}
+        strategy="afterInteractive"
       />
-      <script
+      <Script
+        id="google-ads-init"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
 window.dataLayer = window.dataLayer || [];

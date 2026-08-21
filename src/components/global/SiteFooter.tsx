@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { getLocale, getMessages } from 'next-intl/server'
+import { PhoneConversionLink } from '@/components/global/PhoneConversionLink'
 import { Link } from '@/i18n/navigation'
 
 type FooterLink = {
@@ -260,12 +261,12 @@ export async function SiteFooter() {
                       </span>
                     ))}
                   </address>
-                  <a
+                  <PhoneConversionLink
                     className='mt-2 inline-flex text-base font-semibold text-[var(--gw-ink)] transition-colors duration-200 hover:text-[var(--gw-green)]'
                     href={warehouse.phoneHref}
                   >
                     {warehouse.phone}
-                  </a>
+                  </PhoneConversionLink>
                 </section>
               ))}
             </div>
