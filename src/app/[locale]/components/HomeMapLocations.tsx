@@ -1,4 +1,5 @@
 import { getLocale, getMessages } from "next-intl/server";
+import { PhoneConversionLink } from "@/components/global/PhoneConversionLink";
 import { DeferredMapFrame } from "./DeferredMapFrame";
 
 type MapLocation = {
@@ -152,12 +153,12 @@ export async function HomeMapLocations() {
                       </span>
                     ))}
                   </address>
-                  <a
+                  <PhoneConversionLink
                     className="mt-5 inline-flex font-bold text-[var(--gw-ink)] transition-colors duration-200 hover:text-[var(--gw-green)]"
                     href={location.phoneHref}
                   >
                     Tel: {location.phone}
-                  </a>
+                  </PhoneConversionLink>
                 </div>
 
                 <div className="relative min-h-[260px] border-t border-[#d7dde3] bg-[#eef4f1]">

@@ -1,6 +1,7 @@
 import { getLocale, getMessages } from "next-intl/server";
 import { actionLinkClassName } from "@/components/global/ActionLink";
 import { BrandIcon } from "@/components/global/BrandIcons";
+import { PhoneConversionLink } from "@/components/global/PhoneConversionLink";
 import { ContactLotForm } from "./ContactLotForm";
 
 type ContactChannel = {
@@ -280,7 +281,7 @@ export async function ContactShowcase() {
             </p>
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
               {copy.channels.map((channel, index) => (
-                <a
+                <PhoneConversionLink
                   className="group border border-[#d7dde3] bg-[#f8fafc] p-5 outline-none transition-colors duration-200 hover:border-[var(--gw-green)] hover:bg-white focus-visible:ring-2 focus-visible:ring-[var(--gw-blue)] focus-visible:ring-offset-4"
                   data-aos="fade-up"
                   data-aos-delay={String(150 + index * 70)}
@@ -306,7 +307,7 @@ export async function ContactShowcase() {
                   <span className="mt-4 block text-base font-bold text-[var(--gw-blue)]">
                     {channel.label}
                   </span>
-                </a>
+                </PhoneConversionLink>
               ))}
             </div>
           </div>
@@ -362,13 +363,13 @@ export async function ContactShowcase() {
                     </address>
                   </div>
                   <div className="mt-6 flex flex-wrap gap-3">
-                    <a
+                    <PhoneConversionLink
                       className={actionLinkClassName("secondary")}
                       href={location.phoneHref}
                     >
                       <BrandIcon className="h-4 w-4" name="phone" />
                       {copy.phoneLabel} {location.phone}
-                    </a>
+                    </PhoneConversionLink>
                     <a
                       className={actionLinkClassName("solid")}
                       href={location.directionsUrl}
