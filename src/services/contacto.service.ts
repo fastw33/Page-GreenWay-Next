@@ -1,4 +1,10 @@
-const PUBLIC_KEY = "key_landing_abc";
+const PUBLIC_KEY =
+  process.env.NEXT_PUBLIC_LEADS_PUBLIC_KEY ||
+  "16be09ec1acfb64691abe2668a7aa9afa28e00093bfc649cf79807b3209e29d1";
+
+const LEADS_ENDPOINT =
+  process.env.NEXT_PUBLIC_LEADS_ENDPOINT ||
+  "https://sisleads.appfastway.com/api/leads/public/ingest";
 
 type SendContactoOptions = {
   formId?: string;
@@ -18,7 +24,7 @@ type JsonParseResult =
   | { data: null; ok: false };
 
 function buildEndpointUrl() {
-  return "https://leads.appfastway.com/Leads/public/leads/ingest";
+  return LEADS_ENDPOINT;
 }
 
 function safeJsonParse(text: string): JsonParseResult {
@@ -42,7 +48,13 @@ export async function sendContacto(
 
   formData.append("pageUrl", window.location.href);
   formData.append("formId", opts.formId || "greenwayContactoMaterial");
-  formData.append("payload", JSON.stringify(payload || {}));
+  formData.append(
+    "payload",
+    JSON.stringify({
+      ...(payload || {}),
+      businessUnit: "Greenway",
+    }),
+  );
 
   files.forEach((file) => {
     if (file.size > 0) {
