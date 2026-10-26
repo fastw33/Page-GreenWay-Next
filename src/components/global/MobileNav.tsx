@@ -39,7 +39,7 @@ export function MobileNav() {
       </button>
 
       {isOpen ? (
-        <div className="absolute inset-x-0 top-full max-h-[calc(100svh-84px)] overflow-y-auto border-b border-[#d7dde3] bg-white px-5 py-4 shadow-[0_18px_40px_rgba(15,23,42,0.12)]">
+        <div className="absolute inset-x-0 top-full max-h-[calc(100svh-var(--gw-nav-h))] overflow-y-auto border-b border-[#d7dde3] bg-white px-5 py-4 shadow-[0_18px_40px_rgba(15,23,42,0.12)]">
           <nav aria-label={mobileLabel} className="grid gap-2">
             {navigationItems.map((item) => {
               const isActive = isActivePath(pathname, item.href);

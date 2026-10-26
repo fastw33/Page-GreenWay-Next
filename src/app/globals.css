@@ -22,7 +22,7 @@
   --gw-white: #ffffff;
   --gw-radius: 16px;
   --gw-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  --gw-nav-h: 118px;
+  --gw-nav-h: 79px;
 
   --gw-grad-brand-90: linear-gradient(90deg, var(--gw-green), var(--gw-blue));
   --gw-grad-brand-135: linear-gradient(135deg, var(--gw-green), var(--gw-blue));
@@ -69,6 +69,10 @@ body {
   overflow-x: clip;
 }
 
+main {
+  overflow-wrap: anywhere;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -100,28 +104,40 @@ canvas {
   will-change: transform;
 }
 
-body.aos-ready [data-aos] {
+[data-aos].aos-init {
   opacity: 0;
   transition-duration: 520ms;
   transition-property: opacity, transform;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-body.aos-ready [data-aos].aos-animate {
+[data-aos].aos-init.aos-animate {
   opacity: 1;
   transform: none;
 }
 
-body.aos-ready [data-aos="fade-up"] {
+[data-aos="fade-up"].aos-init {
   transform: translate3d(0, 32px, 0);
 }
 
-body.aos-ready [data-aos="fade-left"] {
+[data-aos="fade-left"].aos-init {
   transform: translate3d(32px, 0, 0);
 }
 
-body.aos-ready [data-aos="fade-right"] {
+[data-aos="fade-right"].aos-init {
   transform: translate3d(-32px, 0, 0);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --gw-nav-h: 97px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --gw-nav-h: 119px;
+  }
 }
 
 @keyframes gw-home-places-marquee {

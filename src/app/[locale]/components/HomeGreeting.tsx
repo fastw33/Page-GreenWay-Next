@@ -147,7 +147,7 @@ export async function HomeGreeting() {
                 />
                 <div>
                   <div className="relative border-b border-[#dbe3ea] bg-[#eef4f2] px-7 py-8">
-                    <div className="grid min-h-[150px] grid-cols-[132px_1fr] items-center gap-6">
+                    <div className="grid min-h-[150px] grid-cols-1 items-center gap-6 sm:grid-cols-[132px_minmax(0,1fr)]">
                       <div className="flex h-32 w-32 items-center justify-center overflow-visible">
                         <BrandLottie
                           className={`origin-center ${card.visualClassName}`}

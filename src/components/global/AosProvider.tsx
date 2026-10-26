@@ -12,26 +12,15 @@ export function AosProvider({ children }: AosProviderProps) {
 
   useEffect(() => {
     const elements = Array.from(
-      document.querySelectorAll<HTMLElement>("[data-aos]"),
+      document.querySelectorAll<HTMLElement>("[data-aos]:not(main)"),
     );
     const prefersReducedMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
     ).matches;
 
-    document.body.classList.add("aos-ready");
-
     if (prefersReducedMotion || !("IntersectionObserver" in window)) {
-      elements.forEach((element) => element.classList.add("aos-animate"));
       return;
     }
-
-    elements.forEach((element) => {
-      const delay = Number(element.dataset.aosDelay ?? 0);
-
-      if (Number.isFinite(delay) && delay > 0) {
-        element.style.transitionDelay = `${Math.min(delay, 240)}ms`;
-      }
-    });
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -45,14 +34,31 @@ export function AosProvider({ children }: AosProviderProps) {
         });
       },
       {
-        rootMargin: "0px 0px -8% 0px",
-        threshold: 0.08,
+        rootMargin: "0px 0px -32px 0px",
+        // Tall sections on mobile may never expose 8% of their total area.
+        threshold: 0,
       },
     );
 
-    elements.forEach((element) => observer.observe(element));
+    elements.forEach((element) => {
+      const delay = Number(element.dataset.aosDelay ?? 0);
 
-    return () => observer.disconnect();
+      if (Number.isFinite(delay) && delay > 0) {
+        element.style.transitionDelay = `${Math.min(delay, 240)}ms`;
+      }
+
+      observer.observe(element);
+      // Only hide registered elements; streamed content stays visible by default.
+      element.classList.add("aos-init");
+    });
+
+    return () => {
+      observer.disconnect();
+      elements.forEach((element) => {
+        element.classList.remove("aos-init", "aos-animate");
+        element.style.removeProperty("transition-delay");
+      });
+    };
   }, [pathname]);
 
   return children;

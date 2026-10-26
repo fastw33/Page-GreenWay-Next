@@ -273,7 +273,7 @@ export async function ContactShowcase() {
             <p className="mb-5 text-xs font-bold uppercase tracking-[0.24em] text-[var(--gw-blue)]">
               {copy.heroEyebrow}
             </p>
-            <h1 className="max-w-3xl text-5xl font-bold leading-[1.02] text-[var(--gw-ink)] sm:text-6xl lg:text-7xl">
+            <h1 className="max-w-3xl text-[clamp(2rem,8.5vw,3rem)] font-bold leading-[1.02] text-[var(--gw-ink)] sm:text-6xl lg:text-7xl">
               {copy.heroTitle}
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-[var(--color-muted)]">

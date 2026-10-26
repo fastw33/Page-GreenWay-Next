@@ -446,7 +446,7 @@ export async function AboutShowcase() {
             <p className="mb-5 text-xs font-bold uppercase tracking-[0.24em] text-[var(--gw-blue)]">
               {copy.eyebrow}
             </p>
-            <h1 className="text-5xl font-bold leading-[0.98] text-[var(--gw-ink)] sm:text-6xl lg:text-7xl">
+            <h1 className="text-[clamp(2rem,8.5vw,3rem)] font-bold leading-[0.98] text-[var(--gw-ink)] sm:text-6xl lg:text-7xl">
               {copy.title}
             </h1>
             <div className="mt-8 h-1 w-28 bg-[var(--gw-grad-brand-90)]" />

@@ -406,7 +406,7 @@ export async function ProductsShowcase() {
             <p className="mb-5 text-xs font-bold uppercase tracking-[0.24em] text-[var(--gw-blue)]">
               {copy.heroEyebrow}
             </p>
-            <h1 className="max-w-3xl text-5xl font-bold leading-[1.02] text-[var(--gw-ink)] sm:text-6xl lg:text-7xl">
+            <h1 className="max-w-3xl text-[clamp(2rem,8.5vw,3rem)] font-bold leading-[1.02] text-[var(--gw-ink)] sm:text-6xl lg:text-7xl">
               {copy.heroTitle}
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-[var(--color-muted)]">
@@ -469,10 +469,10 @@ export async function ProductsShowcase() {
                   ))}
                 </div>
               </div>
-              <div className="mt-12 grid grid-cols-3 border-t border-white/16 pt-7">
+              <div className="mt-12 grid gap-4 border-t border-white/16 pt-7 sm:grid-cols-3 sm:gap-0">
                 {copy.heroStats.map((stat, index) => (
                   <div
-                    className="border-r border-white/16 pr-4 last:border-r-0"
+                    className="border-b border-white/16 pb-4 last:border-b-0 sm:border-b-0 sm:border-r sm:pb-0 sm:pr-4 sm:last:border-r-0"
                     key={`material-stat-${stat.label}-${index}`}
                   >
                     <p className="text-3xl font-bold text-[var(--gw-green)]">

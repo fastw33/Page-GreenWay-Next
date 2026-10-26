@@ -100,7 +100,7 @@ export function ContactLotForm({ copy }: ContactLotFormProps) {
 
   return (
     <form
-      className="border border-[#d7dde3] bg-white p-6 shadow-[0_18px_44px_rgba(15,23,42,0.08)] sm:p-8"
+      className="min-w-0 border border-[#d7dde3] bg-white p-6 shadow-[0_18px_44px_rgba(15,23,42,0.08)] sm:p-8"
       data-aos="fade-left"
       data-aos-delay="140"
       onSubmit={handleSubmit}

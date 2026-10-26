@@ -12,20 +12,20 @@ export async function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-[var(--color-border)] bg-white/95 shadow-[0_8px_28px_rgba(15,23,42,0.06)] backdrop-blur-md">
       <nav
         aria-label="Navegacion principal"
-        className="relative mx-auto flex min-h-[78px] max-w-7xl items-center justify-between gap-2 px-3 sm:min-h-[96px] sm:gap-3 sm:px-6 lg:min-h-[var(--gw-nav-h)] lg:gap-8"
+        className="relative mx-auto flex min-h-[calc(var(--gw-nav-h)-1px)] max-w-7xl items-center justify-between gap-2 px-3 sm:gap-3 sm:px-6 lg:gap-8"
       >
         <Link
           aria-label={t("brand")}
-          className="flex shrink-0 items-center rounded-md outline-none focus-visible:ring-2 focus-visible:ring-[var(--gw-green)] focus-visible:ring-offset-4"
+          className="flex min-w-0 items-center rounded-md outline-none focus-visible:ring-2 focus-visible:ring-[var(--gw-green)] focus-visible:ring-offset-4"
           href="/"
         >
-          <span className="relative h-[58px] w-[176px] shrink-0 sm:h-[68px] sm:w-[214px] lg:h-[78px] lg:w-[246px]">
+          <span className="relative h-[58px] w-[176px] max-w-full sm:h-[68px] sm:w-[214px] lg:h-[78px] lg:w-[246px]">
             <Image
               alt={t("brand")}
               className="h-full w-full object-contain"
               height={1440}
               quality={55}
-              sizes="(max-width: 639px) 84px, (max-width: 1023px) 102px, 112px"
+              sizes="(max-width: 639px) 176px, (max-width: 1023px) 214px, 246px"
               src="/brand/greenway-logo-full-transparent.png"
               width={1600}
             />
@@ -35,7 +35,7 @@ export async function SiteHeader() {
           <NavLinks />
           <LanguageSwitcher />
         </div>
-        <div className="flex min-w-0 items-center justify-end gap-2 lg:hidden">
+        <div className="flex shrink-0 items-center justify-end gap-2 lg:hidden">
           <LanguageSwitcher />
           <MobileNav />
         </div>
