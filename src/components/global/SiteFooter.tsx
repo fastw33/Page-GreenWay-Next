@@ -48,8 +48,8 @@ const warehouses: Record<'en' | 'es', FooterWarehouse[]> = {
   en: [
     {
       address: ['10049 NW 89th Ave unit 4', 'Medley, FL 33178'],
-      phone: '+1 (786) 661-0046',
-      phoneHref: 'tel:+17866610046',
+      phone: '+573028583784',
+      phoneHref: 'tel:+573028583784',
       title: 'Miami - Warehouse',
     },
     {
@@ -62,8 +62,8 @@ const warehouses: Record<'en' | 'es', FooterWarehouse[]> = {
   es: [
     {
       address: ['10049 NW 89th Ave unit 4', 'Medley, FL 33178'],
-      phone: '+1 (786) 661-0046',
-      phoneHref: 'tel:+17866610046',
+      phone: '+573028583784',
+      phoneHref: 'tel:+573028583784',
       title: 'Miami - Warehouse',
     },
     {

@@ -21,10 +21,10 @@ const contacts: Record<"en" | "es", WhatsAppContact[]> = {
   en: [
     {
       body: "Industrial metal lots, tungsten, tungsten carbide, and international coordination.",
-      label: "+1 (786) 661-0046",
+      label: "+573028583784",
       message:
         "Hello Green Way, I want to quote an industrial metal lot. I have material, photos, and location details.",
-      phone: "17866610046",
+      phone: "573028583784",
       title: "Miami / USA",
       trackingTarget: "miami-usa",
     },
@@ -41,10 +41,10 @@ const contacts: Record<"en" | "es", WhatsAppContact[]> = {
   es: [
     {
       body: "Lotes metálicos industriales, tungsteno, carburo de tungsteno y coordinación internacional.",
-      label: "+1 (786) 661-0046",
+      label: "+573028583784",
       message:
         "Hola Green Way, quiero cotizar un lote de metal industrial. Tengo material, fotos y ubicación para revisar.",
-      phone: "17866610046",
+      phone: "573028583784",
       title: "Miami / USA",
       trackingTarget: "miami-usa",
     },

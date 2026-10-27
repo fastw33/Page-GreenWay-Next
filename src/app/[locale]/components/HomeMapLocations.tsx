@@ -50,8 +50,8 @@ const fallbackCopy: Record<"en" | "es", MapLocationsCopy> = {
         address: ["10049 NW 89th Ave unit 4", "Medley, FL 33178"],
         directionsUrl: miamiDirections,
         mapUrl: miamiMap,
-        phone: "+1 (786) 661-0046",
-        phoneHref: "tel:+17866610046",
+        phone: "+573028583784",
+        phoneHref: "tel:+573028583784",
         title: "Miami - Warehouse",
       },
       {
@@ -73,8 +73,8 @@ const fallbackCopy: Record<"en" | "es", MapLocationsCopy> = {
         address: ["10049 NW 89th Ave unit 4", "Medley, FL 33178"],
         directionsUrl: miamiDirections,
         mapUrl: miamiMap,
-        phone: "+1 (786) 661-0046",
-        phoneHref: "tel:+17866610046",
+        phone: "+573028583784",
+        phoneHref: "tel:+573028583784",
         title: "Miami - Warehouse",
       },
       {

@@ -808,7 +808,7 @@ export function getOrganizationJsonLd(localeInput: string) {
               locale === "en"
                 ? "Industrial metal purchasing"
                 : "Compra de metales industriales",
-            telephone: "+1-786-661-0046",
+            telephone: "+573028583784",
           },
           {
             "@type": "ContactPoint",
@@ -832,7 +832,7 @@ export function getOrganizationJsonLd(localeInput: string) {
         knowsAbout: baseKeywords[locale],
         logo: absoluteUrl("/brand/greenway-logo-full-transparent.png"),
         name: siteName,
-        telephone: "+1-786-661-0046",
+        telephone: "+573028583784",
         sameAs: ["https://www.instagram.com/greenwayllc/"],
         slogan:
           locale === "en"

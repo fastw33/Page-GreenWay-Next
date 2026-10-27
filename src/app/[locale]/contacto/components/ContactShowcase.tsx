@@ -53,8 +53,8 @@ const fallbackCopy: Record<"en" | "es", ContactCopy> = {
     channels: [
       {
         body: "Coordination for operations, warehouses, and materials with international movement.",
-        href: "tel:+17866610046",
-        label: "+1 (786) 661-0046",
+        href: "tel:+573028583784",
+        label: "+573028583784",
         title: "Miami Office",
       },
       {
@@ -78,8 +78,8 @@ const fallbackCopy: Record<"en" | "es", ContactCopy> = {
           "https://www.google.com/maps/search/?api=1&query=10049%20NW%2089th%20Ave%20unit%204%2C%20Medley%2C%20FL%2033178",
         mapUrl:
           "https://www.google.com/maps?q=10049%20NW%2089th%20Ave%20unit%204%2C%20Medley%2C%20FL%2033178&output=embed",
-        phone: "+1 (786) 661-0046",
-        phoneHref: "tel:+17866610046",
+        phone: "+573028583784",
+        phoneHref: "tel:+573028583784",
         title: "Miami - Warehouse",
       },
       {
@@ -112,8 +112,8 @@ const fallbackCopy: Record<"en" | "es", ContactCopy> = {
     channels: [
       {
         body: "Coordinación para operaciones, bodegas y materiales con salida internacional.",
-        href: "tel:+17866610046",
-        label: "+1 (786) 661-0046",
+        href: "tel:+573028583784",
+        label: "+573028583784",
         title: "Oficina Miami",
       },
       {
@@ -137,8 +137,8 @@ const fallbackCopy: Record<"en" | "es", ContactCopy> = {
           "https://www.google.com/maps/search/?api=1&query=10049%20NW%2089th%20Ave%20unit%204%2C%20Medley%2C%20FL%2033178",
         mapUrl:
           "https://www.google.com/maps?q=10049%20NW%2089th%20Ave%20unit%204%2C%20Medley%2C%20FL%2033178&output=embed",
-        phone: "+1 (786) 661-0046",
-        phoneHref: "tel:+17866610046",
+        phone: "+573028583784",
+        phoneHref: "tel:+573028583784",
         title: "Miami - Warehouse",
       },
       {
@@ -220,7 +220,7 @@ export async function ContactShowcase() {
           name: "Name",
           namePlaceholder: "Your name",
           phone: "Phone",
-          phonePlaceholder: "+1 786 661 0046",
+          phonePlaceholder: "+573028583784",
           photos: "Material photos",
           photosPlaceholder: "Attach photos or PDF files of the material.",
           sending: "Sending information...",
