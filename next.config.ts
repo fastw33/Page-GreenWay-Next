@@ -11,6 +11,12 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/:path*",
+        has: [{ type: "host", value: "greenwayinter\\.com" }],
+        destination: "https://www.greenwayinter.com/:path*",
+        permanent: true,
+      },
+      {
         destination:
           "/countries/estados-unidos/silicon-valley/silicon-valley-microsoft-portrait-04.webp",
         permanent: true,

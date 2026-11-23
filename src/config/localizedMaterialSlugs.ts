@@ -139,29 +139,3 @@ export const localizedMaterialSlugs = [
     esSlug: "compramos-carburo-de-tungsteno-mississippi",
   },
 ];
-
-export function getLocalizedMaterialPath(
-  pathname: string,
-  targetLocale: "es" | "en",
-) {
-  const segments = pathname.split("/").filter(Boolean);
-  const explicitLocale = segments[0] === "en" || segments[0] === "es"
-    ? segments[0]
-    : undefined;
-  const slugIndex = explicitLocale ? 1 : 0;
-  const slug = segments[slugIndex];
-
-  if (!slug || segments.length !== slugIndex + 1) {
-    return pathname || "/";
-  }
-
-  const route = localizedMaterialSlugs.find(
-    (item) => item.enSlug === slug || item.esSlug === slug,
-  );
-
-  if (!route) {
-    return pathname || "/";
-  }
-
-  return targetLocale === "en" ? `/${route.enSlug}` : `/${route.esSlug}`;
-}

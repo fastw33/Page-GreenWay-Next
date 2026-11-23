@@ -1,8 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
-import { getLocalizedMaterialPath } from "@/config/localizedMaterialSlugs";
-import { Link, usePathname } from "@/i18n/navigation";
+import { localizedPath } from "@/i18n/localizedPaths";
+import { usePathname } from "@/i18n/navigation";
 import type { AppLocale } from "@/i18n/routing";
 
 const languages: Array<{
@@ -87,7 +88,7 @@ export function LanguageSwitcher() {
     <div aria-label={t("label")} className="flex items-center gap-2">
       {languages.map((language) => {
         const isActive = activeLocale === language.locale;
-        const href = getLocalizedMaterialPath(pathname, language.locale);
+        const href = localizedPath(language.locale, pathname);
 
         return (
           <Link
@@ -98,8 +99,8 @@ export function LanguageSwitcher() {
                 : "border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--gw-green)]"
             }`}
             href={href}
+            hrefLang={language.locale}
             key={language.locale}
-            locale={language.locale}
             title={t(language.nameKey)}
           >
             <LocaleMark mark={language.mark} />

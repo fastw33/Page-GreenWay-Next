@@ -1,4 +1,5 @@
 import type { Metadata, MetadataRoute } from "next";
+import { localizedPath } from "@/i18n/localizedPaths";
 import {
   getSeoLandingPageBySlug,
   seoLandingPages,
@@ -431,17 +432,6 @@ export const materialRoutes = [
 
 export function normalizeLocale(locale: string): Locale {
   return locale === "en" ? "en" : defaultLocale;
-}
-
-export function localizedPath(locale: Locale, path = "") {
-  const cleanPath =
-    path === "" || path === "/" ? "" : `/${path.replace(/^\/+/, "")}`;
-
-  if (locale === defaultLocale) {
-    return cleanPath || "/";
-  }
-
-  return cleanPath ? `/en${cleanPath}` : "/en";
 }
 
 export function absoluteUrl(path = "") {
