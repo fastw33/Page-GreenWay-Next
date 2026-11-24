@@ -101,6 +101,7 @@ export function LanguageSwitcher() {
             href={href}
             hrefLang={language.locale}
             key={language.locale}
+            prefetch={false}
             title={t(language.nameKey)}
           >
             <LocaleMark mark={language.mark} />

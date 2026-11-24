@@ -9,7 +9,7 @@ export async function SiteHeader() {
   const t = await getTranslations("Navigation");
 
   return (
-    <header className="sticky top-0 z-40 border-b border-[var(--color-border)] bg-white/95 shadow-[0_8px_28px_rgba(15,23,42,0.06)] backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-[var(--color-border)] bg-white shadow-[0_8px_28px_rgba(15,23,42,0.06)] lg:bg-white/95 lg:backdrop-blur-md">
       <nav
         aria-label="Navegacion principal"
         className="relative mx-auto flex min-h-[calc(var(--gw-nav-h)-1px)] max-w-7xl items-center justify-between gap-2 px-3 sm:gap-3 sm:px-6 lg:gap-8"
@@ -18,8 +18,14 @@ export async function SiteHeader() {
           aria-label={t("brand")}
           className="flex min-w-0 items-center rounded-md outline-none focus-visible:ring-2 focus-visible:ring-[var(--gw-green)] focus-visible:ring-offset-4"
           href="/"
+          prefetch={false}
         >
-          <span className="relative h-[58px] w-[176px] max-w-full sm:h-[68px] sm:w-[214px] lg:h-[78px] lg:w-[246px]">
+          <picture className="relative h-[58px] w-[176px] max-w-full sm:h-[68px] sm:w-[214px] lg:h-[78px] lg:w-[246px]">
+            <source
+              media="(width < 1024px)"
+              srcSet="/brand/greenway-header-mobile.avif"
+              type="image/avif"
+            />
             <Image
               alt={t("brand")}
               className="h-full w-full object-contain"
@@ -29,7 +35,7 @@ export async function SiteHeader() {
               src="/brand/greenway-logo-full-transparent.png"
               width={1600}
             />
-          </span>
+          </picture>
         </Link>
         <div className="hidden items-center justify-end gap-4 text-sm font-semibold text-[var(--color-muted)] lg:flex">
           <NavLinks />

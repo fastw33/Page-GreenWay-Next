@@ -2,13 +2,16 @@
 
 import { Pause, Play } from "lucide-react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState, type TouchEvent } from "react";
 
 const rotationInterval = 6500;
 
-export function HomeHeroPhotoCarousel({ photos }: { photos: readonly string[] }) {
-  const t = useTranslations("Pages.home.videoHero.carousel");
+type HomeHeroPhotoCarouselProps = {
+  labels: { group: string; pause: string; play: string };
+  photos: { label: string; src: string }[];
+};
+
+export function HomeHeroPhotoCarousel({ labels, photos }: HomeHeroPhotoCarouselProps) {
   const stageRef = useRef<HTMLDivElement>(null);
   const swipeStart = useRef<{ x: number; y: number } | null>(null);
   const [selection, setSelection] = useState({ previous: 0, requested: 0 });
@@ -108,25 +111,25 @@ export function HomeHeroPhotoCarousel({ photos }: { photos: readonly string[] })
               (visibleIndex === index ? "opacity-100" : "opacity-0")
             }
             fill
-            key={photo}
+            key={photo.src}
             loading="eager"
             onLoad={() => setLoadedPhotos((loaded) => loaded.includes(index)
               ? loaded
               : [...loaded, index])}
             quality={45}
             sizes="100vw"
-            src={photo}
+            src={photo.src}
           />
         );
       })}
 
       <div
-        aria-label={t("label")}
+        aria-label={labels.group}
         className="absolute left-6 top-5 z-20 flex items-center rounded-full border border-white/25 bg-[var(--gw-ink)]/70 px-1 text-white"
         role="group"
       >
         <button
-          aria-label={t(paused ? "play" : "pause")}
+          aria-label={paused ? labels.play : labels.pause}
           className="grid size-11 place-items-center rounded-full focus-visible:outline-2 focus-visible:outline-white motion-reduce:hidden"
           onClick={() => setPaused((value) => !value)}
           type="button"
@@ -136,9 +139,9 @@ export function HomeHeroPhotoCarousel({ photos }: { photos: readonly string[] })
         {photos.map((photo, index) => (
           <button
             aria-current={index === visibleIndex ? "true" : undefined}
-            aria-label={t("photo", { number: index + 1 })}
+            aria-label={photo.label}
             className="grid size-11 place-items-center rounded-full focus-visible:outline-2 focus-visible:outline-white"
-            key={photo}
+            key={photo.src}
             onClick={() => selectPhoto(index)}
             onFocus={() => setPaused(true)}
             type="button"

@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 import { Montserrat } from "next/font/google";
 import { notFound } from "next/navigation";
 import { SiteFooter } from "@/components/global/SiteFooter";
@@ -8,7 +9,7 @@ import { SiteHeader } from "@/components/global/SiteHeader";
 import { AosProvider } from "@/components/global/AosProvider";
 import { AssetProtection } from "@/components/global/AssetProtection";
 import { FloatingWhatsApp } from "@/components/global/FloatingWhatsApp";
-import { GoogleAdsTag } from "@/components/global/GoogleAdsTag";
+import { GoogleAdsTag } from "../GoogleAdsTag";
 import { routing } from "@/i18n/routing";
 import { getOrganizationJsonLd, getRootMetadata } from "@/lib/seo";
 import "../globals.css";
@@ -50,6 +51,7 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  const { LanguageSwitcher, Navigation } = await getMessages({ locale });
   const jsonLd = JSON.stringify(getOrganizationJsonLd(locale)).replace(
     /</g,
     "\\u003c",
@@ -66,7 +68,7 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: jsonLd }}
           type="application/ld+json"
         />
-        <NextIntlClientProvider>
+        <NextIntlClientProvider messages={{ LanguageSwitcher, Navigation }}>
           <AosProvider>
             <AssetProtection />
             <SiteHeader />

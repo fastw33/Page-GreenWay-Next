@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import { GoogleAdsTag } from "@/components/global/GoogleAdsTag";
+import { GoogleAdsTag } from "./GoogleAdsTag";
 import { NotFoundExperience } from "@/components/global/NotFoundExperience";
 import "./globals.css";
 

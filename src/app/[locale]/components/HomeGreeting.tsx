@@ -129,6 +129,7 @@ export async function HomeGreeting() {
                 data-aos="fade-up"
                 data-aos-delay={String(160 + index * 90)}
                 href={card.href}
+                prefetch={false}
                 key={card.key}
               >
                 <span

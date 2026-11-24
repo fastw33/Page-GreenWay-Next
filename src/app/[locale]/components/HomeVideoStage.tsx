@@ -1,7 +1,11 @@
 import { getImageProps } from "next/image";
+import { getTranslations } from "next-intl/server";
 import type { HomeVideo } from "@/config/homeVideos";
 import { HomeHeroPhotoCarousel } from "./HomeHeroPhotoCarousel";
 import { HomeHeroVideo } from "./HomeHeroVideo";
+
+const mobileHeroMedia = "(width < 1024px)";
+const mobileLeadPhoto = "/videos/home/miami-hero-768.avif";
 
 const mobileHeroPhotos = [
   "/countries/estados-unidos/miami/miami-warehouse-logistics-02.webp",
@@ -27,7 +31,8 @@ type HomeVideoStageProps = {
   videos: HomeVideo[];
 };
 
-export function HomeVideoStage({ copy, videos }: HomeVideoStageProps) {
+export async function HomeVideoStage({ copy, videos }: HomeVideoStageProps) {
+  const t = await getTranslations("Pages.home.videoHero.carousel");
   const activeVideo = videos[0];
   const imageOptions = {
     alt: "",
@@ -51,7 +56,16 @@ export function HomeVideoStage({ copy, videos }: HomeVideoStageProps) {
     <section
       className="relative isolate min-h-[calc(100svh-var(--gw-nav-h))] overflow-hidden bg-[var(--gw-ink)]"
     >
+      <link
+        as="image"
+        fetchPriority="high"
+        href={mobileLeadPhoto}
+        media={mobileHeroMedia}
+        rel="preload"
+        type="image/avif"
+      />
       <picture>
+        <source media={mobileHeroMedia} srcSet={mobileLeadPhoto} type="image/avif" />
         <source
           media="(min-width: 1024px)"
           sizes={desktopPoster.sizes}
@@ -59,7 +73,13 @@ export function HomeVideoStage({ copy, videos }: HomeVideoStageProps) {
         />
         <img {...mobilePhoto} alt="" aria-hidden="true" />
       </picture>
-      <HomeHeroPhotoCarousel photos={mobileHeroPhotos} />
+      <HomeHeroPhotoCarousel
+        labels={{ group: t("label"), pause: t("pause"), play: t("play") }}
+        photos={mobileHeroPhotos.map((src, index) => ({
+          src,
+          label: t("photo", { number: index + 1 }),
+        }))}
+      />
       {activeVideo && <HomeHeroVideo video={activeVideo} />}
 
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(15,23,42,0.22),rgba(15,23,42,0.62)_34%,rgba(15,23,42,0.8))] lg:bg-[linear-gradient(90deg,rgba(15,23,42,0.82),rgba(15,23,42,0.46),rgba(15,23,42,0.1))]" />
@@ -84,7 +104,7 @@ export function HomeVideoStage({ copy, videos }: HomeVideoStageProps) {
           <div className="grid gap-2 lg:gap-3">
             {copy.announcements.map((announcement) => (
               <div
-                className="border-l-4 border-[var(--gw-green)] bg-white/[0.08] p-4 backdrop-blur-sm transition-colors duration-200 hover:bg-white/[0.13] lg:px-5"
+                className="border-l-4 border-[var(--gw-green)] bg-[#222d3e]/90 p-4 lg:bg-white/[0.08] lg:px-5 lg:backdrop-blur-sm lg:transition-colors lg:duration-200 lg:hover:bg-white/[0.13]"
                 key={announcement.id}
               >
                 <p className="text-sm font-bold uppercase tracking-[0.2em] text-[var(--color-highlight)]">
