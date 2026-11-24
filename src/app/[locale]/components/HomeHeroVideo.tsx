@@ -3,53 +3,53 @@
 import { useEffect, useState } from "react";
 import type { HomeVideo } from "@/config/homeVideos";
 
-type HomeHeroVideoProps = {
-  videos: HomeVideo[];
-};
-
-export function HomeHeroVideo({ videos }: HomeHeroVideoProps) {
+export function HomeHeroVideo({ video }: { video: HomeVideo }) {
   const [canLoadVideo, setCanLoadVideo] = useState(false);
-  const activeVideo = videos[0];
 
   useEffect(() => {
     const desktopQuery = window.matchMedia("(min-width: 1024px)");
     const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let timer: number | undefined;
 
-    if (motionQuery.matches) {
-      return;
+    function canPlayVideo() {
+      return desktopQuery.matches && !motionQuery.matches;
     }
 
-    let timeout: number | undefined;
-    const loadDelay = desktopQuery.matches ? 1800 : 3200;
+    function scheduleVideo() {
+      window.clearTimeout(timer);
+      if (canPlayVideo() && document.readyState === "complete") {
+        timer = window.setTimeout(() => setCanLoadVideo(canPlayVideo()), 1800);
+      }
+    }
 
-    function loadAfterInitialPaint() {
-      timeout = window.setTimeout(() => setCanLoadVideo(true), loadDelay);
+    function handleMediaChange() {
+      if (!canPlayVideo()) setCanLoadVideo(false);
+      scheduleVideo();
     }
 
     if (document.readyState === "complete") {
-      loadAfterInitialPaint();
+      scheduleVideo();
     } else {
-      window.addEventListener("load", loadAfterInitialPaint, { once: true });
+      window.addEventListener("load", scheduleVideo, { once: true });
     }
+    desktopQuery.addEventListener("change", handleMediaChange);
+    motionQuery.addEventListener("change", handleMediaChange);
 
     return () => {
-      window.removeEventListener("load", loadAfterInitialPaint);
-
-      if (timeout) {
-        window.clearTimeout(timeout);
-      }
+      window.removeEventListener("load", scheduleVideo);
+      desktopQuery.removeEventListener("change", handleMediaChange);
+      motionQuery.removeEventListener("change", handleMediaChange);
+      window.clearTimeout(timer);
     };
   }, []);
 
-  if (!activeVideo || !canLoadVideo) {
-    return null;
-  }
+  if (!canLoadVideo) return null;
 
   return (
     <video
       aria-hidden="true"
       autoPlay
-      className="absolute inset-0 h-full w-full object-cover"
+      className="absolute inset-0 hidden h-full w-full object-cover lg:block"
       controls={false}
       disablePictureInPicture
       loop
@@ -57,7 +57,7 @@ export function HomeHeroVideo({ videos }: HomeHeroVideoProps) {
       playsInline
       preload="none"
     >
-      <source src={activeVideo.src} type="video/mp4" />
+      <source src={video.src} type="video/mp4" />
     </video>
   );
 }

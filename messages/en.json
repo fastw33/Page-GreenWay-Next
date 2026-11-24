@@ -21,6 +21,12 @@
       "title": "Experts In Industrial Metal Recovery.",
       "description": "We buy, evaluate, and coordinate recovery for tungsten, tungsten carbide, specialty alloys, and metal-bearing industrial residues.",
       "videoHero": {
+        "carousel": {
+          "label": "Operations photos",
+          "pause": "Pause slideshow",
+          "play": "Play slideshow",
+          "photo": "Show photo {number}"
+        },
         "eyebrow": "Green Way International",
         "title": "Industrial Metal Recovery With International Reach.",
         "body": "We identify, value, and buy recoverable metals so every lot moves through a final purchasing process with traceability and speed.",

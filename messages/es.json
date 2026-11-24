@@ -21,6 +21,12 @@
       "title": "Expertos En Recuperación De Metales Industriales.",
       "description": "Compramos, evaluamos y coordinamos la recuperación de tungsteno, carburo de tungsteno, aleaciones especiales y residuos metálicos con valor técnico.",
       "videoHero": {
+        "carousel": {
+          "label": "Fotos de la operación",
+          "pause": "Pausar carrusel",
+          "play": "Reproducir carrusel",
+          "photo": "Ver foto {number}"
+        },
         "eyebrow": "Green Way International",
         "title": "Recuperación De Metales Industriales Con Alcance Internacional.",
         "body": "Identificamos, valorizamos y compramos materiales metálicos recuperables para que cada lote avance con trazabilidad, velocidad y compra final.",
